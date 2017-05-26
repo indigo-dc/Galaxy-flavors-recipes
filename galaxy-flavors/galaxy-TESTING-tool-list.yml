@@ -48,7 +48,7 @@ tools:
   tool_panel_section_label: 'Tools'
   install_resolver_dependencies: True
 
-#- name: 'bowtie_wrappers'
-#  owner: 'devteam'
-#  tool_panel_section_label: 'Tools'
-#  install_resolver_dependencies: 'True'
+- name: 'bowtie_wrappers'
+  owner: 'devteam'
+  tool_panel_section_label: 'Tools'
+  install_resolver_dependencies: 'True'

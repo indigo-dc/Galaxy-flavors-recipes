@@ -3,7 +3,7 @@ api_key: <Admin user API key from galaxy_instance>
 galaxy_instance: <Galaxy instance IP>
 tools:
 
-#---
+#______________________________________
 # Galaxy Tools for INDIGO Review
 
 - name: 'fastqc'

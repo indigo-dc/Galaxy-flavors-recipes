@@ -10,7 +10,7 @@ tools:
   owner: 'devteam'
   tool_panel_section_id: 'textutil'
   install_resolver_dependencies: True
-
+  install_tool_dependencies: False
 #______________________________________
 # Join, Subtract and Group
 
@@ -18,11 +18,13 @@ tools:
   owner: 'devteam'
   tool_panel_section_id: 'group'
   install_resolver_dependencies: True
+  install_tool_dependencies: False
 
 - name: 'column_join'
   owner: 'jjohnson'
   tool_panel_section_id: 'group'
   install_resolver_dependencies: True
+  install_tool_dependencies: False
 
 #______________________________________
 # Convert Formats
@@ -31,6 +33,7 @@ tools:
   owner: 'devteam'
   tool_panel_section_id: 'convert'
   install_resolver_dependencies: True
+  install_tool_dependencies: False
 
 #______________________________________
 # Operate on Genomic Intervals
@@ -55,16 +58,19 @@ tools:
   owner: 'devteam'
   tool_panel_section_label: 'NGS: Mapping'
   install_resolver_dependencies: True
+  install_tool_dependencies: False
 
 - name: 'bowtie_wrappers'
   owner: 'devteam'
   tool_panel_section_label: 'NGS: Mapping'
   install_resolver_dependencies: True
+  install_tool_dependencies: False
 
 - name: 'bowtie2'
   owner: 'devteam'
   tool_panel_section_label: 'NGS: Mapping'
   install_resolver_dependencies: True
+  install_tool_dependencies: False
 
 #______________________________________
 # NGS: QC and manipulation
@@ -77,41 +83,49 @@ tools:
   owner: 'devteam'
   tool_panel_section_label: 'NGS: RNA Analysis'
   install_resolver_dependencies: True
+  install_tool_dependencies: False
 
 - name: 'tophat'
   owner: 'devteam'
   tool_panel_section_label: 'NGS: RNA Analysis'
   install_resolver_dependencies: True
+  install_tool_dependencies: False
 
 - name: 'tophat2'
   owner: 'devteam'
   tool_panel_section_label: 'NGS: RNA Analysis'
   install_resolver_dependencies: True
+  install_tool_dependencies: False
 
 - name: 'rsem'
   owner: 'jjohnson'
   tool_panel_section_label: 'NGS: RNA Analysis'
   install_resolver_dependencies: True
+  install_tool_dependencies: False
 
 - name: 'trinityrnaseq'
   owner: 'anmoljh'
   tool_panel_section_label: 'NGS: RNA Analysis'
   install_resolver_dependencies: True
+  install_tool_dependencies: False
 
 - name: 'cufflinks'
   owner: 'devteam'
   tool_panel_section_label: 'NGS: RNA Analysis'
   install_resolver_dependencies: True
+  install_tool_dependencies: False
 
 - name: 'express'
   owner: 'devteam'
   tool_panel_section_label: 'NGS: RNA Analysis'
   install_resolver_dependencies: True
+  install_tool_dependencies: False
 
 - name: 'filter_transcripts_via_tracking'
   owner: 'devteam'
   tool_panel_section_label: 'NGS: RNA Analysis'
   install_resolver_dependencies: True
+  install_tool_dependencies: False
 
 #______________________________________
 # NGS: Peak Calling
@@ -120,16 +134,19 @@ tools:
   owner: 'modencode-dcc'
   tool_panel_section_label: 'NGS: Peak Calling'
   install_resolver_dependencies: True
+  install_tool_dependencies: False
 
 - name: 'sicer'
   owner: 'devteam'
   tool_panel_section_label: 'NGS: Peak Calling'
   install_resolver_dependencies: True
+  install_tool_dependencies: False
 
 - name: 'peakranger'
   owner: 'modencode-dcc'
   tool_panel_section_label: 'NGS: Peak Calling'
   install_resolver_dependencies: True
+  install_tool_dependencies: False
 
 #- name: 'homer'
 #  owner: 'kevyin'
@@ -139,6 +156,7 @@ tools:
   owner: 'devteam'
   tool_panel_section_label: 'NGS: Peak Calling'
   install_resolver_dependencies: True
+  install_tool_dependencies: False
 
 #______________________________________
 # NGS: Beacon Tools
@@ -151,6 +169,7 @@ tools:
   owner: 'iuc'
   tool_panel_section_label: 'NGS: BEDTools'
   install_resolver_dependencies: True
+  install_tool_dependencies: False
 
 #______________________________________
 # NGS: SamTools
@@ -159,48 +178,58 @@ tools:
   owner: 'devteam'
   tool_panel_section_label: 'NGS: SamTools'
   install_resolver_dependencies: True
+  install_tool_dependencies: False
 
 - name: 'sam_to_bam'
   owner: 'devteam'
   tool_panel_section_label: 'NGS: SamTools'
   install_resolver_dependencies: True
+  install_tool_dependencies: False
 
 - name: 'samtool_filter2'
   owner: 'devteam'
   tool_panel_section_label: 'NGS: SamTools'
   install_resolver_dependencies: True
+  install_tool_dependencies: False
 
 - name: 'sam_bitwise_flag_filter'
   owner: 'devteam'
   tool_panel_section_label: 'NGS: SamTools'
   install_resolver_dependencies: True
+  install_tool_dependencies: False
 
 - name: 'sam_merge'
   owner: 'devteam'
   tool_panel_section_label: 'NGS: SamTools'
   install_resolver_dependencies: True
+  install_tool_dependencies: False
 
 - name: 'samtools_flagstat'
   owner: 'devteam'
   tool_panel_section_label: 'NGS: SamTools'
   install_resolver_dependencies: True
+  install_tool_dependencies: False
 
 - name: 'samtools_slice_bam'
   owner: 'devteam'
   tool_panel_section_label: 'NGS: SamTools'
   install_resolver_dependencies: True
+  install_tool_dependencies: False
 
 - name: 'sam2interval'
   owner: 'devteam'
   tool_panel_section_label: 'NGS: SamTools'
   install_resolver_dependencies: True
+  install_tool_dependencies: False
 
 - name: 'samtools_rmdup'
   owner: 'devteam'
   tool_panel_section_label: 'NGS: SamTools'
   install_resolver_dependencies: True
+  install_tool_dependencies: False
 
 - name: 'picard'
   owner: 'devteam'
   tool_panel_section_label: 'NGS: SamTools'
   install_resolver_dependencies: True
+  install_tool_dependencies: False

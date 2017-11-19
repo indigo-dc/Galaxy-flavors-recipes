@@ -11,5 +11,7 @@ References
 ----------
 
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5570170/
+
 http://bgruening.github.io/galaxy-rna-workbench/#docker-configuration
+
 https://github.com/bgruening/galaxy-rna-workbench

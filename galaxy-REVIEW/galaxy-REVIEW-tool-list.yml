@@ -1,0 +1,31 @@
+---
+api_key: <Admin user API key from galaxy_instance>
+galaxy_instance: <Galaxy instance IP>
+tools:
+
+#______________________________________
+# Galaxy Tools for INDIGO Review
+
+- name: 'fastqc'
+  owner: 'devteam'
+  tool_panel_section_label: 'Review tools'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'bowtie_wrappers'
+  owner: 'devteam'
+  tool_panel_section_label: 'Review tools'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'sam_to_bam'
+  owner: 'devteam'
+  tool_panel_section_label: 'Review tools'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'deeptools_bam_coverage'
+  owner: 'bgruening'
+  tool_panel_section_label: "Review tools"
+  install_resolver_dependencies: True
+  install_tool_dependencies: False

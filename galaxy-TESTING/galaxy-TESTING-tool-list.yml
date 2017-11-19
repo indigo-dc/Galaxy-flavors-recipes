@@ -1,0 +1,16 @@
+---
+api_key: <Admin user API key from galaxy_instance>
+galaxy_instance: <Galaxy instance IP>
+
+tools:
+- name: fastqc
+  owner: devteam
+  tool_panel_section_label: 'Tools'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'bowtie_wrappers'
+  owner: 'devteam'
+  tool_panel_section_label: 'Tools'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False

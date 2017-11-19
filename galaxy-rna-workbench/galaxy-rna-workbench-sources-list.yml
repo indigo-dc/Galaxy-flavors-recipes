@@ -5,4 +5,4 @@
 
 - name: "Set {{galaxy_flavor}} resources"
   set_fact:
-    - galaxy_tools_tool_list_files: "{{galaxy_flavor}}-tool-list.yml"
+    galaxy_tools_tool_list_files: [ '{{galaxy_flavor}}-tool-list.yml' ]

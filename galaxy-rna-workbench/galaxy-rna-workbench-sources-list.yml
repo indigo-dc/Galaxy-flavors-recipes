@@ -3,6 +3,6 @@
 # tools, reference data, workflow, data libraries and/or visualization plugin,
 # to install.
 
-- name: 'Set {{galaxy_flavor}} resources'
-  set_fact:
-    - galaxy_tools_tool_list_files: [ "{{galaxy_flavor}}-tool-list.yml" ]
+#- name: 'Set {{galaxy_flavor}} resources'
+#  set_fact:
+#    - galaxy_tools_tool_list_files: [ "{{galaxy_flavor}}-tool-list.yml" ]

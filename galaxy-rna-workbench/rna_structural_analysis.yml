@@ -1,0 +1,41 @@
+api_key: admin
+galaxy_instance: http://localhost:8080
+install_resolver_dependencies: true
+install_tool_dependencies: false
+
+tools:
+# RNA Structure Analysis
+
+- name: suite_viennarna
+  owner: rnateam
+  tool_panel_section_label: "RNA Structure Analysis"
+
+- name: rnalien
+  owner: rnateam
+  tool_panel_section_label: "RNA Structure Analysis"
+
+- name: suite_cmv
+  owner: rnateam
+  install_resolver_dependencies: false
+  tool_panel_section_label: "RNA Structure Analysis"
+  
+- name: mea
+  owner: rnateam
+  tool_panel_section_label: "RNA Structure Analysis"
+
+- name: rnaz
+  owner: bgruening
+  tool_panel_section_label: "RNA Structure Analysis"
+
+- name: cofold
+  owner: rnateam
+  tool_panel_section_label: "RNA Structure Analysis"
+
+- name: rnashapes
+  owner: rnateam
+  tool_panel_section_label: "RNA Structure Analysis"
+
+# remove until https://github.com/bgruening/galaxytools/pull/553 is fixed
+#- name: antarna
+#  owner: rnateam
+#  tool_panel_section_label: "RNA Structure Analysis"

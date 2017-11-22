@@ -17,3 +17,9 @@
   set_fact:
     install_workflows: true
     galaxy_tools_workflow_path: '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/rna-workbench-workflow'
+
+- name: "Set {{galaxy_flavor}} data library resources"
+  set_fact:
+    install_data_libraries: true
+    galaxy_tools_data_library_list_file:
+      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/library_data.yaml'

@@ -12,3 +12,8 @@
       - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/rna_workbench.yml'
       - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/rna_workbench_2.yml'
       - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/rna_workbench_3.yml'
+
+- name: "Set {{galaxy_flavor}} workflows resources"
+  set_fact:
+    install_workflows: true
+    galaxy_tools_workflow_path: '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/rna-workbench-workflow'

@@ -6,13 +6,12 @@
 - name: "Set {{galaxy_flavor}} resources"
   set_fact:
     galaxy_tools_tool_list_files:
-      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/galaxy-TESTING/galaxy-TESTING-tool-list.yml'
-      #- '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/ngs_preprocessing.yml'
-      #- '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/rna_seq_tools.yml'
-      #- '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/rna_structural_analysis.yml'
-      #- '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/rna_workbench.yml'
-      #- '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/rna_workbench_2.yml'
-      #- '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/rna_workbench_3.yml'
+      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/ngs_preprocessing.yml'
+      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/rna_seq_tools.yml'
+      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/rna_structural_analysis.yml'
+      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/rna_workbench.yml'
+      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/rna_workbench_2.yml'
+      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/rna_workbench_3.yml'
 
 # set path to workflow files
 # ephemeris takes the worlflow path to install workflows

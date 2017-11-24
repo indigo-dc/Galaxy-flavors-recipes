@@ -20,7 +20,7 @@
   set_fact:
     install_workflows: true
     galaxy_tools_workflow_list_path:
-      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/rna-workbench-workflow'
+      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/rna-workbench-workflow'
 
 # set yaml recipes
 # ephemeris takes single files as argument 

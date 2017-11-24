@@ -14,20 +14,27 @@
       #- '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/rna_workbench_2.yml'
       #- '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/rna_workbench_3.yml'
 
+# set path to workflow files
+# ephemeris takes the worlflow path to install workflows
 - name: "Set {{galaxy_flavor}} workflows resources"
   set_fact:
     install_workflows: true
     galaxy_tools_workflow_path_list:
       - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/rna-workbench-workflow'
 
+# set yaml recipes
+# ephemeris takes single files as argument 
 - name: "Set {{galaxy_flavor}} data library resources"
   set_fact:
     install_data_libraries: true
     galaxy_tools_data_library_list_files:
       - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/library_data.yaml'
 
-#- name: "Set {{galaxy_flavor}} tours resources"
-#  set_fact:
-#    install_interactive_tours: true
-#    galaxy_tools_interactive_tour_list_files:
-#      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/rna-workbench-tours'
+# set yaml recipes
+# files are copied into Galaxy. Then Galaxy is restarted
+- name: "Set {{galaxy_flavor}} tours resources"
+  set_fact:
+    install_interactive_tours: true
+    galaxy_tools_interactive_tour_list_files:
+      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/rna-workbench-tours/rnateam.rnaseq.yaml'
+      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/rna-workbench-tours/rnateam.viennarna.yaml'

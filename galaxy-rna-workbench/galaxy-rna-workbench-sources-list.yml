@@ -30,11 +30,10 @@
     galaxy_tools_data_library_list_files:
       - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/library_data.yaml'
 
-# set yaml recipes
-# files are copied into Galaxy. Then Galaxy is restarted
+# set galaxy tours path
+# the whole dir is copied to galaxy/config/plugins/tours/
 - name: "Set {{galaxy_flavor}} tours resources"
   set_fact:
     install_interactive_tours: true
-    galaxy_tools_interactive_tour_list_files:
-      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/rna-workbench-tours/rnateam.rnaseq.yaml'
-      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/rna-workbench-tours/rnateam.viennarna.yaml'
+    galaxy_tools_interactive_tour_path_list:
+      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/rna-workbench-tours'

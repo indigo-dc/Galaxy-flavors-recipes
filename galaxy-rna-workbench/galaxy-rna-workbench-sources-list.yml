@@ -24,3 +24,10 @@
     install_data_libraries: true
     galaxy_tools_data_library_list_files:
       - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/library_data.yaml'
+
+
+- name: "Set {{galaxy_flavor}} tours resources"
+  set_fact:
+    install_interactive_tours: true
+    galaxy_tools_interactive_tour_list_files:
+      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/rna-workbench-tours'

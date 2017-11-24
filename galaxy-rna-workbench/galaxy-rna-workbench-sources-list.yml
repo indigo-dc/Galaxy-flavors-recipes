@@ -19,7 +19,7 @@
 - name: "Set {{galaxy_flavor}} workflows resources"
   set_fact:
     install_workflows: true
-    galaxy_tools_workflow_path_list:
+    galaxy_tools_workflow_list_path:
       - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/rna-workbench-workflow'
 
 # set yaml recipes
@@ -35,5 +35,5 @@
 - name: "Set {{galaxy_flavor}} tours resources"
   set_fact:
     install_interactive_tours: true
-    galaxy_tools_interactive_tour_path_list:
+    galaxy_tools_interactive_tour_list_path:
       - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/rna-workbench-tours'

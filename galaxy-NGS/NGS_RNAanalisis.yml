@@ -1,0 +1,83 @@
+---
+api_key: '2e8854d8fd532029c5ac750f595ae915'
+galaxy_instance: '90.147.102.122'
+tools:
+
+#____________________________________
+#NGS:RNA analysis
+
+
+- name: 'package_r_edger_3_11_0'
+  owner: 'iuc'
+  tool_panel_section_label: 'NGS: RNA analysis'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'htseq_count_eba'
+  owner: 'yboursin'
+  tool_panel_section_label: 'NGS: RNA analysis'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'cuffdiff'
+  owner: 'jjhonson'
+  tool_panel_section_label: 'NGS: RNA analysis'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'deseq_hts'
+  owner: 'vipints'
+  tool_panel_section_label: 'NGS: RNA analysis'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'package_rsem_1_1_17'
+  owner: 'jjhonson'
+  tool_panel_section_label: 'NGS: RNA analysis'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'filter_transcripts_via_tracking'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: RNA analysis'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'tophat2'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: RNA analysis'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'tophat'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: RNA analysis'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'package_cufflinks_2_1_1'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: RNA analysis'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'package_trinity_2_0_6'
+  owner: 'iuc'
+  tool_panel_section_label: 'NGS: RNA analysis'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'edger'
+  owner: 'fcaramia'
+  tool_panel_section_label: 'NGS: RNA analysis'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'express'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: RNA analysis'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+
+

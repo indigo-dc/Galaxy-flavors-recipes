@@ -1,0 +1,70 @@
+---
+api_key: '2e8854d8fd532029c5ac750f595ae915'
+galaxy_instance: '90.147.102.122'
+tools:
+
+#________________________________________
+#NGS:SamTools
+
+- name: 'picard'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: SamTools'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'samtools_rmdup'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: SamTools'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'sam2interval'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: SamTools'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'samtools_slice_bam'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: SamTools'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'samtools_flagstat'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: SamTools'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'sam_merge'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: SamTools'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'sam_bitwise_flag_filter'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: SamTools'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'sam_to_bam'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: SamTools'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'bam_to_sam'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: SamTools'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'samtools_filter2'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: SamTools'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+
+

@@ -1,0 +1,26 @@
+---
+api_key: '2e8854d8fd532029c5ac750f595ae915'
+galaxy_instance: '90.147.102.122'
+tools:
+
+#____________________________________
+#NGS:mapping
+
+- name: 'bowtie2'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: mapping'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'bowtie_wrappers'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: mapping'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'bwa_wrappers'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: mapping'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+

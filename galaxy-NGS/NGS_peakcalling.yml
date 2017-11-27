@@ -1,0 +1,50 @@
+---
+api_key: '2e8854d8fd532029c5ac750f595ae915' 
+galaxy_instance: '90.147.102.122'
+tools:
+
+#____________________________________
+#NGS:Peak Calling
+
+
+- name: 'macs2'
+  owner: 'modencode-dcc'
+  tool_panel_section_label: 'NGS: Peak Calling'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'macs14'
+  owner: 'ryo-tas'
+  tool_panel_section_label: 'NGS: Peak Calling'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'homer'
+  owner: 'kevyin'
+  tool_panel_section_label: 'NGS: Peak Calling'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'peakranger'
+  owner: 'modencode-dcc'
+  tool_panel_section_label: 'NGS: Peak Calling'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'sicer'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: Peak Calling'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'idr'
+  owner: 'iuc'
+  tool_panel_section_label: 'NGS: Peak Calling'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'idr_package'
+  owner: 'modencode-dcc'
+  tool_panel_section_label: 'NGS: Peak Calling'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False

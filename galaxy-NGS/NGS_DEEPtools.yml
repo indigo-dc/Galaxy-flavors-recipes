@@ -12,7 +12,7 @@ tools:
   install_resolver_dependencies: True
   install_tool_dependencies: False
 
-- name: 'deeptools_plot_fingerprinting'
+- name: 'deeptools_plot_fingerprint'
   owner: 'bgruening'
   tool_panel_section_label: 'NGS: DEEPtools'
   install_resolver_dependencies: True
@@ -30,7 +30,7 @@ tools:
   install_resolver_dependencies: True
   install_tool_dependencies: False
 
-- name: 'deeptools_compute_matrix_operation'
+- name: 'deeptools_compute_matrix_operations'
   owner: 'bgruening'
   tool_panel_section_label: 'NGS: DEEPtools'
   install_resolver_dependencies: True
@@ -96,7 +96,7 @@ tools:
   install_resolver_dependencies: True
   install_tool_dependencies: False
 
-- name: 'deeptools_bam_pe_fragmentize'
+- name: 'deeptools_bam_pe_fragmentsize'
   owner: 'bgruening'
   tool_panel_section_label: 'NGS: DEEPtools'
   install_resolver_dependencies: True

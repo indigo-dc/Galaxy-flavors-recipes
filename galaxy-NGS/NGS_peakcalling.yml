@@ -1,6 +1,6 @@
 ---
-api_key: '2e8854d8fd532029c5ac750f595ae915' 
-galaxy_instance: '90.147.102.122'
+api_key: <Admin user API key from galaxy_instance> 
+galaxy_instance: <Galaxy instance IP>
 tools:
 
 #____________________________________

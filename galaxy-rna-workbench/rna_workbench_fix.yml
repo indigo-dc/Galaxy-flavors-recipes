@@ -4,6 +4,9 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+# This fix the error with the workflow rnateam.workflow.analyse_unaligned_ncrnas.ga
+# which is pointing to old revisions of these tools.
+# https://github.com/bgruening/galaxy-rna-workbench/issues/108
 
 - name: viennarna_rnaalifold
   owner: rnateam

@@ -12,6 +12,7 @@
       - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/rna_workbench.yml'
       - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/rna_workbench_2.yml'
       - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/rna_workbench_3.yml'
+      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/rna_workbench_fix.yml'
 
 # set path to workflow files
 # ephemeris takes the worlflow path to install workflows

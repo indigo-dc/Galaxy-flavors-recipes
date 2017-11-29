@@ -331,7 +331,7 @@
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
             "tool_state": "{\"__page__\": 0, \"model_options\": \"{\\\"ribosum\\\": \\\"true\\\", \\\"temperature\\\": \\\"37.0\\\", \\\"betaScale\\\": \\\"1.0\\\", \\\"dangling\\\": \\\"2\\\", \\\"nogu\\\": \\\"true\\\", \\\"endgaps\\\": \\\"false\\\", \\\"nsp\\\": \\\"\\\", \\\"cfactor\\\": \\\"0.5\\\", \\\"noclosinggu\\\": \\\"true\\\", \\\"notetra\\\": \\\"true\\\", \\\"nfactor\\\": \\\"0.6\\\", \\\"nolp\\\": \\\"true\\\"}\", \"general_options\": \"{\\\"color\\\": \\\"true\\\", \\\"noPS\\\": \\\"true\\\", \\\"layout_type\\\": \\\"1\\\", \\\"verbose\\\": \\\"false\\\", \\\"alignment\\\": \\\"true\\\"}\", \"algorithm_options\": \"{\\\"mea\\\": \\\"1.0\\\", \\\"gquad\\\": \\\"false\\\", \\\"bppmThreshold\\\": \\\"1e-06\\\", \\\"pf\\\": \\\"1\\\", \\\"sci\\\": \\\"false\\\", \\\"mis\\\": \\\"false\\\", \\\"pfScale\\\": \\\"1.07\\\", \\\"stochBT_en\\\": \\\"1\\\", \\\"circular\\\": \\\"false\\\"}\", \"__rerun_remap_job_id__\": null, \"IDs\": \"{\\\"auto_id\\\": \\\"false\\\", \\\"id_digits\\\": \\\"4\\\", \\\"id_start\\\": \\\"1\\\", \\\"continuous_ids\\\": \\\"false\\\", \\\"id_prefix\\\": \\\"alignment\\\"}\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"constraints\": \"{\\\"constraintLocation\\\": {\\\"constraintSelector\\\": \\\"none\\\", \\\"__current_case__\\\": 0}, \\\"maxBPspan\\\": \\\"-1\\\", \\\"shapeOption\\\": {\\\"shapeSelector\\\": \\\"notUsed\\\", \\\"__current_case__\\\": 1}}\"}", 
-            "tool_version": "2.2.10.3", 
+            "tool_version": "2.2.10.1", 
             "type": "tool", 
             "uuid": "aa6b003b-eb88-43d7-b660-8a7e3526f56a", 
             "workflow_outputs": [
@@ -487,7 +487,7 @@
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
             "tool_state": "{\"__page__\": 0, \"model_options\": \"{\\\"ribosum\\\": \\\"true\\\", \\\"temperature\\\": \\\"37.0\\\", \\\"betaScale\\\": \\\"1.0\\\", \\\"dangling\\\": \\\"2\\\", \\\"nogu\\\": \\\"true\\\", \\\"endgaps\\\": \\\"false\\\", \\\"nsp\\\": \\\"\\\", \\\"cfactor\\\": \\\"0.6\\\", \\\"noclosinggu\\\": \\\"true\\\", \\\"notetra\\\": \\\"true\\\", \\\"nfactor\\\": \\\"0.5\\\", \\\"nolp\\\": \\\"true\\\"}\", \"general_options\": \"{\\\"color\\\": \\\"true\\\", \\\"noPS\\\": \\\"true\\\", \\\"layout_type\\\": \\\"1\\\", \\\"verbose\\\": \\\"false\\\", \\\"alignment\\\": \\\"true\\\"}\", \"algorithm_options\": \"{\\\"mea\\\": \\\"1.0\\\", \\\"gquad\\\": \\\"false\\\", \\\"bppmThreshold\\\": \\\"1e-06\\\", \\\"pf\\\": \\\"1\\\", \\\"sci\\\": \\\"false\\\", \\\"mis\\\": \\\"true\\\", \\\"pfScale\\\": \\\"1.07\\\", \\\"stochBT_en\\\": \\\"1\\\", \\\"circular\\\": \\\"false\\\"}\", \"__rerun_remap_job_id__\": null, \"IDs\": \"{\\\"auto_id\\\": \\\"false\\\", \\\"id_digits\\\": \\\"4\\\", \\\"id_start\\\": \\\"1\\\", \\\"continuous_ids\\\": \\\"false\\\", \\\"id_prefix\\\": \\\"alignment\\\"}\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"constraints\": \"{\\\"constraintLocation\\\": {\\\"constraintSelector\\\": \\\"none\\\", \\\"__current_case__\\\": 0}, \\\"maxBPspan\\\": \\\"-1\\\", \\\"shapeOption\\\": {\\\"shapeSelector\\\": \\\"notUsed\\\", \\\"__current_case__\\\": 1}}\"}", 
-            "tool_version": "2.2.10.3", 
+            "tool_version": "2.2.10.1", 
             "type": "tool", 
             "uuid": "7e53efdc-e83c-48fb-b221-187bf0ffd956", 
             "workflow_outputs": [

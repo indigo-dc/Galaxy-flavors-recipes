@@ -37,3 +37,13 @@
     install_interactive_tours: true
     galaxy_tools_interactive_tour_list_path:
       - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/rna-workbench-tours'
+
+# set more resources to be installed
+# like visualisation plugins.
+# since there is no a standard way to retrieve and install
+# visualisation plugin, we keep this recepie external.
+- name: "Install visualisation plugins"
+  set_fact:
+    add_more_assets: true
+    galaxy_tools_assets_recipe_list_files:
+      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/rna_visualisations.yml'

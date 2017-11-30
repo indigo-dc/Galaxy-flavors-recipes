@@ -1,8 +1,13 @@
 ---
-# Sources list recipe is used to describe Galaxy resources,
-# tools, reference data, workflow, data libraries and/or visualization plugin,
-# to install.
 
 - name: "Set {{galaxy_flavor}} resources"
   set_fact:
-    galaxy_tools_tool_list_files: [ '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/{{galaxy_flavor}}-tool-list.yml' ]
+    galaxy_tools_tool_list_files:
+      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/galaxy-ngs-base.yml'
+      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/NGS_bedtools.yml'
+      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/NGS_DEEPtools.yml'
+      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/NGS_mapping.yml'
+      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/NGS_peakcalling.yml'
+      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/NGS_QCandmanipulation.yml'
+      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/NGS_RNAanalisis.yml'
+      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/NGS_samtools.yml'

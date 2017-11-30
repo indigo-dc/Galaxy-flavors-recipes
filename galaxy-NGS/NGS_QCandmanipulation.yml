@@ -1,0 +1,87 @@
+---
+api_key: <Admin user API key from galaxy_instance> 
+galaxy_instance: <Galaxy instance IP>
+tools:
+
+#____________________________________
+#NGS:QC and manipulation
+
+
+- name: 'trimmomatic'
+  owner: 'pjbriggs'
+  tool_panel_section_label: 'NGS: QC and manipulation'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'fastq_manipulation'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: QC and manipulation'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'fastq_paired_end_deinterlacer'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: QC and manipulation'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'fastq_paired_end_interlacer'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: QC and manipulation'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'fastq_masker_by_quality'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: QC and manipulation'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'fastq_trimmer_by_quality'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: QC and manipulation'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'fastq_trimmer'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: QC and manipulation'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'fastq_filter'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: QC and manipulation'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'fastq_paired_end_joiner'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: QC and manipulation'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'fastq_paired_end_splitter'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: QC and manipulation'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'fastqc'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: QC and manipulation'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'fastq_stats'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: QC and manipulation'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'fastq_groomer'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: QC and manipulation'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+

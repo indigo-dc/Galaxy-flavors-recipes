@@ -23,3 +23,5 @@
   with_items:
     - { src: '/tmp/galaxytools-master/visualisations/dotplot', dest: '{{galaxy_config_path}}/plugins/visualizations/'  }
     - { src: '/tmp/galaxytools-master/visualisations/dbgraph', dest: '{{galaxy_config_path}}/plugins/visualizations/'  }
+  become_user: '{{ galaxy_user }}'
+  become: true

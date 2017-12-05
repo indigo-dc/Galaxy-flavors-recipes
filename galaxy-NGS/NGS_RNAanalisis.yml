@@ -31,7 +31,7 @@ tools:
   install_resolver_dependencies: True
   install_tool_dependencies: False
 
-- name: 'package_rsem_1_1_17'
+- name: 'rsem'
   owner: 'jjohnson'
   tool_panel_section_label: 'NGS: RNA analysis'
   install_resolver_dependencies: True
@@ -55,13 +55,13 @@ tools:
   install_resolver_dependencies: True
   install_tool_dependencies: False
 
-- name: 'package_cufflinks_2_1_1'
+- name: 'cufflinks'
   owner: 'devteam'
   tool_panel_section_label: 'NGS: RNA analysis'
   install_resolver_dependencies: True
   install_tool_dependencies: False
 
-- name: 'package_trinity_2_0_6'
+- name: 'trinity'
   owner: 'iuc'
   tool_panel_section_label: 'NGS: RNA analysis'
   install_resolver_dependencies: True
@@ -79,5 +79,10 @@ tools:
   install_resolver_dependencies: True
   install_tool_dependencies: False
 
+- name: 'cuffcompare'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: RNA analysis'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
 
-  
+

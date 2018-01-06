@@ -5,12 +5,16 @@ galaxy_instance: <Galaxy instance IP>
 tools:
 - name: fastqc
   owner: devteam
-  tool_panel_section_label: 'Tools'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
+  tool_panel_section_label: 'Test tools'
 
 - name: 'bowtie_wrappers'
   owner: 'devteam'
-  tool_panel_section_label: 'Tools'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
+  tool_panel_section_label: 'Test tools'
+
+- name: 'bwa_wrappers'
+  owner: 'devteam'
+  tool_panel_section_label: 'Test tools'
+
+- name: 'bowtie2'
+  owner: 'devteam'
+  tool_panel_section_label: 'Test tools'

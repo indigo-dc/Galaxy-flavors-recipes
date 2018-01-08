@@ -5,23 +5,27 @@ galaxy_instance: <Galaxy instance IP>
 tools:
 - name: fastqc
   owner: devteam
-  tool_panel_section_label: 'Test tools'
+  tool_panel_section_label: 'QA'
 
 - name: 'bowtie_wrappers'
   owner: 'devteam'
-  tool_panel_section_label: 'Test tools'
+  tool_panel_section_label: 'Bowtie'
 
 - name: 'bwa_wrappers'
   owner: 'devteam'
-  tool_panel_section_label: 'Test tools'
+  tool_panel_section_label: 'BWA'
+
+- name: 'bwa'
+  owner: 'devteam'
+  tool_panel_section_label: 'BWA'
 
 - name: 'bowtie2'
   owner: 'devteam'
-  tool_panel_section_label: 'Test tools'
+  tool_panel_section_label: 'Bowtie'
 
 - name: 'samtools_calmd'
   owner: 'devteam'
-  tool_panel_section_label: 'Test tools'
+  tool_panel_section_label: 'SamTools'
 
 - name: 'bedtools'
   owner: 'iuc'
@@ -29,4 +33,4 @@ tools:
 
 - name: 'pipmir'
   owner: 'rnateam'
-  tool_panel_section_label: 'Test tools'
+  tool_panel_section_label: 'RnaTools'

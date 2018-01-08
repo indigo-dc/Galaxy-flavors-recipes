@@ -18,3 +18,15 @@ tools:
 - name: 'bowtie2'
   owner: 'devteam'
   tool_panel_section_label: 'Test tools'
+
+- name: 'samtools_calmd'
+  owner: 'devteam'
+  tool_panel_section_label: 'Test tools'
+
+- name: 'bedtools'
+  owner: 'iuc'
+  tool_panel_section_label: 'Test tools'
+
+- name: 'pipmir'
+  owner: 'rnateam'
+  tool_panel_section_label: 'Test tools'

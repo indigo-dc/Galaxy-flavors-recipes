@@ -25,7 +25,7 @@ tools:
 
 - name: 'bedtools'
   owner: 'iuc'
-  tool_panel_section_label: 'Test tools'
+  tool_panel_section_label: 'BedTools'
 
 - name: 'pipmir'
   owner: 'rnateam'

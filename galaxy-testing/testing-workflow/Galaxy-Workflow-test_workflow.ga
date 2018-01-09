@@ -1,0 +1,429 @@
+{
+    "a_galaxy_workflow": "true", 
+    "annotation": "", 
+    "format-version": "0.1", 
+    "name": "test workflow", 
+    "steps": {
+        "0": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.70", 
+            "errors": null, 
+            "id": 0, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool FastQC", 
+                    "name": "contaminants"
+                }, 
+                {
+                    "description": "runtime parameter for tool FastQC", 
+                    "name": "limits"
+                }, 
+                {
+                    "description": "runtime parameter for tool FastQC", 
+                    "name": "input_file"
+                }
+            ], 
+            "label": null, 
+            "name": "FastQC", 
+            "outputs": [
+                {
+                    "name": "html_file", 
+                    "type": "html"
+                }, 
+                {
+                    "name": "text_file", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 241, 
+                "top": 211
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.70", 
+            "tool_shed_repository": {
+                "changeset_revision": "2b0c9d9fc6ca", 
+                "name": "fastqc", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"contaminants\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"limits\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "0.70", 
+            "type": "tool", 
+            "uuid": "44eecb76-c216-4382-88c9-3d68d4cf7c64", 
+            "workflow_outputs": []
+        }, 
+        "1": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie_wrappers/bowtie_wrapper/1.2.0", 
+            "errors": null, 
+            "id": 1, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Map with Bowtie for Illumina", 
+                    "name": "singlePaired"
+                }
+            ], 
+            "label": null, 
+            "name": "Map with Bowtie for Illumina", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "sam"
+                }, 
+                {
+                    "name": "mapping_stats", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "output_suppressed_reads_l", 
+                    "type": "fastq"
+                }, 
+                {
+                    "name": "output_suppressed_reads_r", 
+                    "type": "fastq"
+                }, 
+                {
+                    "name": "output_unmapped_reads_l", 
+                    "type": "fastq"
+                }, 
+                {
+                    "name": "output_unmapped_reads_r", 
+                    "type": "fastq"
+                }
+            ], 
+            "position": {
+                "left": 202.5, 
+                "top": 406
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie_wrappers/bowtie_wrapper/1.2.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "b46e7d48076a", 
+                "name": "bowtie_wrappers", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"singlePaired\": \"{\\\"sInput1\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"sParams\\\": {\\\"sSettingsType\\\": \\\"preSet\\\", \\\"__current_case__\\\": 0}, \\\"sPaired\\\": \\\"single\\\", \\\"__current_case__\\\": 0}\", \"__rerun_remap_job_id__\": null, \"save_mapping_stats\": \"\\\"false\\\"\", \"suppressHeader\": \"\\\"false\\\"\", \"refGenomeSource\": \"{\\\"genomeSource\\\": \\\"indexed\\\", \\\"index\\\": \\\"sacCer3\\\", \\\"__current_case__\\\": 0}\"}", 
+            "tool_version": "1.2.0", 
+            "type": "tool", 
+            "uuid": "301c049f-4dbd-4f6a-b433-3e0d3fc0a9de", 
+            "workflow_outputs": []
+        }, 
+        "2": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.3.3.1", 
+            "errors": null, 
+            "id": 2, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Bowtie2", 
+                    "name": "library"
+                }
+            ], 
+            "label": null, 
+            "name": "Bowtie2", 
+            "outputs": [
+                {
+                    "name": "output_unaligned_reads_l", 
+                    "type": "fastqsanger"
+                }, 
+                {
+                    "name": "output_aligned_reads_l", 
+                    "type": "fastqsanger"
+                }, 
+                {
+                    "name": "output_aligned_reads_r", 
+                    "type": "fastqsanger"
+                }, 
+                {
+                    "name": "output_unaligned_reads_r", 
+                    "type": "fastqsanger"
+                }, 
+                {
+                    "name": "output", 
+                    "type": "bam"
+                }, 
+                {
+                    "name": "output_sam", 
+                    "type": "sam"
+                }, 
+                {
+                    "name": "mapping_stats", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 516, 
+                "top": 399
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.3.3.1", 
+            "tool_shed_repository": {
+                "changeset_revision": "121110a12cc9", 
+                "name": "bowtie2", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"library\": \"{\\\"aligned_file\\\": \\\"false\\\", \\\"unaligned_file\\\": \\\"false\\\", \\\"type\\\": \\\"single\\\", \\\"__current_case__\\\": 0, \\\"input_1\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\", \"reference_genome\": \"{\\\"source\\\": \\\"indexed\\\", \\\"__current_case__\\\": 0, \\\"index\\\": \\\"sacCer3\\\"}\", \"rg\": \"{\\\"rg_selector\\\": \\\"do_not_set\\\", \\\"__current_case__\\\": 3}\", \"save_mapping_stats\": \"\\\"false\\\"\", \"analysis_type\": \"{\\\"analysis_type_selector\\\": \\\"simple\\\", \\\"presets\\\": \\\"no_presets\\\", \\\"__current_case__\\\": 0}\"}", 
+            "tool_version": "2.3.3.1", 
+            "type": "tool", 
+            "uuid": "f0cd7993-18cb-4288-a8ab-91ec4384204f", 
+            "workflow_outputs": []
+        }, 
+        "3": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1", 
+            "errors": null, 
+            "id": 3, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Map with BWA-MEM", 
+                    "name": "fastq_input"
+                }
+            ], 
+            "label": null, 
+            "name": "Map with BWA-MEM", 
+            "outputs": [
+                {
+                    "name": "bam_output", 
+                    "type": "bam"
+                }
+            ], 
+            "position": {
+                "left": 218.26666259765625, 
+                "top": 707.1666870117188
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1", 
+            "tool_shed_repository": {
+                "changeset_revision": "dfd8b7f78c37", 
+                "name": "bwa", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"rg\": \"{\\\"rg_selector\\\": \\\"do_not_set\\\", \\\"__current_case__\\\": 3}\", \"fastq_input\": \"{\\\"__current_case__\\\": 1, \\\"fastq_input_selector\\\": \\\"single\\\", \\\"fastq_input1\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\", \"analysis_type\": \"{\\\"analysis_type_selector\\\": \\\"illumina\\\", \\\"__current_case__\\\": 0}\", \"reference_source\": \"{\\\"ref_file\\\": \\\"sacCer3\\\", \\\"reference_source_selector\\\": \\\"cached\\\", \\\"__current_case__\\\": 0}\"}", 
+            "tool_version": "0.7.17.1", 
+            "type": "tool", 
+            "uuid": "d98fbde7-a306-4f92-b1cb-167ebaa3771b", 
+            "workflow_outputs": []
+        }, 
+        "4": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3", 
+            "errors": null, 
+            "id": 4, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Map with BWA for Illumina", 
+                    "name": "paired"
+                }
+            ], 
+            "label": null, 
+            "name": "Map with BWA for Illumina", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "sam"
+                }
+            ], 
+            "position": {
+                "left": 464.26666259765625, 
+                "top": 710.1666870117188
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3", 
+            "tool_shed_repository": {
+                "changeset_revision": "b4427dbb6ced", 
+                "name": "bwa_wrappers", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"genomeSource\": \"{\\\"indices\\\": \\\"sacCer3\\\", \\\"refGenomeSource\\\": \\\"indexed\\\", \\\"__current_case__\\\": 0}\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"paired\": \"{\\\"sPaired\\\": \\\"single\\\", \\\"input1\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0}\", \"params\": \"{\\\"__current_case__\\\": 0, \\\"source_select\\\": \\\"pre_set\\\"}\", \"suppressHeader\": \"\\\"false\\\"\"}", 
+            "tool_version": "1.2.3", 
+            "type": "tool", 
+            "uuid": "224571e4-778d-470b-b05c-d352e73dc168", 
+            "workflow_outputs": []
+        }, 
+        "5": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_getfastabed/2.27.0.0", 
+            "errors": null, 
+            "id": 5, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool GetFastaBed", 
+                    "name": "fasta_source"
+                }, 
+                {
+                    "description": "runtime parameter for tool GetFastaBed", 
+                    "name": "input"
+                }
+            ], 
+            "label": null, 
+            "name": "GetFastaBed", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "fasta"
+                }
+            ], 
+            "position": {
+                "left": 218.39999389648438, 
+                "top": 845.5333251953125
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_getfastabed/2.27.0.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "a8eabd2838f6", 
+                "name": "bedtools", 
+                "owner": "iuc", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"name\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null, \"split\": \"\\\"false\\\"\", \"tab\": \"\\\"false\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"strand\": \"\\\"false\\\"\", \"fasta_source\": \"{\\\"fasta\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0, \\\"fasta_source_selector\\\": \\\"history\\\"}\"}", 
+            "tool_version": "2.27.0.0", 
+            "type": "tool", 
+            "uuid": "ad7e2f71-6b52-4610-a359-c6fc9d28d95a", 
+            "workflow_outputs": []
+        }, 
+        "6": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_color_wrapper/1.0.2", 
+            "errors": null, 
+            "id": 6, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Map with BWA for SOLiD", 
+                    "name": "paired"
+                }
+            ], 
+            "label": null, 
+            "name": "Map with BWA for SOLiD", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "sam"
+                }
+            ], 
+            "position": {
+                "left": 726.7666625976562, 
+                "top": 713.1666870117188
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_color_wrapper/1.0.2", 
+            "tool_shed_repository": {
+                "changeset_revision": "b4427dbb6ced", 
+                "name": "bwa_wrappers", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"genomeSource\": \"{\\\"indices\\\": \\\"sacCer3\\\", \\\"refGenomeSource\\\": \\\"indexed\\\", \\\"__current_case__\\\": 0}\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"paired\": \"{\\\"sPaired\\\": \\\"single\\\", \\\"input1\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0}\", \"params\": \"{\\\"__current_case__\\\": 0, \\\"source_select\\\": \\\"pre_set\\\"}\", \"suppressHeader\": \"\\\"false\\\"\"}", 
+            "tool_version": "1.0.2", 
+            "type": "tool", 
+            "uuid": "e9b3d292-cc91-4715-be7d-9adc2e5d433e", 
+            "workflow_outputs": []
+        }, 
+        "7": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_calmd/samtools_calmd/2.0.1", 
+            "errors": null, 
+            "id": 7, 
+            "input_connections": {
+                "input_bam": {
+                    "id": 2, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool CalMD", 
+                    "name": "input_bam"
+                }
+            ], 
+            "label": null, 
+            "name": "CalMD", 
+            "outputs": [
+                {
+                    "name": "calmd_output", 
+                    "type": "bam"
+                }
+            ], 
+            "position": {
+                "left": 852, 
+                "top": 402
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_calmd/samtools_calmd/2.0.1", 
+            "tool_shed_repository": {
+                "changeset_revision": "33208952b99d", 
+                "name": "samtools_calmd", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"input_bam\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"option_set\": \"{\\\"option_sets\\\": \\\"default\\\", \\\"__current_case__\\\": 0}\", \"reference_source\": \"{\\\"reference_source_selector\\\": \\\"cached\\\", \\\"ref_fasta\\\": \\\"sacCer3\\\", \\\"__current_case__\\\": 0}\"}", 
+            "tool_version": "2.0.1", 
+            "type": "tool", 
+            "uuid": "4c725b95-8765-4812-8625-c028ac87b877", 
+            "workflow_outputs": []
+        }, 
+        "8": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/pipmir/pipmir/0.1.0", 
+            "errors": null, 
+            "id": 8, 
+            "input_connections": {
+                "input_bam": {
+                    "id": 2, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool PIPmiR PIPELINE", 
+                    "name": "input_bam"
+                }
+            ], 
+            "label": null, 
+            "name": "PIPmiR PIPELINE", 
+            "outputs": [
+                {
+                    "name": "putativeMatures", 
+                    "type": "bed"
+                }, 
+                {
+                    "name": "predictedPrecursors", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "predicted_miRNA", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 917.9000244140625, 
+                "top": 529.5333251953125
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/pipmir/pipmir/0.1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "16209195224c", 
+                "name": "pipmir", 
+                "owner": "rnateam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"refGenomeSource\": \"{\\\"genomeSource\\\": \\\"2bit\\\", \\\"builtin\\\": \\\"at10\\\", \\\"__current_case__\\\": 0}\", \"__rerun_remap_job_id__\": null, \"input_bam\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"params\": \"{\\\"settingsType\\\": \\\"default\\\", \\\"__current_case__\\\": 0}\"}", 
+            "tool_version": "0.1.0", 
+            "type": "tool", 
+            "uuid": "9abdf888-ac68-4c14-9590-b36da04fde5e", 
+            "workflow_outputs": []
+        }
+    }, 
+    "uuid": "23c3998b-7350-4d4c-8795-eebe343b641e"
+}

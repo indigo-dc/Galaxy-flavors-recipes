@@ -2,121 +2,13 @@
     "a_galaxy_workflow": "true", 
     "annotation": "", 
     "format-version": "0.1", 
-    "name": "test workflow", 
+    "name": "test workflow (imported from API)", 
     "steps": {
         "0": {
             "annotation": "", 
-            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.70", 
-            "errors": null, 
-            "id": 0, 
-            "input_connections": {}, 
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool FastQC", 
-                    "name": "contaminants"
-                }, 
-                {
-                    "description": "runtime parameter for tool FastQC", 
-                    "name": "limits"
-                }, 
-                {
-                    "description": "runtime parameter for tool FastQC", 
-                    "name": "input_file"
-                }
-            ], 
-            "label": null, 
-            "name": "FastQC", 
-            "outputs": [
-                {
-                    "name": "html_file", 
-                    "type": "html"
-                }, 
-                {
-                    "name": "text_file", 
-                    "type": "txt"
-                }
-            ], 
-            "position": {
-                "left": 241, 
-                "top": 211
-            }, 
-            "post_job_actions": {}, 
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.70", 
-            "tool_shed_repository": {
-                "changeset_revision": "2b0c9d9fc6ca", 
-                "name": "fastqc", 
-                "owner": "devteam", 
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            }, 
-            "tool_state": "{\"__page__\": null, \"contaminants\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"limits\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
-            "tool_version": "0.70", 
-            "type": "tool", 
-            "uuid": "44eecb76-c216-4382-88c9-3d68d4cf7c64", 
-            "workflow_outputs": []
-        }, 
-        "1": {
-            "annotation": "", 
-            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie_wrappers/bowtie_wrapper/1.2.0", 
-            "errors": null, 
-            "id": 1, 
-            "input_connections": {}, 
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool Map with Bowtie for Illumina", 
-                    "name": "singlePaired"
-                }
-            ], 
-            "label": null, 
-            "name": "Map with Bowtie for Illumina", 
-            "outputs": [
-                {
-                    "name": "output", 
-                    "type": "sam"
-                }, 
-                {
-                    "name": "mapping_stats", 
-                    "type": "txt"
-                }, 
-                {
-                    "name": "output_suppressed_reads_l", 
-                    "type": "fastq"
-                }, 
-                {
-                    "name": "output_suppressed_reads_r", 
-                    "type": "fastq"
-                }, 
-                {
-                    "name": "output_unmapped_reads_l", 
-                    "type": "fastq"
-                }, 
-                {
-                    "name": "output_unmapped_reads_r", 
-                    "type": "fastq"
-                }
-            ], 
-            "position": {
-                "left": 202.5, 
-                "top": 406
-            }, 
-            "post_job_actions": {}, 
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie_wrappers/bowtie_wrapper/1.2.0", 
-            "tool_shed_repository": {
-                "changeset_revision": "b46e7d48076a", 
-                "name": "bowtie_wrappers", 
-                "owner": "devteam", 
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            }, 
-            "tool_state": "{\"__page__\": null, \"singlePaired\": \"{\\\"sInput1\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"sParams\\\": {\\\"sSettingsType\\\": \\\"preSet\\\", \\\"__current_case__\\\": 0}, \\\"sPaired\\\": \\\"single\\\", \\\"__current_case__\\\": 0}\", \"__rerun_remap_job_id__\": null, \"save_mapping_stats\": \"\\\"false\\\"\", \"suppressHeader\": \"\\\"false\\\"\", \"refGenomeSource\": \"{\\\"genomeSource\\\": \\\"indexed\\\", \\\"index\\\": \\\"sacCer3\\\", \\\"__current_case__\\\": 0}\"}", 
-            "tool_version": "1.2.0", 
-            "type": "tool", 
-            "uuid": "301c049f-4dbd-4f6a-b433-3e0d3fc0a9de", 
-            "workflow_outputs": []
-        }, 
-        "2": {
-            "annotation": "", 
             "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.3.3.1", 
             "errors": null, 
-            "id": 2, 
+            "id": 0, 
             "input_connections": {}, 
             "inputs": [
                 {
@@ -157,10 +49,41 @@
                 }
             ], 
             "position": {
-                "left": 516, 
-                "top": 399
+                "left": 290, 
+                "top": 200
             }, 
-            "post_job_actions": {}, 
+            "post_job_actions": {
+                "HideDatasetActionmapping_stats": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "mapping_stats"
+                }, 
+                "HideDatasetActionoutput": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output"
+                }, 
+                "HideDatasetActionoutput_aligned_reads_r": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output_aligned_reads_r"
+                }, 
+                "HideDatasetActionoutput_sam": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output_sam"
+                }, 
+                "HideDatasetActionoutput_unaligned_reads_l": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output_unaligned_reads_l"
+                }, 
+                "HideDatasetActionoutput_unaligned_reads_r": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output_unaligned_reads_r"
+                }
+            }, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.3.3.1", 
             "tool_shed_repository": {
                 "changeset_revision": "121110a12cc9", 
@@ -172,6 +95,162 @@
             "tool_version": "2.3.3.1", 
             "type": "tool", 
             "uuid": "f0cd7993-18cb-4288-a8ab-91ec4384204f", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output_aligned_reads_l", 
+                    "uuid": "4c076e10-6fa9-4305-a326-6a0fdc4da4c7"
+                }
+            ]
+        }, 
+        "1": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.70", 
+            "errors": null, 
+            "id": 1, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool FastQC", 
+                    "name": "contaminants"
+                }, 
+                {
+                    "description": "runtime parameter for tool FastQC", 
+                    "name": "limits"
+                }, 
+                {
+                    "description": "runtime parameter for tool FastQC", 
+                    "name": "input_file"
+                }
+            ], 
+            "label": null, 
+            "name": "FastQC", 
+            "outputs": [
+                {
+                    "name": "html_file", 
+                    "type": "html"
+                }, 
+                {
+                    "name": "text_file", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 243, 
+                "top": 321
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionhtml_file": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "html_file"
+                }, 
+                "HideDatasetActiontext_file": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "text_file"
+                }
+            }, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.70", 
+            "tool_shed_repository": {
+                "changeset_revision": "2b0c9d9fc6ca", 
+                "name": "fastqc", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"contaminants\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"limits\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "0.70", 
+            "type": "tool", 
+            "uuid": "44eecb76-c216-4382-88c9-3d68d4cf7c64", 
+            "workflow_outputs": []
+        }, 
+        "2": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie_wrappers/bowtie_wrapper/1.2.0", 
+            "errors": null, 
+            "id": 2, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Map with Bowtie for Illumina", 
+                    "name": "singlePaired"
+                }
+            ], 
+            "label": null, 
+            "name": "Map with Bowtie for Illumina", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "sam"
+                }, 
+                {
+                    "name": "mapping_stats", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "output_suppressed_reads_l", 
+                    "type": "fastq"
+                }, 
+                {
+                    "name": "output_suppressed_reads_r", 
+                    "type": "fastq"
+                }, 
+                {
+                    "name": "output_unmapped_reads_l", 
+                    "type": "fastq"
+                }, 
+                {
+                    "name": "output_unmapped_reads_r", 
+                    "type": "fastq"
+                }
+            ], 
+            "position": {
+                "left": 204.5, 
+                "top": 516
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionmapping_stats": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "mapping_stats"
+                }, 
+                "HideDatasetActionoutput": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output"
+                }, 
+                "HideDatasetActionoutput_suppressed_reads_l": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output_suppressed_reads_l"
+                }, 
+                "HideDatasetActionoutput_suppressed_reads_r": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output_suppressed_reads_r"
+                }, 
+                "HideDatasetActionoutput_unmapped_reads_l": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output_unmapped_reads_l"
+                }, 
+                "HideDatasetActionoutput_unmapped_reads_r": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output_unmapped_reads_r"
+                }
+            }, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie_wrappers/bowtie_wrapper/1.2.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "b46e7d48076a", 
+                "name": "bowtie_wrappers", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"singlePaired\": \"{\\\"sInput1\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"sParams\\\": {\\\"sSettingsType\\\": \\\"preSet\\\", \\\"__current_case__\\\": 0}, \\\"sPaired\\\": \\\"single\\\", \\\"__current_case__\\\": 0}\", \"__rerun_remap_job_id__\": null, \"save_mapping_stats\": \"\\\"false\\\"\", \"suppressHeader\": \"\\\"false\\\"\", \"refGenomeSource\": \"{\\\"genomeSource\\\": \\\"indexed\\\", \\\"index\\\": \\\"sacCer3\\\", \\\"__current_case__\\\": 0}\"}", 
+            "tool_version": "1.2.0", 
+            "type": "tool", 
+            "uuid": "301c049f-4dbd-4f6a-b433-3e0d3fc0a9de", 
             "workflow_outputs": []
         }, 
         "3": {
@@ -195,10 +274,16 @@
                 }
             ], 
             "position": {
-                "left": 218.26666259765625, 
-                "top": 707.1666870117188
+                "left": 220.26666259765625, 
+                "top": 817.1666870117188
             }, 
-            "post_job_actions": {}, 
+            "post_job_actions": {
+                "HideDatasetActionbam_output": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "bam_output"
+                }
+            }, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1", 
             "tool_shed_repository": {
                 "changeset_revision": "dfd8b7f78c37", 
@@ -233,10 +318,16 @@
                 }
             ], 
             "position": {
-                "left": 464.26666259765625, 
-                "top": 710.1666870117188
+                "left": 466.26666259765625, 
+                "top": 820.1666870117188
             }, 
-            "post_job_actions": {}, 
+            "post_job_actions": {
+                "HideDatasetActionoutput": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output"
+                }
+            }, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_wrapper/1.2.3", 
             "tool_shed_repository": {
                 "changeset_revision": "b4427dbb6ced", 
@@ -259,10 +350,6 @@
             "inputs": [
                 {
                     "description": "runtime parameter for tool GetFastaBed", 
-                    "name": "fasta_source"
-                }, 
-                {
-                    "description": "runtime parameter for tool GetFastaBed", 
                     "name": "input"
                 }
             ], 
@@ -275,18 +362,24 @@
                 }
             ], 
             "position": {
-                "left": 218.39999389648438, 
-                "top": 845.5333251953125
+                "left": 220.39999389648438, 
+                "top": 955.5333251953125
             }, 
-            "post_job_actions": {}, 
+            "post_job_actions": {
+                "HideDatasetActionoutput": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output"
+                }
+            }, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_getfastabed/2.27.0.0", 
             "tool_shed_repository": {
-                "changeset_revision": "a8eabd2838f6", 
+                "changeset_revision": "b3c147390100", 
                 "name": "bedtools", 
                 "owner": "iuc", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": null, \"name\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null, \"split\": \"\\\"false\\\"\", \"tab\": \"\\\"false\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"strand\": \"\\\"false\\\"\", \"fasta_source\": \"{\\\"fasta\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0, \\\"fasta_source_selector\\\": \\\"history\\\"}\"}", 
+            "tool_state": "{\"__page__\": null, \"name\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null, \"split\": \"\\\"false\\\"\", \"tab\": \"\\\"false\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"strand\": \"\\\"false\\\"\", \"fasta_source\": \"{\\\"fasta_id\\\": \\\"hg19\\\", \\\"__current_case__\\\": 1, \\\"fasta_source_selector\\\": \\\"preloaded\\\"}\"}", 
             "tool_version": "2.27.0.0", 
             "type": "tool", 
             "uuid": "ad7e2f71-6b52-4610-a359-c6fc9d28d95a", 
@@ -313,10 +406,16 @@
                 }
             ], 
             "position": {
-                "left": 726.7666625976562, 
-                "top": 713.1666870117188
+                "left": 728.7666625976562, 
+                "top": 823.1666870117188
             }, 
-            "post_job_actions": {}, 
+            "post_job_actions": {
+                "HideDatasetActionoutput": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output"
+                }
+            }, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_color_wrapper/1.0.2", 
             "tool_shed_repository": {
                 "changeset_revision": "b4427dbb6ced", 
@@ -337,7 +436,7 @@
             "id": 7, 
             "input_connections": {
                 "input_bam": {
-                    "id": 2, 
+                    "id": 0, 
                     "output_name": "output"
                 }
             }, 
@@ -356,10 +455,16 @@
                 }
             ], 
             "position": {
-                "left": 852, 
-                "top": 402
+                "left": 854, 
+                "top": 512
             }, 
-            "post_job_actions": {}, 
+            "post_job_actions": {
+                "HideDatasetActioncalmd_output": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "calmd_output"
+                }
+            }, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_calmd/samtools_calmd/2.0.1", 
             "tool_shed_repository": {
                 "changeset_revision": "33208952b99d", 
@@ -380,7 +485,7 @@
             "id": 8, 
             "input_connections": {
                 "input_bam": {
-                    "id": 2, 
+                    "id": 0, 
                     "output_name": "output"
                 }
             }, 
@@ -407,10 +512,26 @@
                 }
             ], 
             "position": {
-                "left": 917.9000244140625, 
-                "top": 529.5333251953125
+                "left": 919.9000244140625, 
+                "top": 639.5333404541016
             }, 
-            "post_job_actions": {}, 
+            "post_job_actions": {
+                "HideDatasetActionpredictedPrecursors": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "predictedPrecursors"
+                }, 
+                "HideDatasetActionpredicted_miRNA": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "predicted_miRNA"
+                }, 
+                "HideDatasetActionputativeMatures": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "putativeMatures"
+                }
+            }, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/pipmir/pipmir/0.1.0", 
             "tool_shed_repository": {
                 "changeset_revision": "16209195224c", 
@@ -425,5 +546,5 @@
             "workflow_outputs": []
         }
     }, 
-    "uuid": "23c3998b-7350-4d4c-8795-eebe343b641e"
+    "uuid": "cc84f2d1-8ba6-4913-8639-4579f3a0efc0"
 }

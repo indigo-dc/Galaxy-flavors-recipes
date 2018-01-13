@@ -137,7 +137,7 @@
             ], 
             "position": {
                 "left": 243, 
-                "top": 321
+                "top": 320.99998474121094
             }, 
             "post_job_actions": {
                 "HideDatasetActionhtml_file": {
@@ -206,7 +206,7 @@
             ], 
             "position": {
                 "left": 204.5, 
-                "top": 516
+                "top": 515.9999847412109
             }, 
             "post_job_actions": {
                 "HideDatasetActionmapping_stats": {
@@ -275,7 +275,7 @@
             ], 
             "position": {
                 "left": 220.26666259765625, 
-                "top": 817.1666870117188
+                "top": 817.1666717529297
             }, 
             "post_job_actions": {
                 "HideDatasetActionbam_output": {
@@ -319,7 +319,7 @@
             ], 
             "position": {
                 "left": 466.26666259765625, 
-                "top": 820.1666870117188
+                "top": 820.1666717529297
             }, 
             "post_job_actions": {
                 "HideDatasetActionoutput": {
@@ -363,7 +363,7 @@
             ], 
             "position": {
                 "left": 220.39999389648438, 
-                "top": 955.5333251953125
+                "top": 955.5333099365234
             }, 
             "post_job_actions": {
                 "HideDatasetActionoutput": {
@@ -387,53 +387,9 @@
         }, 
         "6": {
             "annotation": "", 
-            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_color_wrapper/1.0.2", 
-            "errors": null, 
-            "id": 6, 
-            "input_connections": {}, 
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool Map with BWA for SOLiD", 
-                    "name": "paired"
-                }
-            ], 
-            "label": null, 
-            "name": "Map with BWA for SOLiD", 
-            "outputs": [
-                {
-                    "name": "output", 
-                    "type": "sam"
-                }
-            ], 
-            "position": {
-                "left": 728.7666625976562, 
-                "top": 823.1666870117188
-            }, 
-            "post_job_actions": {
-                "HideDatasetActionoutput": {
-                    "action_arguments": {}, 
-                    "action_type": "HideDatasetAction", 
-                    "output_name": "output"
-                }
-            }, 
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa_wrappers/bwa_color_wrapper/1.0.2", 
-            "tool_shed_repository": {
-                "changeset_revision": "b4427dbb6ced", 
-                "name": "bwa_wrappers", 
-                "owner": "devteam", 
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            }, 
-            "tool_state": "{\"genomeSource\": \"{\\\"indices\\\": \\\"sacCer3\\\", \\\"refGenomeSource\\\": \\\"indexed\\\", \\\"__current_case__\\\": 0}\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"paired\": \"{\\\"sPaired\\\": \\\"single\\\", \\\"input1\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0}\", \"params\": \"{\\\"__current_case__\\\": 0, \\\"source_select\\\": \\\"pre_set\\\"}\", \"suppressHeader\": \"\\\"false\\\"\"}", 
-            "tool_version": "1.0.2", 
-            "type": "tool", 
-            "uuid": "e9b3d292-cc91-4715-be7d-9adc2e5d433e", 
-            "workflow_outputs": []
-        }, 
-        "7": {
-            "annotation": "", 
             "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_calmd/samtools_calmd/2.0.1", 
             "errors": null, 
-            "id": 7, 
+            "id": 6, 
             "input_connections": {
                 "input_bam": {
                     "id": 0, 
@@ -455,8 +411,8 @@
                 }
             ], 
             "position": {
-                "left": 854, 
-                "top": 512
+                "left": 854.0000305175781, 
+                "top": 511.99998474121094
             }, 
             "post_job_actions": {
                 "HideDatasetActioncalmd_output": {
@@ -478,11 +434,11 @@
             "uuid": "4c725b95-8765-4812-8625-c028ac87b877", 
             "workflow_outputs": []
         }, 
-        "8": {
+        "7": {
             "annotation": "", 
             "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/pipmir/pipmir/0.1.0", 
             "errors": null, 
-            "id": 8, 
+            "id": 7, 
             "input_connections": {
                 "input_bam": {
                     "id": 0, 
@@ -512,8 +468,8 @@
                 }
             ], 
             "position": {
-                "left": 919.9000244140625, 
-                "top": 639.5333404541016
+                "left": 919.8999938964844, 
+                "top": 639.5333099365234
             }, 
             "post_job_actions": {
                 "HideDatasetActionpredictedPrecursors": {
@@ -546,5 +502,5 @@
             "workflow_outputs": []
         }
     }, 
-    "uuid": "cc84f2d1-8ba6-4913-8639-4579f3a0efc0"
+    "uuid": "f7cac997-e76f-4079-b8dc-cd4603a0ffba"
 }

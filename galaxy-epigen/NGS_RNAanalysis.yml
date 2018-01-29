@@ -1,0 +1,88 @@
+---
+api_key: <Admin user API key from galaxy_instance>
+galaxy_instance: <Galaxy instance IP>
+tools:
+
+#____________________________________
+#NGS:RNA analysis
+
+
+- name: 'package_r_edger_3_11_0'
+  owner: 'iuc'
+  tool_panel_section_label: 'NGS: RNA analysis'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'htseq_count'
+  owner: 'lparsons'
+  tool_panel_section_label: 'NGS: RNA analysis'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'cuffdiff'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: RNA analysis'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'deseq_hts'
+  owner: 'vipints'
+  tool_panel_section_label: 'NGS: RNA analysis'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'rsem'
+  owner: 'jjohnson'
+  tool_panel_section_label: 'NGS: RNA analysis'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'filter_transcripts_via_tracking'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: RNA analysis'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'tophat2'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: RNA analysis'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'tophat'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: RNA analysis'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'cufflinks'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: RNA analysis'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'trinity'
+  owner: 'iuc'
+  tool_panel_section_label: 'NGS: RNA analysis'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'edger'
+  owner: 'fcaramia'
+  tool_panel_section_label: 'NGS: RNA analysis'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'express'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: RNA analysis'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: 'cuffcompare'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: RNA analysis'
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+

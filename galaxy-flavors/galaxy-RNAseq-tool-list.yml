@@ -1,4 +1,9 @@
 ---
+# Credits: Bjorn Gruening
+# https://github.com/bgruening/galaxy-rna-seq
+# Created: 10 nov 2017
+# Update: 10 nov 2017
+
 # This is a sample file to be used as a reference for populating a list of
 # tools that you wish to install into Galaxy from a Tool Shed via the
 # `install_tool_shed_tools.py` script.
@@ -35,11 +40,8 @@
 #                               dependencies or not. (default: True)
 #  * install_repository_dependencies: True or False - whether to install repo
 #                               dependencies or not. (default: True)
-#
-# Credits: Bjorn Gruening
-# https://raw.githubusercontent.com/bgruening/galaxy-rna-seq/master/rna_seq_tools.yml
 
-api_key: a
+api_key: admin
 galaxy_instance: http://localhost:8080
 tools:
 - name: trim_galore
@@ -136,3 +138,25 @@ tools:
   tool_shed_url: toolshed.g2.bx.psu.edu
   install_resolver_dependencies: True
   install_tool_dependencies: False
+
+- name: rgrnastar
+  owner: iuc
+  tool_panel_section_label: "RNA-Seq"
+  tool_shed_url: toolshed.g2.bx.psu.edu
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: data_manager_star_index_builder
+  owner: iuc
+  tool_panel_section_label: "RNA-Seq"
+  tool_shed_url: toolshed.g2.bx.psu.edu
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: star_fusion
+  owner: iuc
+  tool_panel_section_label: "RNA-Seq"
+  tool_shed_url: toolshed.g2.bx.psu.edu
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+

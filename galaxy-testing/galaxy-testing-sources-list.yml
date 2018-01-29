@@ -1,0 +1,24 @@
+---
+# Sources list recipe is used to describe Galaxy resources,
+# tools, reference data, workflow, data libraries and/or visualization plugin,
+# to install.
+
+- name: "Set {{galaxy_flavor}} resources"
+  set_fact:
+    galaxy_tools_tool_list_files: [ '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/{{galaxy_flavor}}-tool-list.yml' ]
+
+# set path to workflow files
+# ephemeris takes the worlflow path to install workflows
+- name: "Set {{galaxy_flavor}} workflows resources"
+  set_fact:
+    install_workflows: true
+    galaxy_tools_workflow_list_path:
+      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/testing-workflow'
+
+# set yaml recipes
+# ephemeris takes single files as argument 
+- name: "Set {{galaxy_flavor}} data library resources"
+  set_fact:
+    install_data_libraries: true
+    galaxy_tools_data_library_list_files:
+      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/library_data.yaml'

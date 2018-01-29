@@ -1,0 +1,21 @@
+api_key: admin
+galaxy_instance: http://localhost:8080
+install_resolver_dependencies: true
+install_tool_dependencies: false
+
+tools:
+# This fix the error with the workflow rnateam.workflow.analyse_unaligned_ncrnas.ga
+# which is pointing to old revisions of these tools.
+# https://github.com/bgruening/galaxy-rna-workbench/issues/108
+
+- name: viennarna_rnaalifold
+  owner: rnateam
+  tool_panel_section_label: "RNA Structure Analysis"
+  revisions:
+    - 3bc9bd5290c1
+
+- name: rnaz
+  owner: bgruening
+  tool_panel_section_label: "RNA Structure Analysis"
+  revisions:
+    - e23c455f8335

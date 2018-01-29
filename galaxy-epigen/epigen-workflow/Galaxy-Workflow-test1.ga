@@ -1,0 +1,816 @@
+{
+    "a_galaxy_workflow": "true", 
+    "annotation": "", 
+    "format-version": "0.1", 
+    "name": "test1", 
+    "steps": {
+        "0": {
+            "annotation": "", 
+            "content_id": "liftOver1", 
+            "errors": null, 
+            "id": 0, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Convert genome coordinates", 
+                    "name": "input"
+                }
+            ], 
+            "label": null, 
+            "name": "Convert genome coordinates", 
+            "outputs": [
+                {
+                    "name": "out_file1", 
+                    "type": "input"
+                }, 
+                {
+                    "name": "out_file2", 
+                    "type": "input"
+                }
+            ], 
+            "position": {
+                "left": 269.98046875, 
+                "top": 200
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "liftOver1", 
+            "tool_state": "{\"__page__\": null, \"multiple\": \"{\\\"minChainT\\\": \\\"0\\\", \\\"minSizeQ\\\": \\\"0\\\", \\\"minChainQ\\\": \\\"0\\\", \\\"__current_case__\\\": 0, \\\"choice\\\": \\\"0\\\"}\", \"__rerun_remap_job_id__\": null, \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"to_dbkey\": \"\\\"hg38\\\"\", \"minMatch\": \"\\\"0.95\\\"\"}", 
+            "tool_version": "1.0.4", 
+            "type": "tool", 
+            "uuid": "a8e73d19-18d3-4f05-b109-edfe78bbaaf9", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "out_file2", 
+                    "uuid": "db3181d2-c0a7-452d-aa61-670d7a4e407e"
+                }, 
+                {
+                    "label": null, 
+                    "output_name": "out_file1", 
+                    "uuid": "1a760662-f9fd-4fb0-80cf-62979a77eae0"
+                }
+            ]
+        }, 
+        "1": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/column_maker/Add_a_column1/1.1.0", 
+            "errors": null, 
+            "id": 1, 
+            "input_connections": {}, 
+            "inputs": [], 
+            "label": null, 
+            "name": "Compute", 
+            "outputs": [
+                {
+                    "name": "out_file1", 
+                    "type": "input"
+                }
+            ], 
+            "position": {
+                "left": 295.9765625, 
+                "top": 359.00390625
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionout_file1": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "out_file1"
+                }
+            }, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/column_maker/Add_a_column1/1.1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "626658afe4cb", 
+                "name": "column_maker", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"input\": \"{\\\"values\\\": [{\\\"src\\\": \\\"hda\\\", \\\"id\\\": 470}]}\", \"__rerun_remap_job_id__\": null, \"cond\": \"\\\"c3-c2\\\"\", \"round\": \"\\\"no\\\"\", \"__page__\": null}", 
+            "tool_version": "1.1.0", 
+            "type": "tool", 
+            "uuid": "b12da8bf-71f9-42c5-888e-ccaeaf6f21a5", 
+            "workflow_outputs": []
+        }, 
+        "2": {
+            "annotation": "", 
+            "content_id": "Filter1", 
+            "errors": null, 
+            "id": 2, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Filter", 
+                    "name": "input"
+                }
+            ], 
+            "label": null, 
+            "name": "Filter", 
+            "outputs": [
+                {
+                    "name": "out_file1", 
+                    "type": "input"
+                }
+            ], 
+            "position": {
+                "left": 285.9765625, 
+                "top": 475.99609375
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionout_file1": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "out_file1"
+                }
+            }, 
+            "tool_id": "Filter1", 
+            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"header_lines\": \"\\\"0\\\"\", \"cond\": \"\\\"c1=='chr1'\\\"\", \"__page__\": null}", 
+            "tool_version": "1.1.0", 
+            "type": "tool", 
+            "uuid": "8e0457ab-eb31-47e3-a71d-e154cda7ee59", 
+            "workflow_outputs": []
+        }, 
+        "3": {
+            "annotation": "", 
+            "content_id": "Extract_features1", 
+            "errors": null, 
+            "id": 3, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Extract features", 
+                    "name": "input1"
+                }
+            ], 
+            "label": null, 
+            "name": "Extract features", 
+            "outputs": [
+                {
+                    "name": "out_file1", 
+                    "type": "input"
+                }
+            ], 
+            "position": {
+                "left": 264.00390625, 
+                "top": 667.5
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionout_file1": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "out_file1"
+                }
+            }, 
+            "tool_id": "Extract_features1", 
+            "tool_state": "{\"column_choice\": \"{\\\"col\\\": \\\"2\\\", \\\"__current_case__\\\": 2, \\\"feature\\\": \\\"exon\\\"}\", \"__rerun_remap_job_id__\": null, \"input1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": null}", 
+            "tool_version": "1.0.0", 
+            "type": "tool", 
+            "uuid": "7372f284-4a6d-4c28-ae18-57eb43653c73", 
+            "workflow_outputs": []
+        }, 
+        "4": {
+            "annotation": "", 
+            "content_id": "Show beginning1", 
+            "errors": null, 
+            "id": 4, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Select first", 
+                    "name": "input"
+                }
+            ], 
+            "label": null, 
+            "name": "Select first", 
+            "outputs": [
+                {
+                    "name": "out_file1", 
+                    "type": "input"
+                }
+            ], 
+            "position": {
+                "left": 273.984375, 
+                "top": 834.4921875
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionout_file1": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "out_file1"
+                }
+            }, 
+            "tool_id": "Show beginning1", 
+            "tool_state": "{\"__page__\": null, \"lineNum\": \"\\\"10000\\\"\", \"__rerun_remap_job_id__\": null, \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "1.0.0", 
+            "type": "tool", 
+            "uuid": "fa76cd10-ffd6-489f-a311-1c4a4e5b4709", 
+            "workflow_outputs": []
+        }, 
+        "5": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_bam_coverage/deeptools_bam_coverage/2.5.1.1.0", 
+            "errors": null, 
+            "id": 5, 
+            "input_connections": {}, 
+            "inputs": [], 
+            "label": null, 
+            "name": "bamCoverage", 
+            "outputs": [
+                {
+                    "name": "outFileName", 
+                    "type": "bigwig"
+                }
+            ], 
+            "position": {
+                "left": 269.98046875, 
+                "top": 952.98828125
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/deeptools_bam_coverage/deeptools_bam_coverage/2.5.1.1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "5d11599b8a7d", 
+                "name": "deeptools_bam_coverage", 
+                "owner": "bgruening", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"outFileFormat\": \"\\\"bigwig\\\"\", \"region\": \"\\\"\\\"\", \"bamInput\": \"null\", \"binSize\": \"\\\"50\\\"\", \"scaling\": \"{\\\"effectiveGenomeSize\\\": {\\\"effectiveGenomeSize_opt\\\": \\\"2451960000\\\", \\\"__current_case__\\\": 2}, \\\"type\\\": \\\"1x\\\", \\\"__current_case__\\\": 2}\", \"advancedOpt\": \"{\\\"showAdvancedOpt\\\": \\\"no\\\", \\\"__current_case__\\\": 0}\", \"__rerun_remap_job_id__\": null}", 
+            "tool_version": "2.5.1.1.0", 
+            "type": "tool", 
+            "uuid": "1b8c55c5-aa80-471a-b588-405f9ba8aa4c", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "outFileName", 
+                    "uuid": "c2301637-7f61-4dd7-bef4-cde0cd68594d"
+                }
+            ]
+        }, 
+        "6": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/bam_to_sam/bam_to_sam/2.0.1", 
+            "errors": null, 
+            "id": 6, 
+            "input_connections": {}, 
+            "inputs": [], 
+            "label": null, 
+            "name": "BAM-to-SAM", 
+            "outputs": [
+                {
+                    "name": "output1", 
+                    "type": "sam"
+                }
+            ], 
+            "position": {
+                "left": 274.98046875, 
+                "top": 1050
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionoutput1": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output1"
+                }
+            }, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bam_to_sam/bam_to_sam/2.0.1", 
+            "tool_shed_repository": {
+                "changeset_revision": "f57df915aa10", 
+                "name": "bam_to_sam", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"header\": \"\\\"-h\\\"\", \"__rerun_remap_job_id__\": null, \"input1\": \"null\", \"__page__\": null}", 
+            "tool_version": "2.0.1", 
+            "type": "tool", 
+            "uuid": "cf3a9bfb-9777-4af4-a453-53c1c98645be", 
+            "workflow_outputs": []
+        }, 
+        "7": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqtofasta/fastq_to_fasta_python/1.1.1", 
+            "errors": null, 
+            "id": 7, 
+            "input_connections": {}, 
+            "inputs": [], 
+            "label": null, 
+            "name": "FASTQ to FASTA", 
+            "outputs": [
+                {
+                    "name": "output_file", 
+                    "type": "fasta"
+                }
+            ], 
+            "position": {
+                "left": 280.9375, 
+                "top": 1156.9921875
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqtofasta/fastq_to_fasta_python/1.1.1", 
+            "tool_shed_repository": {
+                "changeset_revision": "4844c1810c16", 
+                "name": "fastqtofasta", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"input_file\": \"null\"}", 
+            "tool_version": "1.1.1", 
+            "type": "tool", 
+            "uuid": "26f9a9bc-d74b-445f-a10a-5e5b5fd18ebf", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output_file", 
+                    "uuid": "da1886a4-a6ce-41dc-9c48-abcd6b484fa0"
+                }
+            ]
+        }, 
+        "8": {
+            "annotation": "", 
+            "content_id": "bed2gff1", 
+            "errors": null, 
+            "id": 8, 
+            "input_connections": {}, 
+            "inputs": [], 
+            "label": null, 
+            "name": "BED-to-GFF", 
+            "outputs": [
+                {
+                    "name": "out_file1", 
+                    "type": "gff"
+                }
+            ], 
+            "position": {
+                "left": 290.9765625, 
+                "top": 1263.984375
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "bed2gff1", 
+            "tool_state": "{\"input\": \"{\\\"values\\\": [{\\\"src\\\": \\\"hda\\\", \\\"id\\\": 470}]}\", \"__rerun_remap_job_id__\": null, \"__page__\": null}", 
+            "tool_version": "2.0.0", 
+            "type": "tool", 
+            "uuid": "71673a4b-0e1a-48fd-9684-96bbface0ab2", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "out_file1", 
+                    "uuid": "41303d63-2a71-4e80-9826-db071be4a2a7"
+                }
+            ]
+        }, 
+        "9": {
+            "annotation": "", 
+            "content_id": "cat1", 
+            "errors": null, 
+            "id": 9, 
+            "input_connections": {
+                "input1": {
+                    "id": 1, 
+                    "output_name": "out_file1"
+                }, 
+                "queries_0|input2": {
+                    "id": 1, 
+                    "output_name": "out_file1"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Concatenate datasets", 
+                    "name": "input1"
+                }
+            ], 
+            "label": null, 
+            "name": "Concatenate datasets", 
+            "outputs": [
+                {
+                    "name": "out_file1", 
+                    "type": "input"
+                }
+            ], 
+            "position": {
+                "left": 550.9765625, 
+                "top": 359.00390625
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionout_file1": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "out_file1"
+                }
+            }, 
+            "tool_id": "cat1", 
+            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"input1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"queries\": \"[{\\\"input2\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__index__\\\": 0}]\"}", 
+            "tool_version": "1.0.0", 
+            "type": "tool", 
+            "uuid": "c0e90110-cf4a-4a54-b112-e7c14de19841", 
+            "workflow_outputs": []
+        }, 
+        "10": {
+            "annotation": "", 
+            "content_id": "sort1", 
+            "errors": null, 
+            "id": 10, 
+            "input_connections": {
+                "input": {
+                    "id": 2, 
+                    "output_name": "out_file1"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Sort", 
+                    "name": "input"
+                }
+            ], 
+            "label": null, 
+            "name": "Sort", 
+            "outputs": [
+                {
+                    "name": "out_file1", 
+                    "type": "input"
+                }
+            ], 
+            "position": {
+                "left": 574.98046875, 
+                "top": 475.99609375
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionout_file1": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "out_file1"
+                }
+            }, 
+            "tool_id": "sort1", 
+            "tool_state": "{\"__page__\": null, \"style\": \"\\\"num\\\"\", \"column\": \"\\\"2\\\"\", \"__rerun_remap_job_id__\": null, \"order\": \"\\\"DESC\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"column_set\": \"[]\"}", 
+            "tool_version": "1.0.3", 
+            "type": "tool", 
+            "uuid": "b788b81b-51db-4ae4-b162-068b2a6bacce", 
+            "workflow_outputs": []
+        }, 
+        "11": {
+            "annotation": "", 
+            "content_id": "gff_filter_by_attribute", 
+            "errors": null, 
+            "id": 11, 
+            "input_connections": {
+                "input": {
+                    "id": 3, 
+                    "output_name": "out_file1"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Filter GFF data by attribute", 
+                    "name": "input"
+                }
+            ], 
+            "label": null, 
+            "name": "Filter GFF data by attribute", 
+            "outputs": [
+                {
+                    "name": "out_file1", 
+                    "type": "input"
+                }
+            ], 
+            "position": {
+                "left": 508.984375, 
+                "top": 666.484375
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "gff_filter_by_attribute", 
+            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"cond\": \"\\\"gene_id=='NM_152697'\\\"\", \"__page__\": null}", 
+            "tool_version": "0.1.1", 
+            "type": "tool", 
+            "uuid": "a65daa69-33d5-47b9-b3d2-99660a553210", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "out_file1", 
+                    "uuid": "c09a4cec-97d8-4b6c-86b8-0bcfa30946e1"
+                }
+            ]
+        }, 
+        "12": {
+            "annotation": "", 
+            "content_id": "gff_filter_by_feature_count", 
+            "errors": null, 
+            "id": 12, 
+            "input_connections": {
+                "input_file1": {
+                    "id": 4, 
+                    "output_name": "out_file1"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Filter GFF data by feature count", 
+                    "name": "input_file1"
+                }
+            ], 
+            "label": null, 
+            "name": "Filter GFF data by feature count", 
+            "outputs": [
+                {
+                    "name": "out_file1", 
+                    "type": "input"
+                }
+            ], 
+            "position": {
+                "left": 510.99609375, 
+                "top": 834.47265625
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionout_file1": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "out_file1"
+                }
+            }, 
+            "tool_id": "gff_filter_by_feature_count", 
+            "tool_state": "{\"feature_name\": \"\\\"exon\\\"\", \"__rerun_remap_job_id__\": null, \"cond\": \"\\\">10\\\"\", \"input_file1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": null}", 
+            "tool_version": "0.1.1", 
+            "type": "tool", 
+            "uuid": "88f6fcf7-e4f5-48f4-9710-7abc53cf3852", 
+            "workflow_outputs": []
+        }, 
+        "13": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_SamToFastq/2.7.1.0", 
+            "errors": null, 
+            "id": 13, 
+            "input_connections": {
+                "inputFile": {
+                    "id": 6, 
+                    "output_name": "output1"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool SamToFastq", 
+                    "name": "inputFile"
+                }
+            ], 
+            "label": null, 
+            "name": "SamToFastq", 
+            "outputs": [
+                {
+                    "name": "report", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 509.98046875, 
+                "top": 1045
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_SamToFastq/2.7.1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "fc288950c3b7", 
+                "name": "picard", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"clipping_attribute\": \"\\\"\\\"\", \"__page__\": null, \"include_non_primary_alignments\": \"\\\"false\\\"\", \"validation_stringency\": \"\\\"LENIENT\\\"\", \"output_per_rg\": \"\\\"true\\\"\", \"read2_trim\": \"\\\"0\\\"\", \"interleave\": \"\\\"false\\\"\", \"clipping_action\": \"\\\"\\\"\", \"read1_trim\": \"\\\"0\\\"\", \"read2_max_bases_to_write\": \"\\\"-1\\\"\", \"include_non_pf_reads\": \"\\\"false\\\"\", \"read1_max_bases_to_write\": \"\\\"-1\\\"\", \"__rerun_remap_job_id__\": null, \"re_reverse\": \"\\\"true\\\"\", \"inputFile\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "2.7.1.0", 
+            "type": "tool", 
+            "uuid": "77dd1fa2-2f0e-4653-ba59-9ed3f9501c56", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "report", 
+                    "uuid": "bb9ed685-73e6-4476-b901-c248f9e0d329"
+                }
+            ]
+        }, 
+        "14": {
+            "annotation": "", 
+            "content_id": "gff2bed1", 
+            "errors": null, 
+            "id": 14, 
+            "input_connections": {
+                "input": {
+                    "id": 8, 
+                    "output_name": "out_file1"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "GFF-to-BED", 
+            "outputs": [
+                {
+                    "name": "out_file1", 
+                    "type": "bed"
+                }
+            ], 
+            "position": {
+                "left": 599.98046875, 
+                "top": 1261.9921875
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "gff2bed1", 
+            "tool_state": "{\"input\": \"{\\\"values\\\": [{\\\"src\\\": \\\"hda\\\", \\\"id\\\": 470}]}\", \"__rerun_remap_job_id__\": null, \"__page__\": null}", 
+            "tool_version": "1.0.1", 
+            "type": "tool", 
+            "uuid": "062658ae-296d-43da-b4f9-618e0abe45b1", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "out_file1", 
+                    "uuid": "487fefc4-4565-4fe9-891d-1fd0b2c25c3c"
+                }
+            ]
+        }, 
+        "15": {
+            "annotation": "", 
+            "content_id": "Remove beginning1", 
+            "errors": null, 
+            "id": 15, 
+            "input_connections": {
+                "input": {
+                    "id": 9, 
+                    "output_name": "out_file1"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Remove beginning", 
+                    "name": "input"
+                }
+            ], 
+            "label": null, 
+            "name": "Remove beginning", 
+            "outputs": [
+                {
+                    "name": "out_file1", 
+                    "type": "input"
+                }
+            ], 
+            "position": {
+                "left": 808.984375, 
+                "top": 359.00390625
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionout_file1": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "out_file1"
+                }
+            }, 
+            "tool_id": "Remove beginning1", 
+            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"num_lines\": \"\\\"1000\\\"\", \"__page__\": null}", 
+            "tool_version": "1.0.0", 
+            "type": "tool", 
+            "uuid": "e78ce601-48a1-428f-a196-8ee6c44377ad", 
+            "workflow_outputs": []
+        }, 
+        "16": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/subtract_query/subtract_query1/0.1", 
+            "errors": null, 
+            "id": 16, 
+            "input_connections": {
+                "input1": {
+                    "id": 4, 
+                    "output_name": "out_file1"
+                }, 
+                "input2": {
+                    "id": 12, 
+                    "output_name": "out_file1"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Subtract Whole Dataset", 
+                    "name": "input2"
+                }, 
+                {
+                    "description": "runtime parameter for tool Subtract Whole Dataset", 
+                    "name": "input1"
+                }
+            ], 
+            "label": null, 
+            "name": "Subtract Whole Dataset", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "input"
+                }
+            ], 
+            "position": {
+                "left": 779.98046875, 
+                "top": 821.46484375
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionoutput": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output"
+                }
+            }, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/subtract_query/subtract_query1/0.1", 
+            "tool_shed_repository": {
+                "changeset_revision": "ff3901618482", 
+                "name": "subtract_query", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"input2\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": null, \"end_col\": \"null\", \"__rerun_remap_job_id__\": null, \"begin_col\": \"null\", \"input1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"ignore_empty_end_cols\": \"\\\"false\\\"\"}", 
+            "tool_version": "0.1", 
+            "type": "tool", 
+            "uuid": "4f5eb2ce-961a-446c-902e-d37d0f6149c8", 
+            "workflow_outputs": []
+        }, 
+        "17": {
+            "annotation": "", 
+            "content_id": "Show tail1", 
+            "errors": null, 
+            "id": 17, 
+            "input_connections": {
+                "input": {
+                    "id": 15, 
+                    "output_name": "out_file1"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Select last", 
+                    "name": "input"
+                }
+            ], 
+            "label": null, 
+            "name": "Select last", 
+            "outputs": [
+                {
+                    "name": "out_file1", 
+                    "type": "input"
+                }
+            ], 
+            "position": {
+                "left": 1033.984375, 
+                "top": 351.9921875
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionout_file1": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "out_file1"
+                }
+            }, 
+            "tool_id": "Show tail1", 
+            "tool_state": "{\"__page__\": null, \"lineNum\": \"\\\"100\\\"\", \"__rerun_remap_job_id__\": null, \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "1.0.0", 
+            "type": "tool", 
+            "uuid": "377b79ba-5b17-4318-96cc-62c3d3cfe07b", 
+            "workflow_outputs": []
+        }, 
+        "18": {
+            "annotation": "", 
+            "content_id": "comp1", 
+            "errors": null, 
+            "id": 18, 
+            "input_connections": {
+                "input1": {
+                    "id": 11, 
+                    "output_name": "out_file1"
+                }, 
+                "input2": {
+                    "id": 16, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Compare two Datasets", 
+                    "name": "input2"
+                }, 
+                {
+                    "description": "runtime parameter for tool Compare two Datasets", 
+                    "name": "input1"
+                }
+            ], 
+            "label": null, 
+            "name": "Compare two Datasets", 
+            "outputs": [
+                {
+                    "name": "out_file1", 
+                    "type": "input"
+                }
+            ], 
+            "position": {
+                "left": 1044.4921875, 
+                "top": 809.4921875
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "comp1", 
+            "tool_state": "{\"input2\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": null, \"input1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"field2\": \"\\\"9\\\"\", \"__rerun_remap_job_id__\": null, \"field1\": \"\\\"9\\\"\", \"mode\": \"\\\"V\\\"\"}", 
+            "tool_version": "1.0.2", 
+            "type": "tool", 
+            "uuid": "b2d4b6fb-2a54-47bd-b01d-5a891a65a2b4", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "out_file1", 
+                    "uuid": "7450cfec-db89-42c8-83ad-c84f1459a83c"
+                }
+            ]
+        }
+    }, 
+    "uuid": "00554f82-08d0-4d01-bbcc-7b7f8647a18c"
+}

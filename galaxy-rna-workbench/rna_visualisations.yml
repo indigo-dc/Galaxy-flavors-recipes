@@ -25,3 +25,4 @@
     - { src: '/tmp/galaxytools-master/visualisations/dbgraph', dest: '{{galaxy_config_path}}/plugins/visualizations/'  }
   become_user: '{{ galaxy_user }}'
   become: true
+  notify: start galaxy

@@ -9,18 +9,11 @@ tools:
 - name: 'bowtie2'
   owner: 'devteam'
   tool_panel_section_label: 'NGS: mapping'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: 'bowtie_wrappers'
   owner: 'devteam'
   tool_panel_section_label: 'NGS: mapping'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: 'bwa_wrappers'
   owner: 'devteam'
   tool_panel_section_label: 'NGS: mapping'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
-

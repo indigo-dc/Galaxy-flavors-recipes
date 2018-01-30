@@ -46,38 +46,27 @@ tools:
 - name: 'tophat2'
   owner: 'devteam'
   tool_panel_section_label: 'NGS: RNA analysis'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: 'tophat'
   owner: 'devteam'
   tool_panel_section_label: 'NGS: RNA analysis'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
-- name: 'package_cufflinks_2_1_1'
+- name: 'cufflinks'
   owner: 'devteam'
   tool_panel_section_label: 'NGS: RNA analysis'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
-- name: 'package_trinity_2_0_6'
+- name: 'cuffcompare'
+  owner: 'devteam'
+  tool_panel_section_label: 'NGS: RNA analysis'
+
+- name: 'trinity'
   owner: 'iuc'
   tool_panel_section_label: 'NGS: RNA analysis'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: 'edger'
   owner: 'fcaramia'
   tool_panel_section_label: 'NGS: RNA analysis'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: 'express'
   owner: 'devteam'
   tool_panel_section_label: 'NGS: RNA analysis'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
-
-
-  

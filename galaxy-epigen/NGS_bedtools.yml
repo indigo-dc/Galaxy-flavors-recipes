@@ -9,7 +9,3 @@ tools:
 - name: 'bedtools'
   owner: 'iuc'
   tool_panel_section_label: 'NGS: BEDtools'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
-
-

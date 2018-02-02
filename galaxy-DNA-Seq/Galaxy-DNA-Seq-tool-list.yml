@@ -54,6 +54,10 @@ tools:
   owner: iuc
   tool_panel_section_label: "BED Tools"
  
+- name: trim_galore
+  owner: bgruening
+  tool_panel_section_label: "pre-alignment"
+
 - name: fastqc
   owner: devteam
   tool_panel_section_label: "pre-alignment"

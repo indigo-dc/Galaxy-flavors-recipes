@@ -1,8 +1,0 @@
-dm3	dm3	Drosophila melanogaster (dm3)	/refdata/elixir-italy.galaxy.refdata/dm3/rsem/dm3
-hg18	hg18	Homo sapiens (hg18)	/refdata/elixir-italy.galaxy.refdata/hg18/rsem/hg18
-hg19	hg19	Homo sapiens (hg19.RefSeq)	/refdata/elixir-italy.galaxy.refdata/hg19/rsem/hg19RefSeq
-hg19	hg19	Homo sapiens (hg19_ucsc)	/refdata/elixir-italy.galaxy.refdata/hg19/rsem/hg19_ucsc
-hg38	hg38	Homo sapiens (hg38)	/refdata/elixir-italy.galaxy.refdata/hg38/rsem/hg38
-mm9	mm9	Mus musculus (mm9)	/refdata/elixir-italy.galaxy.refdata/mm9/rsem/mm9
-mm10	mm10	Mus musculus (mm10)	/refdata/elixir-italy.galaxy.refdata/mm10/rsem/mm10
-sacCer3	sacCer3	Saccharomyces cerevisiae (sacCer3)	/refdata/elixir-italy.galaxy.refdata/sacCer3/rsem/sacCer3

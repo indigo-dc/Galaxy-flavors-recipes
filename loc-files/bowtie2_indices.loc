@@ -1,9 +1,0 @@
-at9	at9	Arabidopis thaliana (TAIR9)	/refdata/elixir-italy.galaxy.refdata/at9/bowtie2/genome
-at10	at10	Arabidopis thaliana (TAIR10)	/refdata/elixir-italy.galaxy.refdata/at10/bowtie2/genome
-dm3	dm3	Drosophila melanogaster (dm3)	/refdata/elixir-italy.galaxy.refdata/dm3/bowtie2/genome
-hg18	hg18	Homo sapiens (hg18)	/refdata/elixir-italy.galaxy.refdata/hg18/bowtie2/hg18
-hg19	hg19	Homo sapiens (hg19)	/refdata/elixir-italy.galaxy.refdata/hg19/bowtie2/hg19
-hg38	hg38	Homo sapiens (hg38)	/refdata/elixir-italy.galaxy.refdata/hg38/bowtie2/hg38
-mm9	mm9	Mus musculus (mm9)	/refdata/elixir-italy.galaxy.refdata/mm9/bowtie2/mm9
-mm10	mm10	Mus musculus (mm10)	/refdata/elixir-italy.galaxy.refdata/mm10/bowtie2/mm10
-sacCer3	sacCer3	Saccharomyces cerevisiae (sacCer3)	/refdata/elixir-italy.galaxy.refdata/sacCer3/bowtie2/sacCer3

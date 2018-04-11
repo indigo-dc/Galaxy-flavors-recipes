@@ -5,7 +5,7 @@ galaxy_instance: <Galaxy instance IP>
 tools:
 - name: fastqc
   owner: devteam
-  tool_panel_section_label: 'QA'
+  tool_panel_section_label: 'QualityCheck'
 
 - name: 'bowtie_wrappers'
   owner: 'devteam'
@@ -34,3 +34,11 @@ tools:
 - name: 'pipmir'
   owner: 'rnateam'
   tool_panel_section_label: 'RnaTools'
+
+- name: 'sam_to_bam'
+  owner: 'devteam'
+  tool_panel_section_label: 'SamTools'
+
+- name: 'deeptools_bam_coverage'
+  owner: 'bgruening'
+  tool_panel_section_label: "DeepTools"

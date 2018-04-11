@@ -5,3 +5,5 @@ libraries:
           file_type: bed
         - url: http://159.149.160.56/indigo_demo/Sc_IP.fastq
           file_type: fastqsanger
+        - url: http://159.149.160.56/indigo_demo/Sc_INPUT.fastq
+          file_type: fastqsanger

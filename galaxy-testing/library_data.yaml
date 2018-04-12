@@ -1,7 +1,7 @@
 libraries:
     - name: "Test data"
       files:
-          url: https://raw.githubusercontent.com/indigo-dc/Galaxy-flavors-recipes/master/galaxy-testing/testing-libraries/UCSC_Main_on_Human__knownGene__hg19.bed
+        - url: https://raw.githubusercontent.com/indigo-dc/Galaxy-flavors-recipes/master/galaxy-testing/testing-libraries/UCSC_Main_on_Human__knownGene__hg19.bed
           file_type: bed
         - url: https://github.com/indigo-dc/Galaxy-flavors-recipes/blob/master/galaxy-testing/testing-libraries/hg19_test.bam
           file_type: bam

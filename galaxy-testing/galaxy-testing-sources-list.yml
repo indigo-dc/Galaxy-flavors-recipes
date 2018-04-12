@@ -17,8 +17,8 @@
 
 # set yaml recipes
 # ephemeris takes single files as argument 
-- name: "Set {{galaxy_flavor}} data library resources"
-  set_fact:
-    install_data_libraries: true
-    galaxy_tools_data_library_list_files:
-      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/library_data.yaml'
+#- name: "Set {{galaxy_flavor}} data library resources"
+#  set_fact:
+#    install_data_libraries: true
+#    galaxy_tools_data_library_list_files:
+#      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/library_data.yaml'

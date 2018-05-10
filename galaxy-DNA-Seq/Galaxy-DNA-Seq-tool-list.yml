@@ -53,9 +53,9 @@ tools:
 - name: bedtools
   owner: iuc
   tool_panel_section_label: "BED Tools"
- 
-- name: trim_galore
-  owner: bgruening
+
+- name: trimmomatic
+  owner: pjbriggs
   tool_panel_section_label: "pre-alignment"
 
 - name: fastqc
@@ -82,11 +82,6 @@ tools:
   owner: devteam
   tool_panel_section_label: "somatic-variant-calling"
 
-- name: somaticsniper
-  owner: nilesh
+- name: vcftools_merge
+  owner: devteam
   tool_panel_section_label: "somatic-variant-calling"
-
-- name: ensembl_vep
-  owner: alonie
-  tool_panel_section_label: "variant-call-annotation"
-

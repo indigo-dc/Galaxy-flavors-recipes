@@ -11,7 +11,7 @@
 # ephemeris takes the worlflow path to install workflows
 - name: "Set {{galaxy_flavor}} workflows resources"
   set_fact:
-    install_workflows: false
+    install_workflows: true
     galaxy_tools_workflow_list_path:
       - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/testing-workflow'
 
@@ -19,6 +19,6 @@
 # ephemeris takes single files as argument 
 - name: "Set {{galaxy_flavor}} data library resources"
   set_fact:
-    install_data_libraries: false
+    install_data_libraries: true
     galaxy_tools_data_library_list_files:
       - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/library_data.yaml'

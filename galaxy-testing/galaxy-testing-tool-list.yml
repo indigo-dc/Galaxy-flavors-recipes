@@ -7,38 +7,38 @@ tools:
   owner: devteam
   tool_panel_section_label: 'QualityCheck'
 
-#- name: 'bowtie_wrappers'
-#  owner: 'devteam'
-#  tool_panel_section_label: 'Bowtie'
+- name: 'bowtie_wrappers'
+  owner: 'devteam'
+  tool_panel_section_label: 'Bowtie'
 
-#- name: 'bwa_wrappers'
-#  owner: 'devteam'
-#  tool_panel_section_label: 'BWA'
+- name: 'bwa_wrappers'
+  owner: 'devteam'
+  tool_panel_section_label: 'BWA'
 
-#- name: 'bwa'
-#  owner: 'devteam'
-#  tool_panel_section_label: 'BWA'
+- name: 'bwa'
+  owner: 'devteam'
+  tool_panel_section_label: 'BWA'
 
-#- name: 'bowtie2'
-#  owner: 'devteam'
-#  tool_panel_section_label: 'Bowtie'
+- name: 'bowtie2'
+  owner: 'devteam'
+  tool_panel_section_label: 'Bowtie'
 
-#- name: 'samtools_calmd'
-#  owner: 'devteam'
-#  tool_panel_section_label: 'SamTools'
+- name: 'samtools_calmd'
+  owner: 'devteam'
+  tool_panel_section_label: 'SamTools'
 
-#- name: 'bedtools'
-#  owner: 'iuc'
-#  tool_panel_section_label: 'BedTools'
+- name: 'bedtools'
+  owner: 'iuc'
+  tool_panel_section_label: 'BedTools'
 
-#- name: 'pipmir'
-#  owner: 'rnateam'
-#  tool_panel_section_label: 'RnaTools'
+- name: 'pipmir'
+  owner: 'rnateam'
+  tool_panel_section_label: 'RnaTools'
 
-#- name: 'sam_to_bam'
-#  owner: 'devteam'
-#  tool_panel_section_label: 'SamTools'
+- name: 'sam_to_bam'
+  owner: 'devteam'
+  tool_panel_section_label: 'SamTools'
 
-#- name: 'deeptools_bam_coverage'
-#  owner: 'bgruening'
-#  tool_panel_section_label: "DeepTools"
+- name: 'deeptools_bam_coverage'
+  owner: 'bgruening'
+  tool_panel_section_label: "DeepTools"

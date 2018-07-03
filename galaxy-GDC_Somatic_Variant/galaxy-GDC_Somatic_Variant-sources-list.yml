@@ -6,5 +6,5 @@
 - name: "Set {{galaxy_flavor}} resources"
   set_fact:
     galaxy_tools_tool_list_files:
-      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/Galaxy-DNA-Seq-tool-list.yml'
+      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/galaxy-GDC_Somatic_Variant-tool-list.yml'
 

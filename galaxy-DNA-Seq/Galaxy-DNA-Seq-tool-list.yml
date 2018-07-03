@@ -48,7 +48,7 @@ tools:
 
 #________________________________
 #galaxy DNA-seq tools
-#missing tools: MuSE, MUtect2, false positive filter (fpfilter-tool)
+
 
 - name: bedtools
   owner: iuc
@@ -63,6 +63,10 @@ tools:
   tool_panel_section_label: "pre-alignment"
 
 - name: bwa
+  owner: devteam
+  tool_panel_section_label: "DNA-alignment"
+
+- name: bowtie2
   owner: devteam
   tool_panel_section_label: "DNA-alignment"
 
@@ -85,3 +89,23 @@ tools:
 - name: vcftools_merge
   owner: devteam
   tool_panel_section_label: "somatic-variant-calling"
+
+- name: mutect2
+  owner: elixir-it
+  tool_panel_section_label: "somatic-variant-calling"
+
+- name: muse
+  owner: elixir-it
+  tool_panel_section_label: "somatic-variant-calling"
+
+- name: fpfilter
+  owner: elixir-it
+  tool_panel_section_label: "somatic-variant-calling"
+
+- name: somaticsniper
+  owner: elixir-it
+  tool_panel_section_label: "somatic-variant-calling"
+
+- name: vep86_vcf2maf
+  owner: elixir-it
+  tool_panel_section_label: "somatic-annotation"

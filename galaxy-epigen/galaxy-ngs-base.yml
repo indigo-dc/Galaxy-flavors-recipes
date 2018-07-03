@@ -10,16 +10,10 @@ tools:
 - name: 'tables_arithmetic_operations'
   owner: 'devteam'
   tool_panel_section_id: 'textutil'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: 'column_maker'
   owner: 'devteam'
   tool_panel_section_id: 'textutil'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
-
-
 
 #_________________________________
 #Join, Subtract and Group
@@ -28,36 +22,23 @@ tools:
 - name: 'subtract_query'
   owner: 'devteam'
   tool_panel_section_id: 'group'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
   
 - name: 'column_join'
   owner: 'jjohnson'
   tool_panel_section_id: 'group'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 #__________________________________
 #converts formats
 #manca BED-to-GFF,GFF-to-BED,Wiggle-to-interval
 
-- name: 'deeptools_bam_coverage'
-  owner: 'bgruening'
-  tool_panel_section_id: 'convert'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
-
 - name: 'fastqtofasta'
   owner: 'devteam'
   tool_panel_section_id: 'convert'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: 'tabular_to_fasta'
   owner: 'devteam'
   tool_panel_section_id: 'group'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
+
 #_______________________________________
 #Extract Features
 
@@ -75,95 +56,65 @@ tools:
 - name: 'count_gff_features'
   owner: 'devteam'
   tool_panel_section_label: 'operate on genomic intervals'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: 'intersect'
   owner: 'devteam'
   tool_panel_section_label: 'operate on genomic intervals'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: 'get_flanks'
   owner: 'devteam'
   tool_panel_section_label: 'operate on genomic intervals'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: 'complement'
   owner: 'devteam'
   tool_panel_section_label: 'operate on genomic intervals'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: 'basecoverage'
   owner: 'devteam'
   tool_panel_section_label: 'operate on genomic intervals'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: 'flanking_features'
   owner: 'devteam'
   tool_panel_section_label: 'operate on genomic intervals'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: 'concat'
   owner: 'devteam'
   tool_panel_section_label: 'operate on genomic intervals'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: 'join'
   owner: 'devteam'
   tool_panel_section_label: 'operate on genomic intervals'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: 'coverage'
   owner: 'devteam'
   tool_panel_section_label: 'operate on genomic intervals'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: 'cluster'
   owner: 'devteam'
   tool_panel_section_label: 'operate on genomic intervals'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: 'merge'
   owner: 'devteam'
   tool_panel_section_label: 'operate on genomic intervals'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: 'subtract'
   owner: 'devteam'
   tool_panel_section_label: 'operate on genomic intervals'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
+
 #__________________________________________
 #statistic
-
 
 - name: 't_test_two_samples'
   owner: 'devteam'
   tool_panel_section_id: 'stats'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: 'pearson_correlation'
   owner: 'devteam'
   tool_panel_section_id: 'stats'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: 'bed_overlap_significance'
   owner: 'xuebing'
   tool_panel_section_id: 'stats'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 #___________________________________________
 #graph/display Data
@@ -172,54 +123,40 @@ tools:
 - name: 'xy_plot'
   owner: 'devteam'
   tool_panel_section_id: 'plots'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
+
 #_____________________________________________
 #multivariate analysis
 
 - name: 'canonical_correlation_analysis'
   owner: 'devteam'
   tool_panel_section_label: 'multivariate analysis'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: 'principal_component_analysis'
   owner: 'devteam'
   tool_panel_section_label: 'multivariate analysis'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
+
 #________________________________________________
 #multiple regression
 
 - name: 'partialr_square'
   owner: 'devteam'
   tool_panel_section_label: 'multiple regression'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: 'rcve'
   owner: 'devteam'
   tool_panel_section_label: 'multiple regression'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: 'best_regression_subsets'
   owner: 'devteam'
   tool_panel_section_label: 'multiple regression'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: 'logistic_regression_vif'
   owner: 'devteam'
   tool_panel_section_label: 'multiple regression'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: 'linear_regression'
   owner: 'devteam'
   tool_panel_section_label: 'multiple regression'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 #___________________________________________
 #FASTA manipulation
@@ -227,35 +164,23 @@ tools:
 - name: 'seqtk'
   owner: 'iuc'
   tool_panel_section_label: 'FASTA manipulation'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: 'fastx_trimmer'
   owner: 'devteam'
   tool_panel_section_label: 'FASTA manipulation'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: 'fastx_reverse_complement'
   owner: 'devteam'
   tool_panel_section_label: 'FASTA manipulation'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: 'fasta_formatter'
   owner: 'devteam'
   tool_panel_section_label: 'FASTA manipulation'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: 'fasta_filter_by_length'
   owner: 'devteam'
   tool_panel_section_label: 'FASTA manipulation'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: 'fasta_compute_length'
   owner: 'devteam'
   tool_panel_section_label: 'FASTA manipulation'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False

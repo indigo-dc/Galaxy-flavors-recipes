@@ -70,6 +70,10 @@ tools:
   owner: devteam
   tool_panel_section_label: "DNA-alignment"
 
+- name: bowtie_wrappers
+  owner: devteam
+  tool_panel_section_label: "DNA-alignment"
+
 - name: picard
   owner: devteam
   tool_panel_section_label: "picard-tools"

@@ -22,7 +22,7 @@ tools:
   owner: 'vipints'
   tool_panel_section_label: 'NGS: RNA analysis'
 
-- name: 'rsem'
+- name: 'package_rsem_1_1_17'
   owner: 'jjohnson'
   tool_panel_section_label: 'NGS: RNA analysis'
 
@@ -46,13 +46,8 @@ tools:
   owner: 'devteam'
   tool_panel_section_label: 'NGS: RNA analysis'
 
-<<<<<<< HEAD
-- name: 'trinity'
-  owner: 'iuc'
-=======
 - name: 'cuffcompare'
   owner: 'devteam'
->>>>>>> upstream/master
   tool_panel_section_label: 'NGS: RNA analysis'
 
 - name: 'trinity'
@@ -62,16 +57,3 @@ tools:
 - name: 'express'
   owner: 'devteam'
   tool_panel_section_label: 'NGS: RNA analysis'
-<<<<<<< HEAD
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
-
-- name: 'cuffcompare'
-  owner: 'devteam'
-  tool_panel_section_label: 'NGS: RNA analysis'
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
-
-
-=======
->>>>>>> upstream/master

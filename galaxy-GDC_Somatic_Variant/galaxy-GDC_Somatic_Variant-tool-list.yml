@@ -58,19 +58,24 @@ tools:
 - name: mutect2
   owner: elixir-it
   tool_panel_section_label: "somatic-variant-calling"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
 
 - name: muse
   owner: elixir-it
   tool_panel_section_label: "somatic-variant-calling"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
 
 - name: fpfilter
   owner: elixir-it
   tool_panel_section_label: "somatic-variant-calling"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
 
 - name: somaticsniper
   owner: elixir-it
   tool_panel_section_label: "somatic-variant-calling"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
 
 - name: vep86_vcf2maf
   owner: elixir-it
   tool_panel_section_label: "somatic-annotation"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"

@@ -1,0 +1,81 @@
+---
+
+
+api_key: admin
+galaxy_instance: http://localhost:8080
+install_resolver_dependencies: true
+install_tool_dependencies: false
+tools:
+
+#________________________________
+#galaxy-GDC_Somatic_Variant tools
+
+
+- name: bedtools
+  owner: iuc
+  tool_panel_section_label: "BED Tools"
+
+- name: trimmomatic
+  owner: pjbriggs
+  tool_panel_section_label: "pre-alignment"
+
+- name: fastqc
+  owner: devteam
+  tool_panel_section_label: "pre-alignment"
+
+- name: bwa
+  owner: devteam
+  tool_panel_section_label: "DNA-alignment"
+
+- name: bowtie2
+  owner: devteam
+  tool_panel_section_label: "DNA-alignment"
+
+- name: bowtie_wrappers
+  owner: devteam
+  tool_panel_section_label: "DNA-alignment"
+
+- name: picard
+  owner: devteam
+  tool_panel_section_label: "picard-tools"
+
+- name: gatk
+  owner: avowinkel
+  tool_panel_section_label: "Co-cleaning"
+
+- name: samtools_mpileup
+  owner: devteam
+  tool_panel_section_label: "somatic-variant-calling"
+
+- name: varscan_version_2
+  owner: devteam
+  tool_panel_section_label: "somatic-variant-calling"
+
+- name: vcftools_merge
+  owner: devteam
+  tool_panel_section_label: "somatic-variant-calling"
+
+- name: mutect2
+  owner: elixir-it
+  tool_panel_section_label: "somatic-variant-calling"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
+
+- name: muse
+  owner: elixir-it
+  tool_panel_section_label: "somatic-variant-calling"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
+
+- name: fpfilter
+  owner: elixir-it
+  tool_panel_section_label: "somatic-variant-calling"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
+
+- name: somaticsniper
+  owner: elixir-it
+  tool_panel_section_label: "somatic-variant-calling"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
+
+- name: vep86_vcf2maf
+  owner: elixir-it
+  tool_panel_section_label: "somatic-annotation"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"

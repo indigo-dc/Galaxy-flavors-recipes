@@ -2,7 +2,7 @@
     "a_galaxy_workflow": "true", 
     "annotation": "", 
     "format-version": "0.1", 
-    "name": "part2-final-pipeline", 
+    "name": "part2-final-pipeline (imported from uploaded file)", 
     "steps": {
         "0": {
             "annotation": "", 
@@ -367,7 +367,20 @@
                     "output_name": "variants"
                 }
             }, 
-            "inputs": [], 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool fpfilter", 
+                    "name": "reference"
+                }, 
+                {
+                    "description": "runtime parameter for tool fpfilter", 
+                    "name": "vcf"
+                }, 
+                {
+                    "description": "runtime parameter for tool fpfilter", 
+                    "name": "bam"
+                }
+            ], 
             "label": null, 
             "name": "fpfilter", 
             "outputs": [
@@ -382,7 +395,7 @@
             }, 
             "post_job_actions": {}, 
             "tool_id": "fpfilter", 
-            "tool_state": "{\"min_strandness\": \"\\\"0.01\\\"\", \"max_mapqual_diff\": \"\\\"30\\\"\", \"bam\": \"{\\\"values\\\": [{\\\"src\\\": \\\"hda\\\", \\\"id\\\": 571}]}\", \"min_var_dist_3\": \"\\\"0.2\\\"\", \"reference\": \"{\\\"values\\\": [{\\\"src\\\": \\\"hda\\\", \\\"id\\\": 684}]}\", \"min_var_count\": \"\\\"4\\\"\", \"max_readlen_diff\": \"\\\"25\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"max_mm_qualsum_diff\": \"\\\"50\\\"\", \"vcf\": \"{\\\"values\\\": [{\\\"src\\\": \\\"hda\\\", \\\"id\\\": 701}]}\", \"sample\": \"\\\"sample\\\"\", \"min_read_pos\": \"\\\"0.1\\\"\", \"min_var_freq\": \"\\\"0.05\\\"\", \"max_var_mm_qualsum\": \"\\\"100\\\"\"}", 
+            "tool_state": "{\"min_strandness\": \"\\\"0.01\\\"\", \"max_mapqual_diff\": \"\\\"30\\\"\", \"bam\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"min_var_dist_3\": \"\\\"0.2\\\"\", \"reference\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"min_var_count\": \"\\\"4\\\"\", \"max_readlen_diff\": \"\\\"25\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"max_mm_qualsum_diff\": \"\\\"50\\\"\", \"vcf\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"sample\": \"\\\"sample\\\"\", \"min_read_pos\": \"\\\"0.1\\\"\", \"min_var_freq\": \"\\\"0.05\\\"\", \"max_var_mm_qualsum\": \"\\\"100\\\"\"}", 
             "tool_version": "0.0.1", 
             "type": "tool", 
             "uuid": "3ddbfb79-5690-4fd5-a2fc-22f2f16a14b5", 
@@ -396,7 +409,7 @@
         }, 
         "7": {
             "annotation": "", 
-            "content_id": "vep86-vcf2maf", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
             "errors": null, 
             "id": 7, 
             "input_connections": {
@@ -407,12 +420,12 @@
             }, 
             "inputs": [
                 {
-                    "description": "runtime parameter for tool vep86-vcf2maf", 
+                    "description": "runtime parameter for tool vep-unico", 
                     "name": "veptools"
                 }
             ], 
             "label": null, 
-            "name": "vep86-vcf2maf", 
+            "name": "vep-unico", 
             "outputs": [
                 {
                     "name": "output1", 
@@ -432,83 +445,8 @@
                 }
             ], 
             "position": {
-                "left": 673, 
-                "top": 906
-            }, 
-            "post_job_actions": {
-                "HideDatasetActionoutput1": {
-                    "action_arguments": {}, 
-                    "action_type": "HideDatasetAction", 
-                    "output_name": "output1"
-                }, 
-                "HideDatasetActionoutput_maf": {
-                    "action_arguments": {}, 
-                    "action_type": "HideDatasetAction", 
-                    "output_name": "output_maf"
-                }, 
-                "HideDatasetActionstat": {
-                    "action_arguments": {}, 
-                    "action_type": "HideDatasetAction", 
-                    "output_name": "stat"
-                }
-            }, 
-            "tool_id": "vep86-vcf2maf", 
-            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"buffer\\\": \\\"50\\\", \\\"veptoolsselect\\\": \\\"annotate\\\", \\\"everything\\\": null, \\\"__current_case__\\\": 1, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"species\\\": \\\"homo_sapiens --ASSEMBLY GRCh38\\\"}\", \"__rerun_remap_job_id__\": null}", 
-            "tool_version": "1.0.0", 
-            "type": "tool", 
-            "uuid": "c7a003ac-56c4-45f4-9252-8398feea1d81", 
-            "workflow_outputs": [
-                {
-                    "label": null, 
-                    "output_name": "output2", 
-                    "uuid": "5483d591-958e-4eb0-adb8-a26928073a91"
-                }
-            ]
-        }, 
-        "8": {
-            "annotation": "", 
-            "content_id": "vep86-vcf2maf", 
-            "errors": null, 
-            "id": 8, 
-            "input_connections": {
-                "veptools|input_vcf": {
-                    "id": 3, 
-                    "output_name": "output"
-                }
-            }, 
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool vep86-vcf2maf", 
-                    "name": "veptools"
-                }, 
-                {
-                    "description": "runtime parameter for tool vep86-vcf2maf", 
-                    "name": "veptools"
-                }
-            ], 
-            "label": null, 
-            "name": "vep86-vcf2maf", 
-            "outputs": [
-                {
-                    "name": "output1", 
-                    "type": "txt"
-                }, 
-                {
-                    "name": "output2", 
-                    "type": "vcf"
-                }, 
-                {
-                    "name": "stat", 
-                    "type": "html"
-                }, 
-                {
-                    "name": "output_maf", 
-                    "type": "maf"
-                }
-            ], 
-            "position": {
-                "left": 945, 
-                "top": 902.5
+                "left": 588.75, 
+                "top": 953.25
             }, 
             "post_job_actions": {
                 "HideDatasetActionoutput1": {
@@ -532,11 +470,97 @@
                     "output_name": "stat"
                 }
             }, 
-            "tool_id": "vep86-vcf2maf", 
-            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"reference\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"buffer\\\": \\\"5000\\\", \\\"veptoolsselect\\\": \\\"vcf2maf\\\", \\\"input_vcf\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2, \\\"species\\\": \\\"ailuropoda_melanoleuca --ncbi-build ailMel1\\\", \\\"normal_id\\\": \\\"NORMAL\\\", \\\"tumour_id\\\": \\\"TUMOR\\\"}\", \"__rerun_remap_job_id__\": null}", 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "786c9295d2be", 
+                "name": "vep86_vcf2maf", 
+                "owner": "elixir-it", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"buffer\\\": \\\"50\\\", \\\"veptoolsselect\\\": \\\"annotate\\\", \\\"everything\\\": null, \\\"__current_case__\\\": 1, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"species\\\": \\\"homo_sapiens --ASSEMBLY GRCh38\\\"}\", \"__rerun_remap_job_id__\": null}", 
             "tool_version": "1.0.0", 
             "type": "tool", 
-            "uuid": "7bd34e38-0d97-483d-be85-86604080fa79", 
+            "uuid": "2f5ac923-db8d-4770-baf9-589f8993ccd6", 
+            "workflow_outputs": []
+        }, 
+        "8": {
+            "annotation": "", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
+            "errors": null, 
+            "id": 8, 
+            "input_connections": {
+                "veptools|input_vcf": {
+                    "id": 3, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool vep-unico", 
+                    "name": "veptools"
+                }, 
+                {
+                    "description": "runtime parameter for tool vep-unico", 
+                    "name": "veptools"
+                }
+            ], 
+            "label": null, 
+            "name": "vep-unico", 
+            "outputs": [
+                {
+                    "name": "output1", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "output2", 
+                    "type": "vcf"
+                }, 
+                {
+                    "name": "stat", 
+                    "type": "html"
+                }, 
+                {
+                    "name": "output_maf", 
+                    "type": "maf"
+                }
+            ], 
+            "position": {
+                "left": 862.75, 
+                "top": 945.25
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionoutput1": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output1"
+                }, 
+                "HideDatasetActionoutput2": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output2"
+                }, 
+                "HideDatasetActionoutput_maf": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output_maf"
+                }, 
+                "HideDatasetActionstat": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "stat"
+                }
+            }, 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "786c9295d2be", 
+                "name": "vep86_vcf2maf", 
+                "owner": "elixir-it", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"reference\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"buffer\\\": \\\"20\\\", \\\"veptoolsselect\\\": \\\"vcf2maf\\\", \\\"input_vcf\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2, \\\"species\\\": \\\"homo_sapiens --ncbi-build GRCh38\\\", \\\"normal_id\\\": \\\"NORMAL\\\", \\\"tumour_id\\\": \\\"TUMOR\\\"}\", \"__rerun_remap_job_id__\": null}", 
+            "tool_version": "1.0.0", 
+            "type": "tool", 
+            "uuid": "382d2991-0023-4423-9536-14e6335a6990", 
             "workflow_outputs": []
         }, 
         "9": {
@@ -550,7 +574,20 @@
                     "output_name": "output"
                 }
             }, 
-            "inputs": [], 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool fpfilter", 
+                    "name": "reference"
+                }, 
+                {
+                    "description": "runtime parameter for tool fpfilter", 
+                    "name": "vcf"
+                }, 
+                {
+                    "description": "runtime parameter for tool fpfilter", 
+                    "name": "bam"
+                }
+            ], 
             "label": null, 
             "name": "fpfilter", 
             "outputs": [
@@ -565,7 +602,7 @@
             }, 
             "post_job_actions": {}, 
             "tool_id": "fpfilter", 
-            "tool_state": "{\"min_strandness\": \"\\\"0.01\\\"\", \"max_mapqual_diff\": \"\\\"30\\\"\", \"bam\": \"{\\\"values\\\": [{\\\"src\\\": \\\"hda\\\", \\\"id\\\": 571}]}\", \"min_var_dist_3\": \"\\\"0.2\\\"\", \"reference\": \"{\\\"values\\\": [{\\\"src\\\": \\\"hda\\\", \\\"id\\\": 684}]}\", \"min_var_count\": \"\\\"4\\\"\", \"max_readlen_diff\": \"\\\"25\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"max_mm_qualsum_diff\": \"\\\"50\\\"\", \"vcf\": \"{\\\"values\\\": [{\\\"src\\\": \\\"hda\\\", \\\"id\\\": 701}]}\", \"sample\": \"\\\"sample\\\"\", \"min_read_pos\": \"\\\"0.1\\\"\", \"min_var_freq\": \"\\\"0.05\\\"\", \"max_var_mm_qualsum\": \"\\\"100\\\"\"}", 
+            "tool_state": "{\"min_strandness\": \"\\\"0.01\\\"\", \"max_mapqual_diff\": \"\\\"30\\\"\", \"bam\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"min_var_dist_3\": \"\\\"0.2\\\"\", \"reference\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"min_var_count\": \"\\\"4\\\"\", \"max_readlen_diff\": \"\\\"25\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"max_mm_qualsum_diff\": \"\\\"50\\\"\", \"vcf\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"sample\": \"\\\"sample\\\"\", \"min_read_pos\": \"\\\"0.1\\\"\", \"min_var_freq\": \"\\\"0.05\\\"\", \"max_var_mm_qualsum\": \"\\\"100\\\"\"}", 
             "tool_version": "0.0.1", 
             "type": "tool", 
             "uuid": "dabd08ff-e310-49b9-9038-45deda577ba4", 
@@ -579,7 +616,7 @@
         }, 
         "10": {
             "annotation": "", 
-            "content_id": "vep86-vcf2maf", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
             "errors": null, 
             "id": 10, 
             "input_connections": {
@@ -590,12 +627,12 @@
             }, 
             "inputs": [
                 {
-                    "description": "runtime parameter for tool vep86-vcf2maf", 
+                    "description": "runtime parameter for tool vep-unico", 
                     "name": "veptools"
                 }
             ], 
             "label": null, 
-            "name": "vep86-vcf2maf", 
+            "name": "vep-unico", 
             "outputs": [
                 {
                     "name": "output1", 
@@ -615,14 +652,19 @@
                 }
             ], 
             "position": {
-                "left": 846, 
-                "top": 392
+                "left": 795.75, 
+                "top": 387.25
             }, 
             "post_job_actions": {
                 "HideDatasetActionoutput1": {
                     "action_arguments": {}, 
                     "action_type": "HideDatasetAction", 
                     "output_name": "output1"
+                }, 
+                "HideDatasetActionoutput2": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output2"
                 }, 
                 "HideDatasetActionoutput_maf": {
                     "action_arguments": {}, 
@@ -635,22 +677,22 @@
                     "output_name": "stat"
                 }
             }, 
-            "tool_id": "vep86-vcf2maf", 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "786c9295d2be", 
+                "name": "vep86_vcf2maf", 
+                "owner": "elixir-it", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
             "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"buffer\\\": \\\"50\\\", \\\"veptoolsselect\\\": \\\"annotate\\\", \\\"everything\\\": null, \\\"__current_case__\\\": 1, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"species\\\": \\\"homo_sapiens --ASSEMBLY GRCh38\\\"}\", \"__rerun_remap_job_id__\": null}", 
             "tool_version": "1.0.0", 
             "type": "tool", 
-            "uuid": "72875e07-9984-4188-93b0-bc66b8a319a5", 
-            "workflow_outputs": [
-                {
-                    "label": null, 
-                    "output_name": "output2", 
-                    "uuid": "a5f75d0a-1d9f-4549-8bda-534c2607dd52"
-                }
-            ]
+            "uuid": "be818f2e-154d-4700-81e8-bfd21a8fb948", 
+            "workflow_outputs": []
         }, 
         "11": {
             "annotation": "", 
-            "content_id": "vep86-vcf2maf", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
             "errors": null, 
             "id": 11, 
             "input_connections": {
@@ -661,16 +703,16 @@
             }, 
             "inputs": [
                 {
-                    "description": "runtime parameter for tool vep86-vcf2maf", 
+                    "description": "runtime parameter for tool vep-unico", 
                     "name": "veptools"
                 }, 
                 {
-                    "description": "runtime parameter for tool vep86-vcf2maf", 
+                    "description": "runtime parameter for tool vep-unico", 
                     "name": "veptools"
                 }
             ], 
             "label": null, 
-            "name": "vep86-vcf2maf", 
+            "name": "vep-unico", 
             "outputs": [
                 {
                     "name": "output1", 
@@ -690,8 +732,8 @@
                 }
             ], 
             "position": {
-                "left": 1223, 
-                "top": 391.5
+                "left": 1096.75, 
+                "top": 390.25
             }, 
             "post_job_actions": {
                 "HideDatasetActionoutput1": {
@@ -704,28 +746,33 @@
                     "action_type": "HideDatasetAction", 
                     "output_name": "output2"
                 }, 
+                "HideDatasetActionoutput_maf": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output_maf"
+                }, 
                 "HideDatasetActionstat": {
                     "action_arguments": {}, 
                     "action_type": "HideDatasetAction", 
                     "output_name": "stat"
                 }
             }, 
-            "tool_id": "vep86-vcf2maf", 
-            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"reference\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"buffer\\\": \\\"5000\\\", \\\"veptoolsselect\\\": \\\"vcf2maf\\\", \\\"input_vcf\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2, \\\"species\\\": \\\"ailuropoda_melanoleuca --ncbi-build ailMel1\\\", \\\"normal_id\\\": \\\"NORMAL\\\", \\\"tumour_id\\\": \\\"TUMOR\\\"}\", \"__rerun_remap_job_id__\": null}", 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "786c9295d2be", 
+                "name": "vep86_vcf2maf", 
+                "owner": "elixir-it", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"reference\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"buffer\\\": \\\"20\\\", \\\"veptoolsselect\\\": \\\"vcf2maf\\\", \\\"input_vcf\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2, \\\"species\\\": \\\"homo_sapiens --ncbi-build GRCh38\\\", \\\"normal_id\\\": \\\"NORMAL\\\", \\\"tumour_id\\\": \\\"TUMOR\\\"}\", \"__rerun_remap_job_id__\": null}", 
             "tool_version": "1.0.0", 
             "type": "tool", 
-            "uuid": "666d85c0-c33a-4de5-874f-ca71fa34b82e", 
-            "workflow_outputs": [
-                {
-                    "label": null, 
-                    "output_name": "output_maf", 
-                    "uuid": "1001708f-eb27-440d-89e7-330821b9bcb5"
-                }
-            ]
+            "uuid": "fd525e9a-c61d-4306-8b2e-889acc0d3b08", 
+            "workflow_outputs": []
         }, 
         "12": {
             "annotation": "", 
-            "content_id": "vep86-vcf2maf", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
             "errors": null, 
             "id": 12, 
             "input_connections": {
@@ -736,12 +783,12 @@
             }, 
             "inputs": [
                 {
-                    "description": "runtime parameter for tool vep86-vcf2maf", 
+                    "description": "runtime parameter for tool vep-unico", 
                     "name": "veptools"
                 }
             ], 
             "label": null, 
-            "name": "vep86-vcf2maf", 
+            "name": "vep-unico", 
             "outputs": [
                 {
                     "name": "output1", 
@@ -761,14 +808,19 @@
                 }
             ], 
             "position": {
-                "left": 692, 
-                "top": 586
+                "left": 779.75, 
+                "top": 605.25
             }, 
             "post_job_actions": {
                 "HideDatasetActionoutput1": {
                     "action_arguments": {}, 
                     "action_type": "HideDatasetAction", 
                     "output_name": "output1"
+                }, 
+                "HideDatasetActionoutput2": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output2"
                 }, 
                 "HideDatasetActionoutput_maf": {
                     "action_arguments": {}, 
@@ -781,22 +833,22 @@
                     "output_name": "stat"
                 }
             }, 
-            "tool_id": "vep86-vcf2maf", 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "786c9295d2be", 
+                "name": "vep86_vcf2maf", 
+                "owner": "elixir-it", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
             "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"buffer\\\": \\\"50\\\", \\\"veptoolsselect\\\": \\\"annotate\\\", \\\"everything\\\": null, \\\"__current_case__\\\": 1, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"species\\\": \\\"homo_sapiens --ASSEMBLY GRCh38\\\"}\", \"__rerun_remap_job_id__\": null}", 
             "tool_version": "1.0.0", 
             "type": "tool", 
-            "uuid": "ebc91c4b-f377-4232-b5b1-4eeb1a61f41d", 
-            "workflow_outputs": [
-                {
-                    "label": null, 
-                    "output_name": "output2", 
-                    "uuid": "bb918271-f11b-468d-8751-d80e6740ef72"
-                }
-            ]
+            "uuid": "eef9a5fe-4b72-4d08-ac0b-e52591c5cead", 
+            "workflow_outputs": []
         }, 
         "13": {
             "annotation": "", 
-            "content_id": "vep86-vcf2maf", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
             "errors": null, 
             "id": 13, 
             "input_connections": {
@@ -807,16 +859,16 @@
             }, 
             "inputs": [
                 {
-                    "description": "runtime parameter for tool vep86-vcf2maf", 
+                    "description": "runtime parameter for tool vep-unico", 
                     "name": "veptools"
                 }, 
                 {
-                    "description": "runtime parameter for tool vep86-vcf2maf", 
+                    "description": "runtime parameter for tool vep-unico", 
                     "name": "veptools"
                 }
             ], 
             "label": null, 
-            "name": "vep86-vcf2maf", 
+            "name": "vep-unico", 
             "outputs": [
                 {
                     "name": "output1", 
@@ -836,8 +888,8 @@
                 }
             ], 
             "position": {
-                "left": 1034, 
-                "top": 608.5
+                "left": 1049.75, 
+                "top": 602.25
             }, 
             "post_job_actions": {
                 "HideDatasetActionoutput1": {
@@ -861,16 +913,22 @@
                     "output_name": "stat"
                 }
             }, 
-            "tool_id": "vep86-vcf2maf", 
-            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"reference\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"buffer\\\": \\\"5000\\\", \\\"veptoolsselect\\\": \\\"vcf2maf\\\", \\\"input_vcf\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2, \\\"species\\\": \\\"ailuropoda_melanoleuca --ncbi-build ailMel1\\\", \\\"normal_id\\\": \\\"NORMAL\\\", \\\"tumour_id\\\": \\\"TUMOR\\\"}\", \"__rerun_remap_job_id__\": null}", 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "786c9295d2be", 
+                "name": "vep86_vcf2maf", 
+                "owner": "elixir-it", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"reference\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"buffer\\\": \\\"20\\\", \\\"veptoolsselect\\\": \\\"vcf2maf\\\", \\\"input_vcf\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2, \\\"species\\\": \\\"homo_sapiens --ncbi-build GRCh38\\\", \\\"normal_id\\\": \\\"NORMAL\\\", \\\"tumour_id\\\": \\\"TUMOR\\\"}\", \"__rerun_remap_job_id__\": null}", 
             "tool_version": "1.0.0", 
             "type": "tool", 
-            "uuid": "97cd5aca-6a39-4020-81d6-c6cf80188e17", 
+            "uuid": "385ed908-956a-4032-a6e4-b73b4bc74e33", 
             "workflow_outputs": []
         }, 
         "14": {
             "annotation": "", 
-            "content_id": "vep86-vcf2maf", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
             "errors": null, 
             "id": 14, 
             "input_connections": {
@@ -881,12 +939,12 @@
             }, 
             "inputs": [
                 {
-                    "description": "runtime parameter for tool vep86-vcf2maf", 
+                    "description": "runtime parameter for tool vep-unico", 
                     "name": "veptools"
                 }
             ], 
             "label": null, 
-            "name": "vep86-vcf2maf", 
+            "name": "vep-unico", 
             "outputs": [
                 {
                     "name": "output1", 
@@ -906,83 +964,8 @@
                 }
             ], 
             "position": {
-                "left": 924, 
-                "top": 171
-            }, 
-            "post_job_actions": {
-                "HideDatasetActionoutput1": {
-                    "action_arguments": {}, 
-                    "action_type": "HideDatasetAction", 
-                    "output_name": "output1"
-                }, 
-                "HideDatasetActionoutput_maf": {
-                    "action_arguments": {}, 
-                    "action_type": "HideDatasetAction", 
-                    "output_name": "output_maf"
-                }, 
-                "HideDatasetActionstat": {
-                    "action_arguments": {}, 
-                    "action_type": "HideDatasetAction", 
-                    "output_name": "stat"
-                }
-            }, 
-            "tool_id": "vep86-vcf2maf", 
-            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"buffer\\\": \\\"50\\\", \\\"veptoolsselect\\\": \\\"annotate\\\", \\\"everything\\\": null, \\\"__current_case__\\\": 1, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"species\\\": \\\"homo_sapiens --ASSEMBLY GRCh38\\\"}\", \"__rerun_remap_job_id__\": null}", 
-            "tool_version": "1.0.0", 
-            "type": "tool", 
-            "uuid": "6fba6f09-0786-4374-b2f4-ff921b46ff13", 
-            "workflow_outputs": [
-                {
-                    "label": null, 
-                    "output_name": "output2", 
-                    "uuid": "e04f1621-7fe8-45e3-bcfe-5171f8992748"
-                }
-            ]
-        }, 
-        "15": {
-            "annotation": "", 
-            "content_id": "vep86-vcf2maf", 
-            "errors": null, 
-            "id": 15, 
-            "input_connections": {
-                "veptools|input_vcf": {
-                    "id": 9, 
-                    "output_name": "output"
-                }
-            }, 
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool vep86-vcf2maf", 
-                    "name": "veptools"
-                }, 
-                {
-                    "description": "runtime parameter for tool vep86-vcf2maf", 
-                    "name": "veptools"
-                }
-            ], 
-            "label": null, 
-            "name": "vep86-vcf2maf", 
-            "outputs": [
-                {
-                    "name": "output1", 
-                    "type": "txt"
-                }, 
-                {
-                    "name": "output2", 
-                    "type": "vcf"
-                }, 
-                {
-                    "name": "stat", 
-                    "type": "html"
-                }, 
-                {
-                    "name": "output_maf", 
-                    "type": "maf"
-                }
-            ], 
-            "position": {
-                "left": 1154, 
-                "top": 155.5
+                "left": 964.75, 
+                "top": 180.25
             }, 
             "post_job_actions": {
                 "HideDatasetActionoutput1": {
@@ -995,25 +978,110 @@
                     "action_type": "HideDatasetAction", 
                     "output_name": "output2"
                 }, 
+                "HideDatasetActionoutput_maf": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output_maf"
+                }, 
                 "HideDatasetActionstat": {
                     "action_arguments": {}, 
                     "action_type": "HideDatasetAction", 
                     "output_name": "stat"
                 }
             }, 
-            "tool_id": "vep86-vcf2maf", 
-            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"reference\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"buffer\\\": \\\"5000\\\", \\\"veptoolsselect\\\": \\\"vcf2maf\\\", \\\"input_vcf\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2, \\\"species\\\": \\\"ailuropoda_melanoleuca --ncbi-build ailMel1\\\", \\\"normal_id\\\": \\\"NORMAL\\\", \\\"tumour_id\\\": \\\"TUMOR\\\"}\", \"__rerun_remap_job_id__\": null}", 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "786c9295d2be", 
+                "name": "vep86_vcf2maf", 
+                "owner": "elixir-it", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"buffer\\\": \\\"50\\\", \\\"veptoolsselect\\\": \\\"annotate\\\", \\\"everything\\\": null, \\\"__current_case__\\\": 1, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"species\\\": \\\"homo_sapiens --ASSEMBLY GRCh38\\\"}\", \"__rerun_remap_job_id__\": null}", 
             "tool_version": "1.0.0", 
             "type": "tool", 
-            "uuid": "b37bd363-0f79-440e-97a4-a246bdb29448", 
-            "workflow_outputs": [
-                {
-                    "label": null, 
-                    "output_name": "output_maf", 
-                    "uuid": "c83ff173-0c87-4516-baad-a1874bd9a215"
+            "uuid": "a48a62c0-67e5-4370-976d-655c409a32d4", 
+            "workflow_outputs": []
+        }, 
+        "15": {
+            "annotation": "", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
+            "errors": null, 
+            "id": 15, 
+            "input_connections": {
+                "veptools|input_vcf": {
+                    "id": 9, 
+                    "output_name": "output"
                 }
-            ]
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool vep-unico", 
+                    "name": "veptools"
+                }, 
+                {
+                    "description": "runtime parameter for tool vep-unico", 
+                    "name": "veptools"
+                }
+            ], 
+            "label": null, 
+            "name": "vep-unico", 
+            "outputs": [
+                {
+                    "name": "output1", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "output2", 
+                    "type": "vcf"
+                }, 
+                {
+                    "name": "stat", 
+                    "type": "html"
+                }, 
+                {
+                    "name": "output_maf", 
+                    "type": "maf"
+                }
+            ], 
+            "position": {
+                "left": 1186.75, 
+                "top": 196.25
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionoutput1": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output1"
+                }, 
+                "HideDatasetActionoutput2": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output2"
+                }, 
+                "HideDatasetActionoutput_maf": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output_maf"
+                }, 
+                "HideDatasetActionstat": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "stat"
+                }
+            }, 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "786c9295d2be", 
+                "name": "vep86_vcf2maf", 
+                "owner": "elixir-it", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"reference\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"buffer\\\": \\\"20\\\", \\\"veptoolsselect\\\": \\\"vcf2maf\\\", \\\"input_vcf\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2, \\\"species\\\": \\\"homo_sapiens --ncbi-build GRCh38\\\", \\\"normal_id\\\": \\\"NORMAL\\\", \\\"tumour_id\\\": \\\"TUMOR\\\"}\", \"__rerun_remap_job_id__\": null}", 
+            "tool_version": "1.0.0", 
+            "type": "tool", 
+            "uuid": "33b380bc-9c92-45ae-8efc-f449a5ff53a6", 
+            "workflow_outputs": []
         }
     }, 
-    "uuid": "9c9f5129-1cf7-4684-ba33-d5c17b2bc141"
+    "uuid": "f2799834-e383-485a-9c62-cfa8f43aa147"
 }

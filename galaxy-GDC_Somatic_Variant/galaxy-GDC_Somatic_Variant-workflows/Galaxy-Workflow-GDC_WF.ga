@@ -1,0 +1,2245 @@
+{
+    "a_galaxy_workflow": "true", 
+    "annotation": "", 
+    "format-version": "0.1", 
+    "name": "GDC_WF", 
+    "steps": {
+        "0": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72", 
+            "errors": null, 
+            "id": 0, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool FastQC", 
+                    "name": "contaminants"
+                }, 
+                {
+                    "description": "runtime parameter for tool FastQC", 
+                    "name": "limits"
+                }, 
+                {
+                    "description": "runtime parameter for tool FastQC", 
+                    "name": "input_file"
+                }
+            ], 
+            "label": null, 
+            "name": "FastQC", 
+            "outputs": [
+                {
+                    "name": "html_file", 
+                    "type": "html"
+                }, 
+                {
+                    "name": "text_file", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 200, 
+                "top": 205
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionhtml_file": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "html_file"
+                }, 
+                "HideDatasetActiontext_file": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "text_file"
+                }
+            }, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72", 
+            "tool_shed_repository": {
+                "changeset_revision": "c15237684a01", 
+                "name": "fastqc", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"contaminants\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"limits\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "0.72", 
+            "type": "tool", 
+            "uuid": "b5055eaa-5327-4dc4-9846-b4fc26c451a4", 
+            "workflow_outputs": []
+        }, 
+        "1": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72", 
+            "errors": null, 
+            "id": 1, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool FastQC", 
+                    "name": "contaminants"
+                }, 
+                {
+                    "description": "runtime parameter for tool FastQC", 
+                    "name": "limits"
+                }, 
+                {
+                    "description": "runtime parameter for tool FastQC", 
+                    "name": "input_file"
+                }
+            ], 
+            "label": null, 
+            "name": "FastQC", 
+            "outputs": [
+                {
+                    "name": "html_file", 
+                    "type": "html"
+                }, 
+                {
+                    "name": "text_file", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 202, 
+                "top": 402
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionhtml_file": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "html_file"
+                }, 
+                "HideDatasetActiontext_file": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "text_file"
+                }
+            }, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72", 
+            "tool_shed_repository": {
+                "changeset_revision": "c15237684a01", 
+                "name": "fastqc", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"contaminants\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"limits\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "0.72", 
+            "type": "tool", 
+            "uuid": "93d73bf7-aa7a-4db1-b8c2-f5846b7f0d65", 
+            "workflow_outputs": []
+        }, 
+        "2": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72", 
+            "errors": null, 
+            "id": 2, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool FastQC", 
+                    "name": "contaminants"
+                }, 
+                {
+                    "description": "runtime parameter for tool FastQC", 
+                    "name": "limits"
+                }, 
+                {
+                    "description": "runtime parameter for tool FastQC", 
+                    "name": "input_file"
+                }
+            ], 
+            "label": null, 
+            "name": "FastQC", 
+            "outputs": [
+                {
+                    "name": "html_file", 
+                    "type": "html"
+                }, 
+                {
+                    "name": "text_file", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 504, 
+                "top": 206
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionhtml_file": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "html_file"
+                }, 
+                "HideDatasetActiontext_file": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "text_file"
+                }
+            }, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72", 
+            "tool_shed_repository": {
+                "changeset_revision": "c15237684a01", 
+                "name": "fastqc", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"contaminants\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"limits\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "0.72", 
+            "type": "tool", 
+            "uuid": "8ff1ae20-5c0c-49ef-a506-3b5eed1f7b3c", 
+            "workflow_outputs": []
+        }, 
+        "3": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72", 
+            "errors": null, 
+            "id": 3, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool FastQC", 
+                    "name": "contaminants"
+                }, 
+                {
+                    "description": "runtime parameter for tool FastQC", 
+                    "name": "limits"
+                }, 
+                {
+                    "description": "runtime parameter for tool FastQC", 
+                    "name": "input_file"
+                }
+            ], 
+            "label": null, 
+            "name": "FastQC", 
+            "outputs": [
+                {
+                    "name": "html_file", 
+                    "type": "html"
+                }, 
+                {
+                    "name": "text_file", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 506, 
+                "top": 403
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionhtml_file": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "html_file"
+                }, 
+                "HideDatasetActiontext_file": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "text_file"
+                }
+            }, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72", 
+            "tool_shed_repository": {
+                "changeset_revision": "c15237684a01", 
+                "name": "fastqc", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"contaminants\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"limits\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "0.72", 
+            "type": "tool", 
+            "uuid": "ce85aaea-56e5-4a3e-a72a-1b7eb1a39dd8", 
+            "workflow_outputs": []
+        }, 
+        "4": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1", 
+            "errors": null, 
+            "id": 4, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Map with BWA-MEM", 
+                    "name": "fastq_input"
+                }, 
+                {
+                    "description": "runtime parameter for tool Map with BWA-MEM", 
+                    "name": "fastq_input"
+                }
+            ], 
+            "label": null, 
+            "name": "Map with BWA-MEM", 
+            "outputs": [
+                {
+                    "name": "bam_output", 
+                    "type": "bam"
+                }
+            ], 
+            "position": {
+                "left": 627.0833740234375, 
+                "top": 679.5833129882812
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1", 
+            "tool_shed_repository": {
+                "changeset_revision": "8d2a528a9513", 
+                "name": "bwa", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"rg\": \"{\\\"rg_selector\\\": \\\"set_picard\\\", \\\"read_group_sm_conditional\\\": {\\\"do_auto_name\\\": \\\"false\\\", \\\"SM\\\": \\\"SRR6\\\", \\\"__current_case__\\\": 1}, \\\"CN\\\": \\\"\\\", \\\"PU\\\": \\\"\\\", \\\"read_group_lb_conditional\\\": {\\\"do_auto_name\\\": \\\"false\\\", \\\"LB\\\": \\\"SRR6\\\", \\\"__current_case__\\\": 1}, \\\"read_group_id_conditional\\\": {\\\"do_auto_name\\\": \\\"false\\\", \\\"ID\\\": \\\"NORMAL\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 0, \\\"DT\\\": \\\"\\\", \\\"PI\\\": \\\"\\\", \\\"DS\\\": \\\"\\\", \\\"PL\\\": \\\"ILLUMINA\\\"}\", \"fastq_input\": \"{\\\"iset_stats\\\": \\\"\\\", \\\"fastq_input2\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0, \\\"fastq_input_selector\\\": \\\"paired\\\", \\\"fastq_input1\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\", \"analysis_type\": \"{\\\"analysis_type_selector\\\": \\\"illumina\\\", \\\"__current_case__\\\": 0}\", \"reference_source\": \"{\\\"ref_file\\\": \\\"hg19\\\", \\\"reference_source_selector\\\": \\\"cached\\\", \\\"__current_case__\\\": 0}\"}", 
+            "tool_version": "0.7.17.1", 
+            "type": "tool", 
+            "uuid": "78f7cb09-2e56-46f1-a4d7-19e3885608f4", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "bam_output", 
+                    "uuid": "eaf85763-ae04-4c61-bd47-f89acab160fa"
+                }
+            ]
+        }, 
+        "5": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1", 
+            "errors": null, 
+            "id": 5, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Map with BWA-MEM", 
+                    "name": "fastq_input"
+                }, 
+                {
+                    "description": "runtime parameter for tool Map with BWA-MEM", 
+                    "name": "fastq_input"
+                }
+            ], 
+            "label": null, 
+            "name": "Map with BWA-MEM", 
+            "outputs": [
+                {
+                    "name": "bam_output", 
+                    "type": "bam"
+                }
+            ], 
+            "position": {
+                "left": 625.0833740234375, 
+                "top": 896.0833129882812
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1", 
+            "tool_shed_repository": {
+                "changeset_revision": "8d2a528a9513", 
+                "name": "bwa", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"rg\": \"{\\\"rg_selector\\\": \\\"set_picard\\\", \\\"read_group_sm_conditional\\\": {\\\"do_auto_name\\\": \\\"false\\\", \\\"SM\\\": \\\"SSR7\\\", \\\"__current_case__\\\": 1}, \\\"CN\\\": \\\"\\\", \\\"PU\\\": \\\"\\\", \\\"read_group_lb_conditional\\\": {\\\"do_auto_name\\\": \\\"false\\\", \\\"LB\\\": \\\"SSR7\\\", \\\"__current_case__\\\": 1}, \\\"read_group_id_conditional\\\": {\\\"do_auto_name\\\": \\\"false\\\", \\\"ID\\\": \\\"TUMOR\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 0, \\\"DT\\\": \\\"\\\", \\\"PI\\\": \\\"\\\", \\\"DS\\\": \\\"\\\", \\\"PL\\\": \\\"ILLUMINA\\\"}\", \"fastq_input\": \"{\\\"iset_stats\\\": \\\"\\\", \\\"fastq_input2\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0, \\\"fastq_input_selector\\\": \\\"paired\\\", \\\"fastq_input1\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\", \"analysis_type\": \"{\\\"analysis_type_selector\\\": \\\"illumina\\\", \\\"__current_case__\\\": 0}\", \"reference_source\": \"{\\\"ref_file\\\": \\\"hg19\\\", \\\"reference_source_selector\\\": \\\"cached\\\", \\\"__current_case__\\\": 0}\"}", 
+            "tool_version": "0.7.17.1", 
+            "type": "tool", 
+            "uuid": "aa16234c-9c75-4f3b-9386-f21729b985bd", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "bam_output", 
+                    "uuid": "8c3dd121-ec25-4429-81dc-e8855d126d0b"
+                }
+            ]
+        }, 
+        "6": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_SortSam/2.18.2.1", 
+            "errors": null, 
+            "id": 6, 
+            "input_connections": {
+                "inputFile": {
+                    "id": 4, 
+                    "output_name": "bam_output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool SortSam", 
+                    "name": "inputFile"
+                }
+            ], 
+            "label": null, 
+            "name": "SortSam", 
+            "outputs": [
+                {
+                    "name": "outFile", 
+                    "type": "bam"
+                }
+            ], 
+            "position": {
+                "left": 1138.0833129882812, 
+                "top": 683.0833129882812
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_SortSam/2.18.2.1", 
+            "tool_shed_repository": {
+                "changeset_revision": "2a17c789e0a5", 
+                "name": "picard", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"sort_order\": \"\\\"coordinate\\\"\", \"validation_stringency\": \"\\\"LENIENT\\\"\", \"inputFile\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "2.18.2.1", 
+            "type": "tool", 
+            "uuid": "9086c294-9ebb-47c4-baf6-6b6bdf501546", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "outFile", 
+                    "uuid": "0d65e44b-f47c-4ee1-ba74-5c9518e7fa2e"
+                }
+            ]
+        }, 
+        "7": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_SortSam/2.18.2.1", 
+            "errors": null, 
+            "id": 7, 
+            "input_connections": {
+                "inputFile": {
+                    "id": 5, 
+                    "output_name": "bam_output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool SortSam", 
+                    "name": "inputFile"
+                }
+            ], 
+            "label": null, 
+            "name": "SortSam", 
+            "outputs": [
+                {
+                    "name": "outFile", 
+                    "type": "bam"
+                }
+            ], 
+            "position": {
+                "left": 984.0833129882812, 
+                "top": 885.0833129882812
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_SortSam/2.18.2.1", 
+            "tool_shed_repository": {
+                "changeset_revision": "2a17c789e0a5", 
+                "name": "picard", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"sort_order\": \"\\\"coordinate\\\"\", \"validation_stringency\": \"\\\"LENIENT\\\"\", \"inputFile\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "2.18.2.1", 
+            "type": "tool", 
+            "uuid": "c76488b3-8f93-4f38-b207-fbd36c91d4b6", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "outFile", 
+                    "uuid": "101015ee-605a-4a07-a583-c778ed3e1cbf"
+                }
+            ]
+        }, 
+        "8": {
+            "annotation": "", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/mutect2/mutect2/3.8", 
+            "errors": null, 
+            "id": 8, 
+            "input_connections": {
+                "input1": {
+                    "id": 5, 
+                    "output_name": "bam_output"
+                }, 
+                "input2": {
+                    "id": 4, 
+                    "output_name": "bam_output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool MuTect2", 
+                    "name": "input2"
+                }, 
+                {
+                    "description": "runtime parameter for tool MuTect2", 
+                    "name": "input1"
+                }, 
+                {
+                    "description": "runtime parameter for tool MuTect2", 
+                    "name": "cosmic"
+                }, 
+                {
+                    "description": "runtime parameter for tool MuTect2", 
+                    "name": "alleles"
+                }, 
+                {
+                    "description": "runtime parameter for tool MuTect2", 
+                    "name": "list"
+                }, 
+                {
+                    "description": "runtime parameter for tool MuTect2", 
+                    "name": "dbSNP"
+                }
+            ], 
+            "label": null, 
+            "name": "MuTect2", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "vcf"
+                }, 
+                {
+                    "name": "log", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "activeRegionOut_output", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "activityProfileOut_output", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "graphOutput_output", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "bamOutput_output", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 2490.3333129882812, 
+                "top": 553.3333129882812
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionactiveRegionOut_output": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "activeRegionOut_output"
+                }, 
+                "HideDatasetActionactivityProfileOut_output": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "activityProfileOut_output"
+                }, 
+                "HideDatasetActionbamOutput_output": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "bamOutput_output"
+                }, 
+                "HideDatasetActiongraphOutput_output": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "graphOutput_output"
+                }, 
+                "HideDatasetActionlog": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "log"
+                }
+            }, 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/mutect2/mutect2/3.8", 
+            "tool_shed_repository": {
+                "changeset_revision": "2ebf2cd4f18f", 
+                "name": "mutect2", 
+                "owner": "elixir-it", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"input2\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": null, \"input1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cosmic\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"alleles\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"list\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"reference_source\": \"{\\\"ref_file\\\": \\\"hg19\\\", \\\"reference_source_selector\\\": \\\"cached\\\", \\\"__current_case__\\\": 0}\", \"dbSNP\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"optional_out4\": \"{\\\"__current_case__\\\": 0, \\\"outFile4\\\": \\\"no\\\"}\", \"optional_out2\": \"{\\\"outFile2\\\": \\\"no\\\", \\\"__current_case__\\\": 0}\", \"optional_out3\": \"{\\\"outFile3\\\": \\\"no\\\", \\\"__current_case__\\\": 0}\", \"advanced\": \"{\\\"__current_case__\\\": 0, \\\"advanced_parameters\\\": \\\"hide\\\"}\", \"optional_out1\": \"{\\\"outFile1\\\": \\\"no\\\", \\\"__current_case__\\\": 0}\"}", 
+            "tool_version": "3.8", 
+            "type": "tool", 
+            "uuid": "885f6966-0b41-4203-8059-9d49af8d056b", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "c24753d5-c3be-49c5-b6e6-13f853645025"
+                }
+            ]
+        }, 
+        "9": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_MarkDuplicates/2.18.2.1", 
+            "errors": null, 
+            "id": 9, 
+            "input_connections": {
+                "inputFile": {
+                    "id": 6, 
+                    "output_name": "outFile"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool MarkDuplicates", 
+                    "name": "inputFile"
+                }
+            ], 
+            "label": null, 
+            "name": "MarkDuplicates", 
+            "outputs": [
+                {
+                    "name": "metrics_file", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "outFile", 
+                    "type": "bam"
+                }
+            ], 
+            "position": {
+                "left": 1501.5833129882812, 
+                "top": 652.0833129882812
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionmetrics_file": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "metrics_file"
+                }, 
+                "HideDatasetActionoutFile": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "outFile"
+                }
+            }, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_MarkDuplicates/2.18.2.1", 
+            "tool_shed_repository": {
+                "changeset_revision": "2a17c789e0a5", 
+                "name": "picard", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"duplicate_scoring_strategy\": \"\\\"SUM_OF_BASE_QUALITIES\\\"\", \"remove_duplicates\": \"\\\"false\\\"\", \"read_name_regex\": \"\\\"\\\"\", \"barcode_tag\": \"\\\"\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"validation_stringency\": \"\\\"LENIENT\\\"\", \"comments\": \"[]\", \"assume_sorted\": \"\\\"true\\\"\", \"optical_duplicate_pixel_distance\": \"\\\"100\\\"\", \"inputFile\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "2.18.2.1", 
+            "type": "tool", 
+            "uuid": "27625735-e0f6-4243-9d38-e2dc554e0a90", 
+            "workflow_outputs": []
+        }, 
+        "10": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_MarkDuplicates/2.18.2.1", 
+            "errors": null, 
+            "id": 10, 
+            "input_connections": {
+                "inputFile": {
+                    "id": 7, 
+                    "output_name": "outFile"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool MarkDuplicates", 
+                    "name": "inputFile"
+                }
+            ], 
+            "label": null, 
+            "name": "MarkDuplicates", 
+            "outputs": [
+                {
+                    "name": "metrics_file", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "outFile", 
+                    "type": "bam"
+                }
+            ], 
+            "position": {
+                "left": 1303.5833129882812, 
+                "top": 884.0833129882812
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionmetrics_file": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "metrics_file"
+                }, 
+                "HideDatasetActionoutFile": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "outFile"
+                }
+            }, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_MarkDuplicates/2.18.2.1", 
+            "tool_shed_repository": {
+                "changeset_revision": "2a17c789e0a5", 
+                "name": "picard", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"duplicate_scoring_strategy\": \"\\\"SUM_OF_BASE_QUALITIES\\\"\", \"remove_duplicates\": \"\\\"false\\\"\", \"read_name_regex\": \"\\\"\\\"\", \"barcode_tag\": \"\\\"\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"validation_stringency\": \"\\\"LENIENT\\\"\", \"comments\": \"[]\", \"assume_sorted\": \"\\\"true\\\"\", \"optical_duplicate_pixel_distance\": \"\\\"100\\\"\", \"inputFile\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "2.18.2.1", 
+            "type": "tool", 
+            "uuid": "99aa2f54-d572-44be-940d-11076b97d05b", 
+            "workflow_outputs": []
+        }, 
+        "11": {
+            "annotation": "", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
+            "errors": null, 
+            "id": 11, 
+            "input_connections": {
+                "veptools|input": {
+                    "id": 8, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool vep-unico", 
+                    "name": "veptools"
+                }
+            ], 
+            "label": null, 
+            "name": "vep-unico", 
+            "outputs": [
+                {
+                    "name": "output1", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "output2", 
+                    "type": "vcf"
+                }, 
+                {
+                    "name": "stat", 
+                    "type": "html"
+                }, 
+                {
+                    "name": "output_maf", 
+                    "type": "maf"
+                }
+            ], 
+            "position": {
+                "left": 2815, 
+                "top": 606
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionoutput1": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output1"
+                }, 
+                "HideDatasetActionoutput_maf": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output_maf"
+                }, 
+                "HideDatasetActionstat": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "stat"
+                }
+            }, 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "786c9295d2be", 
+                "name": "vep86_vcf2maf", 
+                "owner": "elixir-it", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"buffer\\\": \\\"5000\\\", \\\"veptoolsselect\\\": \\\"annotate\\\", \\\"everything\\\": null, \\\"__current_case__\\\": 1, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"species\\\": \\\"homo_sapiens --ASSEMBLY GRCh38\\\"}\", \"__rerun_remap_job_id__\": null}", 
+            "tool_version": "1.0.0", 
+            "type": "tool", 
+            "uuid": "5890addb-0e69-4ee8-ba2d-a75cdf705a53", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output2", 
+                    "uuid": "8c3db54c-95fc-4e5f-a3fc-682264915215"
+                }
+            ]
+        }, 
+        "12": {
+            "annotation": "", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
+            "errors": null, 
+            "id": 12, 
+            "input_connections": {
+                "veptools|input_vcf": {
+                    "id": 8, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool vep-unico", 
+                    "name": "veptools"
+                }, 
+                {
+                    "description": "runtime parameter for tool vep-unico", 
+                    "name": "veptools"
+                }
+            ], 
+            "label": null, 
+            "name": "vep-unico", 
+            "outputs": [
+                {
+                    "name": "output1", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "output2", 
+                    "type": "vcf"
+                }, 
+                {
+                    "name": "stat", 
+                    "type": "html"
+                }, 
+                {
+                    "name": "output_maf", 
+                    "type": "maf"
+                }
+            ], 
+            "position": {
+                "left": 3063, 
+                "top": 626
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionoutput1": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output1"
+                }, 
+                "HideDatasetActionoutput_maf": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output_maf"
+                }, 
+                "HideDatasetActionstat": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "stat"
+                }
+            }, 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "786c9295d2be", 
+                "name": "vep86_vcf2maf", 
+                "owner": "elixir-it", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"reference\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"buffer\\\": \\\"5000\\\", \\\"veptoolsselect\\\": \\\"vcf2maf\\\", \\\"input_vcf\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2, \\\"species\\\": \\\"homo_sapiens --ncbi-build GRCh38\\\", \\\"normal_id\\\": \\\"NORMAL\\\", \\\"tumour_id\\\": \\\"TUMOR\\\"}\", \"__rerun_remap_job_id__\": null}", 
+            "tool_version": "1.0.0", 
+            "type": "tool", 
+            "uuid": "8e62eb8c-01be-48a6-8814-1249c8d4f57b", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output2", 
+                    "uuid": "477464c6-2dd3-459a-9281-dc606c29247d"
+                }
+            ]
+        }, 
+        "13": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/avowinkel/gatk/gatk/3.4-0.d9", 
+            "errors": null, 
+            "id": 13, 
+            "input_connections": {
+                "analysis_type|cond_bam_input|input": {
+                    "id": 9, 
+                    "output_name": "outFile"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "GATK", 
+            "outputs": [
+                {
+                    "name": "rtc_output_intervals", 
+                    "type": "gatk_interval"
+                }, 
+                {
+                    "name": "ir_output_bam", 
+                    "type": "bam"
+                }, 
+                {
+                    "name": "br_table", 
+                    "type": "tabular"
+                }, 
+                {
+                    "name": "ac_plotsReportFile", 
+                    "type": "pdf"
+                }, 
+                {
+                    "name": "pr_output_bam", 
+                    "type": "bam"
+                }, 
+                {
+                    "name": "hc_output_gvcf", 
+                    "type": "vcf"
+                }, 
+                {
+                    "name": "gg_output_gvcf", 
+                    "type": "vcf"
+                }, 
+                {
+                    "name": "cg_output_vcf", 
+                    "type": "vcf"
+                }, 
+                {
+                    "name": "cv_output_vcf", 
+                    "type": "vcf"
+                }, 
+                {
+                    "name": "output_log", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 1767.0833282470703, 
+                "top": 512.0833129882812
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionac_plotsReportFile": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "ac_plotsReportFile"
+                }, 
+                "HideDatasetActionbr_table": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "br_table"
+                }, 
+                "HideDatasetActioncg_output_vcf": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "cg_output_vcf"
+                }, 
+                "HideDatasetActioncv_output_vcf": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "cv_output_vcf"
+                }, 
+                "HideDatasetActiongg_output_gvcf": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "gg_output_gvcf"
+                }, 
+                "HideDatasetActionhc_output_gvcf": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "hc_output_gvcf"
+                }, 
+                "HideDatasetActionir_output_bam": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "ir_output_bam"
+                }, 
+                "HideDatasetActionoutput_log": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output_log"
+                }, 
+                "HideDatasetActionpr_output_bam": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "pr_output_bam"
+                }
+            }, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/avowinkel/gatk/gatk/3.4-0.d9", 
+            "tool_shed_repository": {
+                "changeset_revision": "b80ff7f43ad1", 
+                "name": "gatk", 
+                "owner": "avowinkel", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"cond_threads\": \"{\\\"cond_threads_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"ref_file\": \"\\\"hg19\\\"\", \"__rerun_remap_job_id__\": null, \"cond_BQSR\": \"{\\\"cond_BQSR_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"analysis_type\": \"{\\\"analysis_type_selector\\\": \\\"RealignerTargetCreator\\\", \\\"optional_parameters\\\": {\\\"optional_parameters_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}, \\\"cond_bam_input\\\": {\\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"all_in_one\\\": \\\"false\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 0}\", \"cond_intervals\": \"{\\\"cond_intervals_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\"}", 
+            "tool_version": "3.4-0.d9", 
+            "type": "tool", 
+            "uuid": "cd158b44-cf82-4e1e-a5ee-210ec28ff443", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "rtc_output_intervals", 
+                    "uuid": "4d72007b-0cb4-443b-82dd-aca088d6a461"
+                }
+            ]
+        }, 
+        "14": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/avowinkel/gatk/gatk/3.4-0.d9", 
+            "errors": null, 
+            "id": 14, 
+            "input_connections": {
+                "analysis_type|cond_bam_input|input": {
+                    "id": 10, 
+                    "output_name": "outFile"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "GATK", 
+            "outputs": [
+                {
+                    "name": "rtc_output_intervals", 
+                    "type": "gatk_interval"
+                }, 
+                {
+                    "name": "ir_output_bam", 
+                    "type": "bam"
+                }, 
+                {
+                    "name": "br_table", 
+                    "type": "tabular"
+                }, 
+                {
+                    "name": "ac_plotsReportFile", 
+                    "type": "pdf"
+                }, 
+                {
+                    "name": "pr_output_bam", 
+                    "type": "bam"
+                }, 
+                {
+                    "name": "hc_output_gvcf", 
+                    "type": "vcf"
+                }, 
+                {
+                    "name": "gg_output_gvcf", 
+                    "type": "vcf"
+                }, 
+                {
+                    "name": "cg_output_vcf", 
+                    "type": "vcf"
+                }, 
+                {
+                    "name": "cv_output_vcf", 
+                    "type": "vcf"
+                }, 
+                {
+                    "name": "output_log", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 1712.8333282470703, 
+                "top": 991.3333282470703
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionac_plotsReportFile": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "ac_plotsReportFile"
+                }, 
+                "HideDatasetActionbr_table": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "br_table"
+                }, 
+                "HideDatasetActioncg_output_vcf": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "cg_output_vcf"
+                }, 
+                "HideDatasetActioncv_output_vcf": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "cv_output_vcf"
+                }, 
+                "HideDatasetActiongg_output_gvcf": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "gg_output_gvcf"
+                }, 
+                "HideDatasetActionhc_output_gvcf": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "hc_output_gvcf"
+                }, 
+                "HideDatasetActionir_output_bam": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "ir_output_bam"
+                }, 
+                "HideDatasetActionoutput_log": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output_log"
+                }, 
+                "HideDatasetActionpr_output_bam": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "pr_output_bam"
+                }
+            }, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/avowinkel/gatk/gatk/3.4-0.d9", 
+            "tool_shed_repository": {
+                "changeset_revision": "b80ff7f43ad1", 
+                "name": "gatk", 
+                "owner": "avowinkel", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"cond_threads\": \"{\\\"cond_threads_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"ref_file\": \"\\\"hg19\\\"\", \"__rerun_remap_job_id__\": null, \"cond_BQSR\": \"{\\\"cond_BQSR_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"analysis_type\": \"{\\\"analysis_type_selector\\\": \\\"RealignerTargetCreator\\\", \\\"optional_parameters\\\": {\\\"optional_parameters_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}, \\\"cond_bam_input\\\": {\\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"all_in_one\\\": \\\"false\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 0}\", \"cond_intervals\": \"{\\\"cond_intervals_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\"}", 
+            "tool_version": "3.4-0.d9", 
+            "type": "tool", 
+            "uuid": "ab4ba289-b430-4af6-99fb-2715704dc82b", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "rtc_output_intervals", 
+                    "uuid": "cdb2ec41-cf08-4fbf-a56a-7bd5d8b2179a"
+                }
+            ]
+        }, 
+        "15": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/avowinkel/gatk/gatk/3.4-0.d9", 
+            "errors": null, 
+            "id": 15, 
+            "input_connections": {
+                "analysis_type|cond_bam_input|input": {
+                    "id": 9, 
+                    "output_name": "outFile"
+                }, 
+                "analysis_type|targetIntervals": {
+                    "id": 13, 
+                    "output_name": "rtc_output_intervals"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool GATK", 
+                    "name": "analysis_type"
+                }
+            ], 
+            "label": null, 
+            "name": "GATK", 
+            "outputs": [
+                {
+                    "name": "rtc_output_intervals", 
+                    "type": "gatk_interval"
+                }, 
+                {
+                    "name": "ir_output_bam", 
+                    "type": "bam"
+                }, 
+                {
+                    "name": "br_table", 
+                    "type": "tabular"
+                }, 
+                {
+                    "name": "ac_plotsReportFile", 
+                    "type": "pdf"
+                }, 
+                {
+                    "name": "pr_output_bam", 
+                    "type": "bam"
+                }, 
+                {
+                    "name": "hc_output_gvcf", 
+                    "type": "vcf"
+                }, 
+                {
+                    "name": "gg_output_gvcf", 
+                    "type": "vcf"
+                }, 
+                {
+                    "name": "cg_output_vcf", 
+                    "type": "vcf"
+                }, 
+                {
+                    "name": "cv_output_vcf", 
+                    "type": "vcf"
+                }, 
+                {
+                    "name": "output_log", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 2065.0833282470703, 
+                "top": 501.08331298828125
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionac_plotsReportFile": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "ac_plotsReportFile"
+                }, 
+                "HideDatasetActionbr_table": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "br_table"
+                }, 
+                "HideDatasetActioncg_output_vcf": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "cg_output_vcf"
+                }, 
+                "HideDatasetActioncv_output_vcf": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "cv_output_vcf"
+                }, 
+                "HideDatasetActiongg_output_gvcf": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "gg_output_gvcf"
+                }, 
+                "HideDatasetActionhc_output_gvcf": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "hc_output_gvcf"
+                }, 
+                "HideDatasetActionir_output_bam": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "ir_output_bam"
+                }, 
+                "HideDatasetActionoutput_log": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output_log"
+                }, 
+                "HideDatasetActionpr_output_bam": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "pr_output_bam"
+                }
+            }, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/avowinkel/gatk/gatk/3.4-0.d9", 
+            "tool_shed_repository": {
+                "changeset_revision": "b80ff7f43ad1", 
+                "name": "gatk", 
+                "owner": "avowinkel", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"cond_threads\": \"{\\\"cond_threads_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"ref_file\": \"\\\"hg19\\\"\", \"__rerun_remap_job_id__\": null, \"cond_BQSR\": \"{\\\"cond_BQSR_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"analysis_type\": \"{\\\"__current_case__\\\": 1, \\\"targetIntervals\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"optional_parameters\\\": {\\\"optional_parameters_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}, \\\"analysis_type_selector\\\": \\\"IndelRealigner\\\", \\\"advanced_parameters\\\": {\\\"advanced_parameters_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}, \\\"cond_bam_input\\\": {\\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"all_in_one\\\": \\\"false\\\", \\\"__current_case__\\\": 1}}\", \"cond_intervals\": \"{\\\"cond_intervals_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\"}", 
+            "tool_version": "3.4-0.d9", 
+            "type": "tool", 
+            "uuid": "9459ddff-275a-474f-97ad-eafe1abf4d64", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "rtc_output_intervals", 
+                    "uuid": "0b14e515-e0b3-430a-a816-58101b5dc14b"
+                }
+            ]
+        }, 
+        "16": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/avowinkel/gatk/gatk/3.4-0.d9", 
+            "errors": null, 
+            "id": 16, 
+            "input_connections": {
+                "analysis_type|cond_bam_input|input": {
+                    "id": 10, 
+                    "output_name": "outFile"
+                }, 
+                "analysis_type|targetIntervals": {
+                    "id": 14, 
+                    "output_name": "rtc_output_intervals"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool GATK", 
+                    "name": "analysis_type"
+                }
+            ], 
+            "label": null, 
+            "name": "GATK", 
+            "outputs": [
+                {
+                    "name": "rtc_output_intervals", 
+                    "type": "gatk_interval"
+                }, 
+                {
+                    "name": "ir_output_bam", 
+                    "type": "bam"
+                }, 
+                {
+                    "name": "br_table", 
+                    "type": "tabular"
+                }, 
+                {
+                    "name": "ac_plotsReportFile", 
+                    "type": "pdf"
+                }, 
+                {
+                    "name": "pr_output_bam", 
+                    "type": "bam"
+                }, 
+                {
+                    "name": "hc_output_gvcf", 
+                    "type": "vcf"
+                }, 
+                {
+                    "name": "gg_output_gvcf", 
+                    "type": "vcf"
+                }, 
+                {
+                    "name": "cg_output_vcf", 
+                    "type": "vcf"
+                }, 
+                {
+                    "name": "cv_output_vcf", 
+                    "type": "vcf"
+                }, 
+                {
+                    "name": "output_log", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 2065.0833282470703, 
+                "top": 959.0833129882812
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionac_plotsReportFile": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "ac_plotsReportFile"
+                }, 
+                "HideDatasetActionbr_table": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "br_table"
+                }, 
+                "HideDatasetActioncg_output_vcf": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "cg_output_vcf"
+                }, 
+                "HideDatasetActioncv_output_vcf": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "cv_output_vcf"
+                }, 
+                "HideDatasetActiongg_output_gvcf": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "gg_output_gvcf"
+                }, 
+                "HideDatasetActionhc_output_gvcf": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "hc_output_gvcf"
+                }, 
+                "HideDatasetActionoutput_log": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output_log"
+                }, 
+                "HideDatasetActionpr_output_bam": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "pr_output_bam"
+                }, 
+                "HideDatasetActionrtc_output_intervals": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "rtc_output_intervals"
+                }
+            }, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/avowinkel/gatk/gatk/3.4-0.d9", 
+            "tool_shed_repository": {
+                "changeset_revision": "b80ff7f43ad1", 
+                "name": "gatk", 
+                "owner": "avowinkel", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"cond_threads\": \"{\\\"cond_threads_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"ref_file\": \"\\\"hg19\\\"\", \"__rerun_remap_job_id__\": null, \"cond_BQSR\": \"{\\\"cond_BQSR_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"analysis_type\": \"{\\\"__current_case__\\\": 1, \\\"targetIntervals\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"optional_parameters\\\": {\\\"optional_parameters_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}, \\\"analysis_type_selector\\\": \\\"IndelRealigner\\\", \\\"advanced_parameters\\\": {\\\"advanced_parameters_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}, \\\"cond_bam_input\\\": {\\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"all_in_one\\\": \\\"false\\\", \\\"__current_case__\\\": 1}}\", \"cond_intervals\": \"{\\\"cond_intervals_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\"}", 
+            "tool_version": "3.4-0.d9", 
+            "type": "tool", 
+            "uuid": "25332e38-7d3c-4e35-9016-130604cc0100", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "ir_output_bam", 
+                    "uuid": "9067e05d-7765-4176-97e8-f7027a4564dc"
+                }
+            ]
+        }, 
+        "17": {
+            "annotation": "", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/somaticsniper/somatic_sniper/1.0", 
+            "errors": null, 
+            "id": 17, 
+            "input_connections": {
+                "normal": {
+                    "id": 15, 
+                    "output_name": "ir_output_bam"
+                }, 
+                "tumor": {
+                    "id": 16, 
+                    "output_name": "ir_output_bam"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool SomaticSniper", 
+                    "name": "tumor"
+                }, 
+                {
+                    "description": "runtime parameter for tool SomaticSniper", 
+                    "name": "interval"
+                }, 
+                {
+                    "description": "runtime parameter for tool SomaticSniper", 
+                    "name": "ref"
+                }, 
+                {
+                    "description": "runtime parameter for tool SomaticSniper", 
+                    "name": "normal"
+                }
+            ], 
+            "label": null, 
+            "name": "SomaticSniper", 
+            "outputs": [
+                {
+                    "name": "variants", 
+                    "type": "vcf"
+                }
+            ], 
+            "position": {
+                "left": 2040.0833282470703, 
+                "top": 1378.0833282470703
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/somaticsniper/somatic_sniper/1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "2ff18e84c946", 
+                "name": "somaticsniper", 
+                "owner": "elixir-it", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"normal\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"interval\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"tumor\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"ref\": \"{\\\"ref_options\\\": \\\"history\\\", \\\"ownFile\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 1}\", \"advancedsettings\": \"{\\\"Q\\\": \\\"15\\\", \\\"G\\\": \\\"true\\\", \\\"L\\\": \\\"true\\\", \\\"n\\\": \\\"NORMAL\\\", \\\"q\\\": \\\"0\\\", \\\"p\\\": \\\"true\\\", \\\"r\\\": \\\"0.001\\\", \\\"T\\\": \\\"0.85\\\", \\\"N\\\": \\\"2\\\", \\\"t\\\": \\\"TUMOR\\\"}\"}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "8b2267e3-f02a-4bfc-8bbd-a6b82b76e388", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "variants", 
+                    "uuid": "670ff2ff-e191-4821-ad04-61f8efd78c4d"
+                }
+            ]
+        }, 
+        "18": {
+            "annotation": "", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/muse/muse_call/1.0.rc", 
+            "errors": null, 
+            "id": 18, 
+            "input_connections": {
+                "input2": {
+                    "id": 16, 
+                    "output_name": "ir_output_bam"
+                }, 
+                "input3": {
+                    "id": 15, 
+                    "output_name": "ir_output_bam"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool muse call", 
+                    "name": "input2"
+                }, 
+                {
+                    "description": "runtime parameter for tool muse call", 
+                    "name": "input3"
+                }, 
+                {
+                    "description": "runtime parameter for tool muse call", 
+                    "name": "input1"
+                }, 
+                {
+                    "description": "runtime parameter for tool muse call", 
+                    "name": "positions"
+                }
+            ], 
+            "label": null, 
+            "name": "muse call", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 1975.0833282470703, 
+                "top": 1577.0833129882812
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/muse/muse_call/1.0.rc", 
+            "tool_shed_repository": {
+                "changeset_revision": "c4f5e1994690", 
+                "name": "muse", 
+                "owner": "elixir-it", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"input2\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input3\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": null, \"positions\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"region\": \"\\\"\\\"\", \"__rerun_remap_job_id__\": null}", 
+            "tool_version": "1.0.rc", 
+            "type": "tool", 
+            "uuid": "8d1b9384-3cf2-4981-a7f4-cb97d34ca126", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "9ba11e7b-6c57-4ea6-b139-7ba4f1fadb1a"
+                }
+            ]
+        }, 
+        "19": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.3", 
+            "errors": null, 
+            "id": 19, 
+            "input_connections": {
+                "reference_source|input_bam": [
+                    {
+                        "id": 16, 
+                        "output_name": "ir_output_bam"
+                    }, 
+                    {
+                        "id": 15, 
+                        "output_name": "ir_output_bam"
+                    }
+                ]
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool MPileup", 
+                    "name": "reference_source"
+                }, 
+                {
+                    "description": "runtime parameter for tool MPileup", 
+                    "name": "reference_source"
+                }
+            ], 
+            "label": null, 
+            "name": "MPileup", 
+            "outputs": [
+                {
+                    "name": "output_mpileup", 
+                    "type": "pileup"
+                }
+            ], 
+            "position": {
+                "left": 1906.8333282470703, 
+                "top": 1862.3333129882812
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.3", 
+            "tool_shed_repository": {
+                "changeset_revision": "583abf29fc8e", 
+                "name": "samtools_mpileup", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"reference_source\": \"{\\\"ref_file\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"reference_source_selector\\\": \\\"history\\\", \\\"input_bam\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 1}\", \"__rerun_remap_job_id__\": null, \"genotype_likelihood_computation_type\": \"{\\\"output_mapping_quality\\\": \\\"false\\\", \\\"__current_case__\\\": 1, \\\"genotype_likelihood_computation_type_selector\\\": \\\"do_not_perform_genotype_likelihood_computation\\\", \\\"base_position_on_reads\\\": \\\"false\\\"}\", \"advanced_options\": \"{\\\"advanced_options_selector\\\": \\\"basic\\\", \\\"__current_case__\\\": 0}\"}", 
+            "tool_version": "2.1.3", 
+            "type": "tool", 
+            "uuid": "79444960-c4a8-4be1-be28-5590cc5e3ec9", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output_mpileup", 
+                    "uuid": "c8e88eeb-ce6a-47a7-ac4b-31ba660b518f"
+                }
+            ]
+        }, 
+        "20": {
+            "annotation": "", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/fpfilter/fpfilter/0.0.1", 
+            "errors": null, 
+            "id": 20, 
+            "input_connections": {
+                "bam": {
+                    "id": 16, 
+                    "output_name": "ir_output_bam"
+                }, 
+                "vcf": {
+                    "id": 17, 
+                    "output_name": "variants"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool fpfilter", 
+                    "name": "reference"
+                }, 
+                {
+                    "description": "runtime parameter for tool fpfilter", 
+                    "name": "vcf"
+                }, 
+                {
+                    "description": "runtime parameter for tool fpfilter", 
+                    "name": "bam"
+                }
+            ], 
+            "label": null, 
+            "name": "fpfilter", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "vcf"
+                }
+            ], 
+            "position": {
+                "left": 2292, 
+                "top": 1398
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/fpfilter/fpfilter/0.0.1", 
+            "tool_shed_repository": {
+                "changeset_revision": "276875076be1", 
+                "name": "fpfilter", 
+                "owner": "elixir-it", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"min_strandness\": \"\\\"0.01\\\"\", \"max_mapqual_diff\": \"\\\"30\\\"\", \"bam\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"min_var_dist_3\": \"\\\"0.2\\\"\", \"reference\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"min_var_count\": \"\\\"4\\\"\", \"max_readlen_diff\": \"\\\"25\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"max_mm_qualsum_diff\": \"\\\"50\\\"\", \"vcf\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"sample\": \"\\\"TUMOR\\\"\", \"min_read_pos\": \"\\\"0.1\\\"\", \"min_var_freq\": \"\\\"0.05\\\"\", \"max_var_mm_qualsum\": \"\\\"100\\\"\"}", 
+            "tool_version": "0.0.1", 
+            "type": "tool", 
+            "uuid": "dab7f27a-2c25-421c-bff4-745472a8adda", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "5919fdde-db96-4b48-a41b-9e6a6c7e4bec"
+                }
+            ]
+        }, 
+        "21": {
+            "annotation": "", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/muse/muse/1.0.rc", 
+            "errors": null, 
+            "id": 21, 
+            "input_connections": {
+                "input1": {
+                    "id": 18, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool muse_sump", 
+                    "name": "input2"
+                }, 
+                {
+                    "description": "runtime parameter for tool muse_sump", 
+                    "name": "input1"
+                }
+            ], 
+            "label": null, 
+            "name": "muse_sump", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "vcf"
+                }
+            ], 
+            "position": {
+                "left": 2231.0833129882812, 
+                "top": 1604.0833129882812
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/muse/muse/1.0.rc", 
+            "tool_shed_repository": {
+                "changeset_revision": "c4f5e1994690", 
+                "name": "muse", 
+                "owner": "elixir-it", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"input2\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"input1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"selection\": \"\\\"-E\\\"\"}", 
+            "tool_version": "1.0.rc", 
+            "type": "tool", 
+            "uuid": "f84c0c8d-11bf-41ba-b092-00a31e3b5ec1", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "b49fcbfe-7f12-44b3-8184-a7f08e17bf9d"
+                }
+            ]
+        }, 
+        "22": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/varscan_version_2/varscan/2.4.2", 
+            "errors": null, 
+            "id": 22, 
+            "input_connections": {
+                "input": {
+                    "id": 19, 
+                    "output_name": "output_mpileup"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool VarScan", 
+                    "name": "input"
+                }
+            ], 
+            "label": null, 
+            "name": "VarScan", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "vcf"
+                }
+            ], 
+            "position": {
+                "left": 2254.0833129882812, 
+                "top": 1868.0833129882812
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/varscan_version_2/varscan/2.4.2", 
+            "tool_shed_repository": {
+                "changeset_revision": "bc1e0cd41241", 
+                "name": "varscan_version_2", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"strand_filter\": \"\\\"no\\\"\", \"min_coverage\": \"\\\"8\\\"\", \"sample_names\": \"\\\"\\\"\", \"min_avg_qual\": \"\\\"15\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"cmd\": \"\\\"mpileup2snp\\\"\", \"min_freq_for_hom\": \"\\\"0.75\\\"\", \"min_var_freq\": \"\\\"0.01\\\"\", \"p_value\": \"\\\"0.99\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"min_supporting_reads\": \"\\\"2\\\"\"}", 
+            "tool_version": "2.4.2", 
+            "type": "tool", 
+            "uuid": "5244d3ac-037d-42bb-b114-4822ceb99160", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "5b5b47ff-413c-496e-81af-93cc09f39eff"
+                }
+            ]
+        }, 
+        "23": {
+            "annotation": "", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
+            "errors": null, 
+            "id": 23, 
+            "input_connections": {
+                "veptools|input": {
+                    "id": 20, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool vep-unico", 
+                    "name": "veptools"
+                }
+            ], 
+            "label": null, 
+            "name": "vep-unico", 
+            "outputs": [
+                {
+                    "name": "output1", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "output2", 
+                    "type": "vcf"
+                }, 
+                {
+                    "name": "stat", 
+                    "type": "html"
+                }, 
+                {
+                    "name": "output_maf", 
+                    "type": "maf"
+                }
+            ], 
+            "position": {
+                "left": 2515, 
+                "top": 1391
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionoutput1": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output1"
+                }, 
+                "HideDatasetActionoutput_maf": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output_maf"
+                }, 
+                "HideDatasetActionstat": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "stat"
+                }
+            }, 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "786c9295d2be", 
+                "name": "vep86_vcf2maf", 
+                "owner": "elixir-it", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"buffer\\\": \\\"5000\\\", \\\"veptoolsselect\\\": \\\"annotate\\\", \\\"everything\\\": null, \\\"__current_case__\\\": 1, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"species\\\": \\\"homo_sapiens --ASSEMBLY GRCh38\\\"}\", \"__rerun_remap_job_id__\": null}", 
+            "tool_version": "1.0.0", 
+            "type": "tool", 
+            "uuid": "63f25133-4b5f-45bc-8a9a-37a40b4f85a0", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output2", 
+                    "uuid": "00b6140b-776e-4812-aa65-e064a51f53d1"
+                }
+            ]
+        }, 
+        "24": {
+            "annotation": "", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
+            "errors": null, 
+            "id": 24, 
+            "input_connections": {
+                "veptools|input_vcf": {
+                    "id": 20, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool vep-unico", 
+                    "name": "veptools"
+                }, 
+                {
+                    "description": "runtime parameter for tool vep-unico", 
+                    "name": "veptools"
+                }
+            ], 
+            "label": null, 
+            "name": "vep-unico", 
+            "outputs": [
+                {
+                    "name": "output1", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "output2", 
+                    "type": "vcf"
+                }, 
+                {
+                    "name": "stat", 
+                    "type": "html"
+                }, 
+                {
+                    "name": "output_maf", 
+                    "type": "maf"
+                }
+            ], 
+            "position": {
+                "left": 2733, 
+                "top": 1384
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionoutput1": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output1"
+                }, 
+                "HideDatasetActionoutput_maf": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output_maf"
+                }, 
+                "HideDatasetActionstat": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "stat"
+                }
+            }, 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "786c9295d2be", 
+                "name": "vep86_vcf2maf", 
+                "owner": "elixir-it", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"reference\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"buffer\\\": \\\"5000\\\", \\\"veptoolsselect\\\": \\\"vcf2maf\\\", \\\"input_vcf\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2, \\\"species\\\": \\\"homo_sapiens --ncbi-build GRCh38\\\", \\\"normal_id\\\": \\\"NORMAL\\\", \\\"tumour_id\\\": \\\"TUMOR\\\"}\", \"__rerun_remap_job_id__\": null}", 
+            "tool_version": "1.0.0", 
+            "type": "tool", 
+            "uuid": "68c9c74d-4017-428d-8a6a-5f79cf8f1adf", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output2", 
+                    "uuid": "754da7a4-4c7d-4238-b8bd-c7d0159c4728"
+                }
+            ]
+        }, 
+        "25": {
+            "annotation": "", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
+            "errors": null, 
+            "id": 25, 
+            "input_connections": {
+                "veptools|input": {
+                    "id": 21, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool vep-unico", 
+                    "name": "veptools"
+                }
+            ], 
+            "label": null, 
+            "name": "vep-unico", 
+            "outputs": [
+                {
+                    "name": "output1", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "output2", 
+                    "type": "vcf"
+                }, 
+                {
+                    "name": "stat", 
+                    "type": "html"
+                }, 
+                {
+                    "name": "output_maf", 
+                    "type": "maf"
+                }
+            ], 
+            "position": {
+                "left": 2496, 
+                "top": 1601
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionoutput1": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output1"
+                }, 
+                "HideDatasetActionoutput_maf": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output_maf"
+                }, 
+                "HideDatasetActionstat": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "stat"
+                }
+            }, 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "786c9295d2be", 
+                "name": "vep86_vcf2maf", 
+                "owner": "elixir-it", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"buffer\\\": \\\"5000\\\", \\\"veptoolsselect\\\": \\\"annotate\\\", \\\"everything\\\": null, \\\"__current_case__\\\": 1, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"species\\\": \\\"homo_sapiens --ASSEMBLY GRCh38\\\"}\", \"__rerun_remap_job_id__\": null}", 
+            "tool_version": "1.0.0", 
+            "type": "tool", 
+            "uuid": "0cf19830-1e82-4cd0-9066-3de4e59821f3", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output2", 
+                    "uuid": "23df5cc8-a76e-4502-a477-50e2368130e0"
+                }
+            ]
+        }, 
+        "26": {
+            "annotation": "", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
+            "errors": null, 
+            "id": 26, 
+            "input_connections": {
+                "veptools|input_vcf": {
+                    "id": 21, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool vep-unico", 
+                    "name": "veptools"
+                }, 
+                {
+                    "description": "runtime parameter for tool vep-unico", 
+                    "name": "veptools"
+                }
+            ], 
+            "label": null, 
+            "name": "vep-unico", 
+            "outputs": [
+                {
+                    "name": "output1", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "output2", 
+                    "type": "vcf"
+                }, 
+                {
+                    "name": "stat", 
+                    "type": "html"
+                }, 
+                {
+                    "name": "output_maf", 
+                    "type": "maf"
+                }
+            ], 
+            "position": {
+                "left": 2717, 
+                "top": 1605
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionoutput1": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output1"
+                }, 
+                "HideDatasetActionoutput_maf": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output_maf"
+                }, 
+                "HideDatasetActionstat": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "stat"
+                }
+            }, 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "786c9295d2be", 
+                "name": "vep86_vcf2maf", 
+                "owner": "elixir-it", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"reference\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"buffer\\\": \\\"5000\\\", \\\"veptoolsselect\\\": \\\"vcf2maf\\\", \\\"input_vcf\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2, \\\"species\\\": \\\"homo_sapiens --ncbi-build GRCh38\\\", \\\"normal_id\\\": \\\"NORMAL\\\", \\\"tumour_id\\\": \\\"TUMOR\\\"}\", \"__rerun_remap_job_id__\": null}", 
+            "tool_version": "1.0.0", 
+            "type": "tool", 
+            "uuid": "f1ab360d-ee38-4e37-a34a-70e3565de3f6", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output2", 
+                    "uuid": "d394f409-bc5d-4068-a268-cdc36f816786"
+                }
+            ]
+        }, 
+        "27": {
+            "annotation": "", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/fpfilter/fpfilter/0.0.1", 
+            "errors": null, 
+            "id": 27, 
+            "input_connections": {
+                "vcf": {
+                    "id": 22, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool fpfilter", 
+                    "name": "reference"
+                }, 
+                {
+                    "description": "runtime parameter for tool fpfilter", 
+                    "name": "vcf"
+                }, 
+                {
+                    "description": "runtime parameter for tool fpfilter", 
+                    "name": "bam"
+                }
+            ], 
+            "label": null, 
+            "name": "fpfilter", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "vcf"
+                }
+            ], 
+            "position": {
+                "left": 2486, 
+                "top": 1848
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/fpfilter/fpfilter/0.0.1", 
+            "tool_shed_repository": {
+                "changeset_revision": "276875076be1", 
+                "name": "fpfilter", 
+                "owner": "elixir-it", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"min_strandness\": \"\\\"0.01\\\"\", \"max_mapqual_diff\": \"\\\"30\\\"\", \"bam\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"min_var_dist_3\": \"\\\"0.2\\\"\", \"reference\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"min_var_count\": \"\\\"4\\\"\", \"max_readlen_diff\": \"\\\"25\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"max_mm_qualsum_diff\": \"\\\"50\\\"\", \"vcf\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"sample\": \"\\\"sample2\\\"\", \"min_read_pos\": \"\\\"0.1\\\"\", \"min_var_freq\": \"\\\"0.05\\\"\", \"max_var_mm_qualsum\": \"\\\"100\\\"\"}", 
+            "tool_version": "0.0.1", 
+            "type": "tool", 
+            "uuid": "198e9d4a-8836-4bb6-9c02-fb58fdbd0fbc", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "58596fc4-1fe4-4f73-912b-de3c784bbbe3"
+                }
+            ]
+        }, 
+        "28": {
+            "annotation": "", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
+            "errors": null, 
+            "id": 28, 
+            "input_connections": {
+                "veptools|input": {
+                    "id": 27, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool vep-unico", 
+                    "name": "veptools"
+                }
+            ], 
+            "label": null, 
+            "name": "vep-unico", 
+            "outputs": [
+                {
+                    "name": "output1", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "output2", 
+                    "type": "vcf"
+                }, 
+                {
+                    "name": "stat", 
+                    "type": "html"
+                }, 
+                {
+                    "name": "output_maf", 
+                    "type": "maf"
+                }
+            ], 
+            "position": {
+                "left": 2732, 
+                "top": 1840
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionoutput1": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output1"
+                }, 
+                "HideDatasetActionoutput_maf": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output_maf"
+                }, 
+                "HideDatasetActionstat": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "stat"
+                }
+            }, 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "786c9295d2be", 
+                "name": "vep86_vcf2maf", 
+                "owner": "elixir-it", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"buffer\\\": \\\"5000\\\", \\\"veptoolsselect\\\": \\\"annotate\\\", \\\"everything\\\": null, \\\"__current_case__\\\": 1, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"species\\\": \\\"homo_sapiens --ASSEMBLY GRCh38\\\"}\", \"__rerun_remap_job_id__\": null}", 
+            "tool_version": "1.0.0", 
+            "type": "tool", 
+            "uuid": "11cb4a40-7f62-495b-a1dc-21ab43b2f0d4", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output2", 
+                    "uuid": "14ee87c7-08db-4424-9d20-aa0152b91e2b"
+                }
+            ]
+        }, 
+        "29": {
+            "annotation": "", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
+            "errors": null, 
+            "id": 29, 
+            "input_connections": {
+                "veptools|input_vcf": {
+                    "id": 27, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool vep-unico", 
+                    "name": "veptools"
+                }, 
+                {
+                    "description": "runtime parameter for tool vep-unico", 
+                    "name": "veptools"
+                }
+            ], 
+            "label": null, 
+            "name": "vep-unico", 
+            "outputs": [
+                {
+                    "name": "output1", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "output2", 
+                    "type": "vcf"
+                }, 
+                {
+                    "name": "stat", 
+                    "type": "html"
+                }, 
+                {
+                    "name": "output_maf", 
+                    "type": "maf"
+                }
+            ], 
+            "position": {
+                "left": 2944, 
+                "top": 1801
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionoutput1": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output1"
+                }, 
+                "HideDatasetActionoutput_maf": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output_maf"
+                }, 
+                "HideDatasetActionstat": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "stat"
+                }
+            }, 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "786c9295d2be", 
+                "name": "vep86_vcf2maf", 
+                "owner": "elixir-it", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"reference\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"buffer\\\": \\\"5000\\\", \\\"veptoolsselect\\\": \\\"vcf2maf\\\", \\\"input_vcf\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2, \\\"species\\\": \\\"homo_sapiens --ncbi-build GRCh38\\\", \\\"normal_id\\\": \\\"NORMAL\\\", \\\"tumour_id\\\": \\\"TUMOR\\\"}\", \"__rerun_remap_job_id__\": null}", 
+            "tool_version": "1.0.0", 
+            "type": "tool", 
+            "uuid": "1789bbb8-8698-47ae-abb3-29db57443ec7", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output2", 
+                    "uuid": "47d93eed-bf7a-41d8-bda5-4c6010f61a25"
+                }
+            ]
+        }
+    }, 
+    "uuid": "eab14fca-3bd4-4e7e-8be7-301fb02d5fca"
+}

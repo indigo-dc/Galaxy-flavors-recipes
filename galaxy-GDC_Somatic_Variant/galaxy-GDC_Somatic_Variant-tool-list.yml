@@ -46,6 +46,8 @@ tools:
 - name: samtools_mpileup
   owner: devteam
   tool_panel_section_label: "somatic-variant-calling"
+  revisions:
+    - fa7ad9b89f4a
 
 - name: varscan_version_2
   owner: devteam

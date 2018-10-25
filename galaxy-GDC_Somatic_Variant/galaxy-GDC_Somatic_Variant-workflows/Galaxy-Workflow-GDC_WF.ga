@@ -2,7 +2,7 @@
     "a_galaxy_workflow": "true", 
     "annotation": "", 
     "format-version": "0.1", 
-    "name": "GDC_WF_up (imported from uploaded file)", 
+    "name": "GDC_WF_up", 
     "steps": {
         "0": {
             "annotation": "", 

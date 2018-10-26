@@ -14,9 +14,9 @@ tools:
   owner: 'lparsons'
   tool_panel_section_label: 'NGS: RNA analysis'
 
-- name: 'cuffdiff'
-  owner: 'devteam'
-  tool_panel_section_label: 'NGS: RNA analysis'
+#- name: 'cuffdiff'
+#  owner: 'devteam'
+#  tool_panel_section_label: 'NGS: RNA analysis'
 
 - name: 'deseq_hts'
   owner: 'vipints'
@@ -42,13 +42,13 @@ tools:
   owner: 'devteam'
   tool_panel_section_label: 'NGS: RNA analysis'
 
-- name: 'cufflinks'
-  owner: 'devteam'
-  tool_panel_section_label: 'NGS: RNA analysis'
+#- name: 'cufflinks'
+#  owner: 'devteam'
+#  tool_panel_section_label: 'NGS: RNA analysis'
 
-- name: 'cuffcompare'
-  owner: 'devteam'
-  tool_panel_section_label: 'NGS: RNA analysis'
+#- name: 'cuffcompare'
+#  owner: 'devteam'
+#  tool_panel_section_label: 'NGS: RNA analysis'
 
 - name: 'trinity'
   owner: 'iuc'

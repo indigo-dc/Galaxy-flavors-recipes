@@ -2,7 +2,7 @@
     "a_galaxy_workflow": "true", 
     "annotation": "", 
     "format-version": "0.1", 
-    "name": "GDC_WF", 
+    "name": "GDC_WF_up", 
     "steps": {
         "0": {
             "annotation": "", 
@@ -10,20 +10,7 @@
             "errors": null, 
             "id": 0, 
             "input_connections": {}, 
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool FastQC", 
-                    "name": "contaminants"
-                }, 
-                {
-                    "description": "runtime parameter for tool FastQC", 
-                    "name": "limits"
-                }, 
-                {
-                    "description": "runtime parameter for tool FastQC", 
-                    "name": "input_file"
-                }
-            ], 
+            "inputs": [], 
             "label": null, 
             "name": "FastQC", 
             "outputs": [
@@ -37,8 +24,8 @@
                 }
             ], 
             "position": {
-                "left": 200, 
-                "top": 205
+                "left": 188, 
+                "top": 127
             }, 
             "post_job_actions": {
                 "HideDatasetActionhtml_file": {
@@ -59,10 +46,10 @@
                 "owner": "devteam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": null, \"contaminants\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"limits\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_state": "{\"__page__\": null, \"contaminants\": \"null\", \"__rerun_remap_job_id__\": null, \"limits\": \"null\", \"input_file\": \"{\\\"values\\\": [{\\\"src\\\": \\\"hda\\\", \\\"id\\\": 414}]}\"}", 
             "tool_version": "0.72", 
             "type": "tool", 
-            "uuid": "b5055eaa-5327-4dc4-9846-b4fc26c451a4", 
+            "uuid": "d73cd773-c63e-4238-ab5a-c7d286b8f05d", 
             "workflow_outputs": []
         }, 
         "1": {
@@ -71,20 +58,7 @@
             "errors": null, 
             "id": 1, 
             "input_connections": {}, 
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool FastQC", 
-                    "name": "contaminants"
-                }, 
-                {
-                    "description": "runtime parameter for tool FastQC", 
-                    "name": "limits"
-                }, 
-                {
-                    "description": "runtime parameter for tool FastQC", 
-                    "name": "input_file"
-                }
-            ], 
+            "inputs": [], 
             "label": null, 
             "name": "FastQC", 
             "outputs": [
@@ -98,8 +72,8 @@
                 }
             ], 
             "position": {
-                "left": 202, 
-                "top": 402
+                "left": 189, 
+                "top": 338
             }, 
             "post_job_actions": {
                 "HideDatasetActionhtml_file": {
@@ -120,10 +94,10 @@
                 "owner": "devteam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": null, \"contaminants\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"limits\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_state": "{\"__page__\": null, \"contaminants\": \"null\", \"__rerun_remap_job_id__\": null, \"limits\": \"null\", \"input_file\": \"{\\\"values\\\": [{\\\"src\\\": \\\"hda\\\", \\\"id\\\": 414}]}\"}", 
             "tool_version": "0.72", 
             "type": "tool", 
-            "uuid": "93d73bf7-aa7a-4db1-b8c2-f5846b7f0d65", 
+            "uuid": "142d2586-f8ed-405a-bc86-6904c55adfec", 
             "workflow_outputs": []
         }, 
         "2": {
@@ -132,20 +106,7 @@
             "errors": null, 
             "id": 2, 
             "input_connections": {}, 
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool FastQC", 
-                    "name": "contaminants"
-                }, 
-                {
-                    "description": "runtime parameter for tool FastQC", 
-                    "name": "limits"
-                }, 
-                {
-                    "description": "runtime parameter for tool FastQC", 
-                    "name": "input_file"
-                }
-            ], 
+            "inputs": [], 
             "label": null, 
             "name": "FastQC", 
             "outputs": [
@@ -159,8 +120,8 @@
                 }
             ], 
             "position": {
-                "left": 504, 
-                "top": 206
+                "left": 484, 
+                "top": 133
             }, 
             "post_job_actions": {
                 "HideDatasetActionhtml_file": {
@@ -181,10 +142,10 @@
                 "owner": "devteam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": null, \"contaminants\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"limits\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_state": "{\"__page__\": null, \"contaminants\": \"null\", \"__rerun_remap_job_id__\": null, \"limits\": \"null\", \"input_file\": \"{\\\"values\\\": [{\\\"src\\\": \\\"hda\\\", \\\"id\\\": 414}]}\"}", 
             "tool_version": "0.72", 
             "type": "tool", 
-            "uuid": "8ff1ae20-5c0c-49ef-a506-3b5eed1f7b3c", 
+            "uuid": "ed17fc64-936d-4f1c-bf40-e640504dd03d", 
             "workflow_outputs": []
         }, 
         "3": {
@@ -193,20 +154,7 @@
             "errors": null, 
             "id": 3, 
             "input_connections": {}, 
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool FastQC", 
-                    "name": "contaminants"
-                }, 
-                {
-                    "description": "runtime parameter for tool FastQC", 
-                    "name": "limits"
-                }, 
-                {
-                    "description": "runtime parameter for tool FastQC", 
-                    "name": "input_file"
-                }
-            ], 
+            "inputs": [], 
             "label": null, 
             "name": "FastQC", 
             "outputs": [
@@ -220,8 +168,8 @@
                 }
             ], 
             "position": {
-                "left": 506, 
-                "top": 403
+                "left": 472, 
+                "top": 324
             }, 
             "post_job_actions": {
                 "HideDatasetActionhtml_file": {
@@ -242,10 +190,10 @@
                 "owner": "devteam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": null, \"contaminants\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"limits\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_state": "{\"__page__\": null, \"contaminants\": \"null\", \"__rerun_remap_job_id__\": null, \"limits\": \"null\", \"input_file\": \"{\\\"values\\\": [{\\\"src\\\": \\\"hda\\\", \\\"id\\\": 414}]}\"}", 
             "tool_version": "0.72", 
             "type": "tool", 
-            "uuid": "ce85aaea-56e5-4a3e-a72a-1b7eb1a39dd8", 
+            "uuid": "da4c3657-07f6-42c2-bd2a-4910df219c64", 
             "workflow_outputs": []
         }, 
         "4": {
@@ -273,8 +221,8 @@
                 }
             ], 
             "position": {
-                "left": 627.0833740234375, 
-                "top": 679.5833129882812
+                "left": 648.0833740234375, 
+                "top": 525.0833129882812
             }, 
             "post_job_actions": {}, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1", 
@@ -284,7 +232,7 @@
                 "owner": "devteam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"rg\": \"{\\\"rg_selector\\\": \\\"set_picard\\\", \\\"read_group_sm_conditional\\\": {\\\"do_auto_name\\\": \\\"false\\\", \\\"SM\\\": \\\"SRR6\\\", \\\"__current_case__\\\": 1}, \\\"CN\\\": \\\"\\\", \\\"PU\\\": \\\"\\\", \\\"read_group_lb_conditional\\\": {\\\"do_auto_name\\\": \\\"false\\\", \\\"LB\\\": \\\"SRR6\\\", \\\"__current_case__\\\": 1}, \\\"read_group_id_conditional\\\": {\\\"do_auto_name\\\": \\\"false\\\", \\\"ID\\\": \\\"NORMAL\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 0, \\\"DT\\\": \\\"\\\", \\\"PI\\\": \\\"\\\", \\\"DS\\\": \\\"\\\", \\\"PL\\\": \\\"ILLUMINA\\\"}\", \"fastq_input\": \"{\\\"iset_stats\\\": \\\"\\\", \\\"fastq_input2\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0, \\\"fastq_input_selector\\\": \\\"paired\\\", \\\"fastq_input1\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\", \"analysis_type\": \"{\\\"analysis_type_selector\\\": \\\"illumina\\\", \\\"__current_case__\\\": 0}\", \"reference_source\": \"{\\\"ref_file\\\": \\\"hg19\\\", \\\"reference_source_selector\\\": \\\"cached\\\", \\\"__current_case__\\\": 0}\"}", 
+            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"rg\": \"{\\\"rg_selector\\\": \\\"set_picard\\\", \\\"read_group_sm_conditional\\\": {\\\"do_auto_name\\\": \\\"false\\\", \\\"SM\\\": \\\"SRR6\\\", \\\"__current_case__\\\": 1}, \\\"CN\\\": \\\"\\\", \\\"PU\\\": \\\"\\\", \\\"read_group_lb_conditional\\\": {\\\"do_auto_name\\\": \\\"false\\\", \\\"LB\\\": \\\"SRR6\\\", \\\"__current_case__\\\": 1}, \\\"read_group_id_conditional\\\": {\\\"do_auto_name\\\": \\\"false\\\", \\\"ID\\\": \\\"NORMAL\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 0, \\\"DT\\\": \\\"\\\", \\\"PI\\\": \\\"\\\", \\\"DS\\\": \\\"\\\", \\\"PL\\\": \\\"ILLUMINA\\\"}\", \"fastq_input\": \"{\\\"iset_stats\\\": \\\"\\\", \\\"fastq_input2\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0, \\\"fastq_input_selector\\\": \\\"paired\\\", \\\"fastq_input1\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\", \"analysis_type\": \"{\\\"analysis_type_selector\\\": \\\"illumina\\\", \\\"__current_case__\\\": 0}\", \"reference_source\": \"{\\\"ref_file\\\": \\\"hg19_bundle\\\", \\\"reference_source_selector\\\": \\\"cached\\\", \\\"__current_case__\\\": 0}\"}", 
             "tool_version": "0.7.17.1", 
             "type": "tool", 
             "uuid": "78f7cb09-2e56-46f1-a4d7-19e3885608f4", 
@@ -321,8 +269,8 @@
                 }
             ], 
             "position": {
-                "left": 625.0833740234375, 
-                "top": 896.0833129882812
+                "left": 658.0833740234375, 
+                "top": 693.5833129882812
             }, 
             "post_job_actions": {}, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1", 
@@ -332,7 +280,7 @@
                 "owner": "devteam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"rg\": \"{\\\"rg_selector\\\": \\\"set_picard\\\", \\\"read_group_sm_conditional\\\": {\\\"do_auto_name\\\": \\\"false\\\", \\\"SM\\\": \\\"SSR7\\\", \\\"__current_case__\\\": 1}, \\\"CN\\\": \\\"\\\", \\\"PU\\\": \\\"\\\", \\\"read_group_lb_conditional\\\": {\\\"do_auto_name\\\": \\\"false\\\", \\\"LB\\\": \\\"SSR7\\\", \\\"__current_case__\\\": 1}, \\\"read_group_id_conditional\\\": {\\\"do_auto_name\\\": \\\"false\\\", \\\"ID\\\": \\\"TUMOR\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 0, \\\"DT\\\": \\\"\\\", \\\"PI\\\": \\\"\\\", \\\"DS\\\": \\\"\\\", \\\"PL\\\": \\\"ILLUMINA\\\"}\", \"fastq_input\": \"{\\\"iset_stats\\\": \\\"\\\", \\\"fastq_input2\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0, \\\"fastq_input_selector\\\": \\\"paired\\\", \\\"fastq_input1\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\", \"analysis_type\": \"{\\\"analysis_type_selector\\\": \\\"illumina\\\", \\\"__current_case__\\\": 0}\", \"reference_source\": \"{\\\"ref_file\\\": \\\"hg19\\\", \\\"reference_source_selector\\\": \\\"cached\\\", \\\"__current_case__\\\": 0}\"}", 
+            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"rg\": \"{\\\"rg_selector\\\": \\\"set_picard\\\", \\\"read_group_sm_conditional\\\": {\\\"do_auto_name\\\": \\\"false\\\", \\\"SM\\\": \\\"SSR7\\\", \\\"__current_case__\\\": 1}, \\\"CN\\\": \\\"\\\", \\\"PU\\\": \\\"\\\", \\\"read_group_lb_conditional\\\": {\\\"do_auto_name\\\": \\\"false\\\", \\\"LB\\\": \\\"SSR7\\\", \\\"__current_case__\\\": 1}, \\\"read_group_id_conditional\\\": {\\\"do_auto_name\\\": \\\"false\\\", \\\"ID\\\": \\\"TUMOR\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 0, \\\"DT\\\": \\\"\\\", \\\"PI\\\": \\\"\\\", \\\"DS\\\": \\\"\\\", \\\"PL\\\": \\\"ILLUMINA\\\"}\", \"fastq_input\": \"{\\\"iset_stats\\\": \\\"\\\", \\\"fastq_input2\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0, \\\"fastq_input_selector\\\": \\\"paired\\\", \\\"fastq_input1\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\", \"analysis_type\": \"{\\\"analysis_type_selector\\\": \\\"illumina\\\", \\\"__current_case__\\\": 0}\", \"reference_source\": \"{\\\"ref_file\\\": \\\"hg19_bundle\\\", \\\"reference_source_selector\\\": \\\"cached\\\", \\\"__current_case__\\\": 0}\"}", 
             "tool_version": "0.7.17.1", 
             "type": "tool", 
             "uuid": "aa16234c-9c75-4f3b-9386-f21729b985bd", 
@@ -370,13 +318,13 @@
                 }
             ], 
             "position": {
-                "left": 1138.0833129882812, 
-                "top": 683.0833129882812
+                "left": 1181.0833740234375, 
+                "top": 499.58331298828125
             }, 
             "post_job_actions": {}, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_SortSam/2.18.2.1", 
             "tool_shed_repository": {
-                "changeset_revision": "2a17c789e0a5", 
+                "changeset_revision": "6f9c0884a3e7", 
                 "name": "picard", 
                 "owner": "devteam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -419,13 +367,13 @@
                 }
             ], 
             "position": {
-                "left": 984.0833129882812, 
-                "top": 885.0833129882812
+                "left": 1027.0833740234375, 
+                "top": 701.5833129882812
             }, 
             "post_job_actions": {}, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_SortSam/2.18.2.1", 
             "tool_shed_repository": {
-                "changeset_revision": "2a17c789e0a5", 
+                "changeset_revision": "6f9c0884a3e7", 
                 "name": "picard", 
                 "owner": "devteam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -512,8 +460,8 @@
                 }
             ], 
             "position": {
-                "left": 2490.3333129882812, 
-                "top": 553.3333129882812
+                "left": 2533.3333740234375, 
+                "top": 369.83331298828125
             }, 
             "post_job_actions": {
                 "HideDatasetActionactiveRegionOut_output": {
@@ -591,8 +539,8 @@
                 }
             ], 
             "position": {
-                "left": 1501.5833129882812, 
-                "top": 652.0833129882812
+                "left": 1544.5833740234375, 
+                "top": 468.58331298828125
             }, 
             "post_job_actions": {
                 "HideDatasetActionmetrics_file": {
@@ -608,7 +556,7 @@
             }, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_MarkDuplicates/2.18.2.1", 
             "tool_shed_repository": {
-                "changeset_revision": "2a17c789e0a5", 
+                "changeset_revision": "6f9c0884a3e7", 
                 "name": "picard", 
                 "owner": "devteam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -649,8 +597,8 @@
                 }
             ], 
             "position": {
-                "left": 1303.5833129882812, 
-                "top": 884.0833129882812
+                "left": 1346.5833740234375, 
+                "top": 700.5833129882812
             }, 
             "post_job_actions": {
                 "HideDatasetActionmetrics_file": {
@@ -666,7 +614,7 @@
             }, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_MarkDuplicates/2.18.2.1", 
             "tool_shed_repository": {
-                "changeset_revision": "2a17c789e0a5", 
+                "changeset_revision": "6f9c0884a3e7", 
                 "name": "picard", 
                 "owner": "devteam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -715,8 +663,8 @@
                 }
             ], 
             "position": {
-                "left": 2815, 
-                "top": 606
+                "left": 2858, 
+                "top": 422.5
             }, 
             "post_job_actions": {
                 "HideDatasetActionoutput1": {
@@ -737,12 +685,12 @@
             }, 
             "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
             "tool_shed_repository": {
-                "changeset_revision": "786c9295d2be", 
+                "changeset_revision": "7a54ac4976d0", 
                 "name": "vep86_vcf2maf", 
                 "owner": "elixir-it", 
                 "tool_shed": "testtoolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"buffer\\\": \\\"5000\\\", \\\"veptoolsselect\\\": \\\"annotate\\\", \\\"everything\\\": null, \\\"__current_case__\\\": 1, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"species\\\": \\\"homo_sapiens --ASSEMBLY GRCh38\\\"}\", \"__rerun_remap_job_id__\": null}", 
+            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"buffer\\\": \\\"500\\\", \\\"veptoolsselect\\\": \\\"annotate\\\", \\\"everything\\\": null, \\\"__current_case__\\\": 1, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"species\\\": \\\"homo_sapiens --ASSEMBLY GRCh37\\\"}\", \"__rerun_remap_job_id__\": null}", 
             "tool_version": "1.0.0", 
             "type": "tool", 
             "uuid": "5890addb-0e69-4ee8-ba2d-a75cdf705a53", 
@@ -796,8 +744,8 @@
                 }
             ], 
             "position": {
-                "left": 3063, 
-                "top": 626
+                "left": 3106, 
+                "top": 442.5
             }, 
             "post_job_actions": {
                 "HideDatasetActionoutput1": {
@@ -818,12 +766,12 @@
             }, 
             "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
             "tool_shed_repository": {
-                "changeset_revision": "786c9295d2be", 
+                "changeset_revision": "7a54ac4976d0", 
                 "name": "vep86_vcf2maf", 
                 "owner": "elixir-it", 
                 "tool_shed": "testtoolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"reference\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"buffer\\\": \\\"5000\\\", \\\"veptoolsselect\\\": \\\"vcf2maf\\\", \\\"input_vcf\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2, \\\"species\\\": \\\"homo_sapiens --ncbi-build GRCh38\\\", \\\"normal_id\\\": \\\"NORMAL\\\", \\\"tumour_id\\\": \\\"TUMOR\\\"}\", \"__rerun_remap_job_id__\": null}", 
+            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"reference\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"buffer\\\": \\\"500\\\", \\\"veptoolsselect\\\": \\\"vcf2maf\\\", \\\"input_vcf\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2, \\\"species\\\": \\\"homo_sapiens --ncbi-build GRCh37\\\", \\\"normal_id\\\": \\\"NORMAL\\\", \\\"tumour_id\\\": \\\"TUMOR\\\"}\", \"__rerun_remap_job_id__\": null}", 
             "tool_version": "1.0.0", 
             "type": "tool", 
             "uuid": "8e62eb8c-01be-48a6-8814-1249c8d4f57b", 
@@ -892,8 +840,8 @@
                 }
             ], 
             "position": {
-                "left": 1767.0833282470703, 
-                "top": 512.0833129882812
+                "left": 1810.0833740234375, 
+                "top": 328.58331298828125
             }, 
             "post_job_actions": {
                 "HideDatasetActionac_plotsReportFile": {
@@ -949,7 +897,7 @@
                 "owner": "avowinkel", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": null, \"cond_threads\": \"{\\\"cond_threads_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"ref_file\": \"\\\"hg19\\\"\", \"__rerun_remap_job_id__\": null, \"cond_BQSR\": \"{\\\"cond_BQSR_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"analysis_type\": \"{\\\"analysis_type_selector\\\": \\\"RealignerTargetCreator\\\", \\\"optional_parameters\\\": {\\\"optional_parameters_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}, \\\"cond_bam_input\\\": {\\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"all_in_one\\\": \\\"false\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 0}\", \"cond_intervals\": \"{\\\"cond_intervals_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\"}", 
+            "tool_state": "{\"__page__\": null, \"cond_threads\": \"{\\\"cond_threads_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"ref_file\": \"\\\"hg19_bundle\\\"\", \"__rerun_remap_job_id__\": null, \"cond_BQSR\": \"{\\\"cond_BQSR_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"analysis_type\": \"{\\\"analysis_type_selector\\\": \\\"RealignerTargetCreator\\\", \\\"optional_parameters\\\": {\\\"optional_parameters_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}, \\\"cond_bam_input\\\": {\\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"all_in_one\\\": \\\"false\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 0}\", \"cond_intervals\": \"{\\\"cond_intervals_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\"}", 
             "tool_version": "3.4-0.d9", 
             "type": "tool", 
             "uuid": "cd158b44-cf82-4e1e-a5ee-210ec28ff443", 
@@ -1018,8 +966,8 @@
                 }
             ], 
             "position": {
-                "left": 1712.8333282470703, 
-                "top": 991.3333282470703
+                "left": 1754.8333740234375, 
+                "top": 807.8333129882812
             }, 
             "post_job_actions": {
                 "HideDatasetActionac_plotsReportFile": {
@@ -1075,7 +1023,7 @@
                 "owner": "avowinkel", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": null, \"cond_threads\": \"{\\\"cond_threads_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"ref_file\": \"\\\"hg19\\\"\", \"__rerun_remap_job_id__\": null, \"cond_BQSR\": \"{\\\"cond_BQSR_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"analysis_type\": \"{\\\"analysis_type_selector\\\": \\\"RealignerTargetCreator\\\", \\\"optional_parameters\\\": {\\\"optional_parameters_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}, \\\"cond_bam_input\\\": {\\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"all_in_one\\\": \\\"false\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 0}\", \"cond_intervals\": \"{\\\"cond_intervals_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\"}", 
+            "tool_state": "{\"__page__\": null, \"cond_threads\": \"{\\\"cond_threads_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"ref_file\": \"\\\"hg19_bundle\\\"\", \"__rerun_remap_job_id__\": null, \"cond_BQSR\": \"{\\\"cond_BQSR_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"analysis_type\": \"{\\\"analysis_type_selector\\\": \\\"RealignerTargetCreator\\\", \\\"optional_parameters\\\": {\\\"optional_parameters_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}, \\\"cond_bam_input\\\": {\\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"all_in_one\\\": \\\"false\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 0}\", \"cond_intervals\": \"{\\\"cond_intervals_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\"}", 
             "tool_version": "3.4-0.d9", 
             "type": "tool", 
             "uuid": "ab4ba289-b430-4af6-99fb-2715704dc82b", 
@@ -1153,8 +1101,8 @@
                 }
             ], 
             "position": {
-                "left": 2065.0833282470703, 
-                "top": 501.08331298828125
+                "left": 2104.0833740234375, 
+                "top": 312.58331298828125
             }, 
             "post_job_actions": {
                 "HideDatasetActionac_plotsReportFile": {
@@ -1210,7 +1158,7 @@
                 "owner": "avowinkel", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": null, \"cond_threads\": \"{\\\"cond_threads_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"ref_file\": \"\\\"hg19\\\"\", \"__rerun_remap_job_id__\": null, \"cond_BQSR\": \"{\\\"cond_BQSR_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"analysis_type\": \"{\\\"__current_case__\\\": 1, \\\"targetIntervals\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"optional_parameters\\\": {\\\"optional_parameters_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}, \\\"analysis_type_selector\\\": \\\"IndelRealigner\\\", \\\"advanced_parameters\\\": {\\\"advanced_parameters_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}, \\\"cond_bam_input\\\": {\\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"all_in_one\\\": \\\"false\\\", \\\"__current_case__\\\": 1}}\", \"cond_intervals\": \"{\\\"cond_intervals_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\"}", 
+            "tool_state": "{\"__page__\": null, \"cond_threads\": \"{\\\"cond_threads_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"ref_file\": \"\\\"hg19_bundle\\\"\", \"__rerun_remap_job_id__\": null, \"cond_BQSR\": \"{\\\"cond_BQSR_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"analysis_type\": \"{\\\"__current_case__\\\": 1, \\\"targetIntervals\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"optional_parameters\\\": {\\\"optional_parameters_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}, \\\"analysis_type_selector\\\": \\\"IndelRealigner\\\", \\\"advanced_parameters\\\": {\\\"advanced_parameters_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}, \\\"cond_bam_input\\\": {\\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"all_in_one\\\": \\\"false\\\", \\\"__current_case__\\\": 1}}\", \"cond_intervals\": \"{\\\"cond_intervals_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\"}", 
             "tool_version": "3.4-0.d9", 
             "type": "tool", 
             "uuid": "9459ddff-275a-474f-97ad-eafe1abf4d64", 
@@ -1288,8 +1236,8 @@
                 }
             ], 
             "position": {
-                "left": 2065.0833282470703, 
-                "top": 959.0833129882812
+                "left": 2108.0833740234375, 
+                "top": 775.5833129882812
             }, 
             "post_job_actions": {
                 "HideDatasetActionac_plotsReportFile": {
@@ -1345,7 +1293,7 @@
                 "owner": "avowinkel", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": null, \"cond_threads\": \"{\\\"cond_threads_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"ref_file\": \"\\\"hg19\\\"\", \"__rerun_remap_job_id__\": null, \"cond_BQSR\": \"{\\\"cond_BQSR_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"analysis_type\": \"{\\\"__current_case__\\\": 1, \\\"targetIntervals\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"optional_parameters\\\": {\\\"optional_parameters_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}, \\\"analysis_type_selector\\\": \\\"IndelRealigner\\\", \\\"advanced_parameters\\\": {\\\"advanced_parameters_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}, \\\"cond_bam_input\\\": {\\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"all_in_one\\\": \\\"false\\\", \\\"__current_case__\\\": 1}}\", \"cond_intervals\": \"{\\\"cond_intervals_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\"}", 
+            "tool_state": "{\"__page__\": null, \"cond_threads\": \"{\\\"cond_threads_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"ref_file\": \"\\\"hg19_bundle\\\"\", \"__rerun_remap_job_id__\": null, \"cond_BQSR\": \"{\\\"cond_BQSR_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"analysis_type\": \"{\\\"__current_case__\\\": 1, \\\"targetIntervals\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"optional_parameters\\\": {\\\"optional_parameters_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}, \\\"analysis_type_selector\\\": \\\"IndelRealigner\\\", \\\"advanced_parameters\\\": {\\\"advanced_parameters_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}, \\\"cond_bam_input\\\": {\\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"all_in_one\\\": \\\"false\\\", \\\"__current_case__\\\": 1}}\", \"cond_intervals\": \"{\\\"cond_intervals_enabled\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\"}", 
             "tool_version": "3.4-0.d9", 
             "type": "tool", 
             "uuid": "25332e38-7d3c-4e35-9016-130604cc0100", 
@@ -1383,10 +1331,6 @@
                 }, 
                 {
                     "description": "runtime parameter for tool SomaticSniper", 
-                    "name": "ref"
-                }, 
-                {
-                    "description": "runtime parameter for tool SomaticSniper", 
                     "name": "normal"
                 }
             ], 
@@ -1399,8 +1343,8 @@
                 }
             ], 
             "position": {
-                "left": 2040.0833282470703, 
-                "top": 1378.0833282470703
+                "left": 2083.0833740234375, 
+                "top": 1194.5833129882812
             }, 
             "post_job_actions": {}, 
             "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/somaticsniper/somatic_sniper/1.0", 
@@ -1410,7 +1354,7 @@
                 "owner": "elixir-it", 
                 "tool_shed": "testtoolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": null, \"normal\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"interval\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"tumor\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"ref\": \"{\\\"ref_options\\\": \\\"history\\\", \\\"ownFile\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 1}\", \"advancedsettings\": \"{\\\"Q\\\": \\\"15\\\", \\\"G\\\": \\\"true\\\", \\\"L\\\": \\\"true\\\", \\\"n\\\": \\\"NORMAL\\\", \\\"q\\\": \\\"0\\\", \\\"p\\\": \\\"true\\\", \\\"r\\\": \\\"0.001\\\", \\\"T\\\": \\\"0.85\\\", \\\"N\\\": \\\"2\\\", \\\"t\\\": \\\"TUMOR\\\"}\"}", 
+            "tool_state": "{\"__page__\": null, \"normal\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"interval\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"tumor\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"ref\": \"{\\\"index\\\": \\\"hg19_bundle\\\", \\\"ref_options\\\": \\\"cached\\\", \\\"__current_case__\\\": 0}\", \"advancedsettings\": \"{\\\"Q\\\": \\\"15\\\", \\\"G\\\": \\\"true\\\", \\\"L\\\": \\\"true\\\", \\\"n\\\": \\\"NORMAL\\\", \\\"q\\\": \\\"0\\\", \\\"p\\\": \\\"true\\\", \\\"r\\\": \\\"0.001\\\", \\\"T\\\": \\\"0.85\\\", \\\"N\\\": \\\"2\\\", \\\"t\\\": \\\"TUMOR\\\"}\"}", 
             "tool_version": "1.0", 
             "type": "tool", 
             "uuid": "8b2267e3-f02a-4bfc-8bbd-a6b82b76e388", 
@@ -1448,10 +1392,6 @@
                 }, 
                 {
                     "description": "runtime parameter for tool muse call", 
-                    "name": "input1"
-                }, 
-                {
-                    "description": "runtime parameter for tool muse call", 
                     "name": "positions"
                 }
             ], 
@@ -1464,87 +1404,83 @@
                 }
             ], 
             "position": {
-                "left": 1975.0833282470703, 
-                "top": 1577.0833129882812
+                "left": 2033.5000610351562, 
+                "top": 1394
             }, 
-            "post_job_actions": {}, 
+            "post_job_actions": {
+                "HideDatasetActionoutput": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output"
+                }
+            }, 
             "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/muse/muse_call/1.0.rc", 
             "tool_shed_repository": {
-                "changeset_revision": "c4f5e1994690", 
+                "changeset_revision": "b3152fc222fb", 
                 "name": "muse", 
                 "owner": "elixir-it", 
                 "tool_shed": "testtoolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"input2\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input3\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": null, \"positions\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"region\": \"\\\"\\\"\", \"__rerun_remap_job_id__\": null}", 
+            "tool_state": "{\"input2\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input3\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": null, \"positions\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"region\": \"\\\"\\\"\", \"reference_source\": \"{\\\"ref_file\\\": \\\"hg19\\\", \\\"reference_source_selector\\\": \\\"cached\\\", \\\"__current_case__\\\": 0}\", \"__rerun_remap_job_id__\": null}", 
             "tool_version": "1.0.rc", 
             "type": "tool", 
-            "uuid": "8d1b9384-3cf2-4981-a7f4-cb97d34ca126", 
-            "workflow_outputs": [
-                {
-                    "label": null, 
-                    "output_name": "output", 
-                    "uuid": "9ba11e7b-6c57-4ea6-b139-7ba4f1fadb1a"
-                }
-            ]
+            "uuid": "c420a332-5541-49e9-b95b-2a86bf8aac08", 
+            "workflow_outputs": []
         }, 
         "19": {
             "annotation": "", 
-            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.3", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.4", 
             "errors": null, 
             "id": 19, 
             "input_connections": {
                 "reference_source|input_bam": [
                     {
-                        "id": 16, 
+                        "id": 15, 
                         "output_name": "ir_output_bam"
                     }, 
                     {
-                        "id": 15, 
+                        "id": 16, 
                         "output_name": "ir_output_bam"
                     }
                 ]
             }, 
             "inputs": [
                 {
-                    "description": "runtime parameter for tool MPileup", 
-                    "name": "reference_source"
-                }, 
-                {
-                    "description": "runtime parameter for tool MPileup", 
+                    "description": "runtime parameter for tool samtools mpileup", 
                     "name": "reference_source"
                 }
             ], 
             "label": null, 
-            "name": "MPileup", 
+            "name": "samtools mpileup", 
             "outputs": [
                 {
-                    "name": "output_mpileup", 
+                    "name": "output_file_pu", 
                     "type": "pileup"
                 }
             ], 
             "position": {
-                "left": 1906.8333282470703, 
-                "top": 1862.3333129882812
+                "left": 2008.0000610351562, 
+                "top": 1685
             }, 
-            "post_job_actions": {}, 
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.3", 
+            "post_job_actions": {
+                "HideDatasetActionoutput_file_pu": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output_file_pu"
+                }
+            }, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_mpileup/samtools_mpileup/2.1.4", 
             "tool_shed_repository": {
-                "changeset_revision": "583abf29fc8e", 
+                "changeset_revision": "fa7ad9b89f4a", 
                 "name": "samtools_mpileup", 
                 "owner": "devteam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": null, \"reference_source\": \"{\\\"ref_file\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"reference_source_selector\\\": \\\"history\\\", \\\"input_bam\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 1}\", \"__rerun_remap_job_id__\": null, \"genotype_likelihood_computation_type\": \"{\\\"output_mapping_quality\\\": \\\"false\\\", \\\"__current_case__\\\": 1, \\\"genotype_likelihood_computation_type_selector\\\": \\\"do_not_perform_genotype_likelihood_computation\\\", \\\"base_position_on_reads\\\": \\\"false\\\"}\", \"advanced_options\": \"{\\\"advanced_options_selector\\\": \\\"basic\\\", \\\"__current_case__\\\": 0}\"}", 
-            "tool_version": "2.1.3", 
+            "tool_state": "{\"__page__\": null, \"reference_source\": \"{\\\"ref_file\\\": \\\"hg19_bundle\\\", \\\"reference_source_selector\\\": \\\"cached\\\", \\\"input_bam\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0}\", \"__rerun_remap_job_id__\": null, \"output_options_cond\": \"{\\\"output_options_selector\\\": \\\"default\\\", \\\"__current_case__\\\": 0}\", \"advanced_options\": \"{\\\"advanced_options_selector\\\": \\\"default\\\", \\\"__current_case__\\\": 0}\"}", 
+            "tool_version": "2.1.4", 
             "type": "tool", 
-            "uuid": "79444960-c4a8-4be1-be28-5590cc5e3ec9", 
-            "workflow_outputs": [
-                {
-                    "label": null, 
-                    "output_name": "output_mpileup", 
-                    "uuid": "c8e88eeb-ce6a-47a7-ac4b-31ba660b518f"
-                }
-            ]
+            "uuid": "bb42635a-20a3-4af6-a8ed-60c0b245b6b4", 
+            "workflow_outputs": []
         }, 
         "20": {
             "annotation": "", 
@@ -1584,8 +1520,8 @@
                 }
             ], 
             "position": {
-                "left": 2292, 
-                "top": 1398
+                "left": 2335.0000610351562, 
+                "top": 1214.499984741211
             }, 
             "post_job_actions": {}, 
             "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/fpfilter/fpfilter/0.0.1", 
@@ -1637,13 +1573,13 @@
                 }
             ], 
             "position": {
-                "left": 2231.0833129882812, 
-                "top": 1604.0833129882812
+                "left": 2274.0833740234375, 
+                "top": 1420.5833129882812
             }, 
             "post_job_actions": {}, 
             "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/muse/muse/1.0.rc", 
             "tool_shed_repository": {
-                "changeset_revision": "c4f5e1994690", 
+                "changeset_revision": "b3152fc222fb", 
                 "name": "muse", 
                 "owner": "elixir-it", 
                 "tool_shed": "testtoolshed.g2.bx.psu.edu"
@@ -1668,7 +1604,7 @@
             "input_connections": {
                 "input": {
                     "id": 19, 
-                    "output_name": "output_mpileup"
+                    "output_name": "output_file_pu"
                 }
             }, 
             "inputs": [
@@ -1686,8 +1622,8 @@
                 }
             ], 
             "position": {
-                "left": 2254.0833129882812, 
-                "top": 1868.0833129882812
+                "left": 2297.0833740234375, 
+                "top": 1684.5833129882812
             }, 
             "post_job_actions": {}, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/varscan_version_2/varscan/2.4.2", 
@@ -1697,7 +1633,7 @@
                 "owner": "devteam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"strand_filter\": \"\\\"no\\\"\", \"min_coverage\": \"\\\"8\\\"\", \"sample_names\": \"\\\"\\\"\", \"min_avg_qual\": \"\\\"15\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"cmd\": \"\\\"mpileup2snp\\\"\", \"min_freq_for_hom\": \"\\\"0.75\\\"\", \"min_var_freq\": \"\\\"0.01\\\"\", \"p_value\": \"\\\"0.99\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"min_supporting_reads\": \"\\\"2\\\"\"}", 
+            "tool_state": "{\"strand_filter\": \"\\\"no\\\"\", \"min_coverage\": \"\\\"8\\\"\", \"sample_names\": \"\\\"NORMAL,TUMOR\\\"\", \"min_avg_qual\": \"\\\"15\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"cmd\": \"\\\"mpileup2snp\\\"\", \"min_freq_for_hom\": \"\\\"0.75\\\"\", \"min_var_freq\": \"\\\"0.01\\\"\", \"p_value\": \"\\\"0.99\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"min_supporting_reads\": \"\\\"2\\\"\"}", 
             "tool_version": "2.4.2", 
             "type": "tool", 
             "uuid": "5244d3ac-037d-42bb-b114-4822ceb99160", 
@@ -1747,8 +1683,8 @@
                 }
             ], 
             "position": {
-                "left": 2515, 
-                "top": 1391
+                "left": 2558, 
+                "top": 1207.499984741211
             }, 
             "post_job_actions": {
                 "HideDatasetActionoutput1": {
@@ -1769,12 +1705,12 @@
             }, 
             "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
             "tool_shed_repository": {
-                "changeset_revision": "786c9295d2be", 
+                "changeset_revision": "7a54ac4976d0", 
                 "name": "vep86_vcf2maf", 
                 "owner": "elixir-it", 
                 "tool_shed": "testtoolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"buffer\\\": \\\"5000\\\", \\\"veptoolsselect\\\": \\\"annotate\\\", \\\"everything\\\": null, \\\"__current_case__\\\": 1, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"species\\\": \\\"homo_sapiens --ASSEMBLY GRCh38\\\"}\", \"__rerun_remap_job_id__\": null}", 
+            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"buffer\\\": \\\"500\\\", \\\"veptoolsselect\\\": \\\"annotate\\\", \\\"everything\\\": null, \\\"__current_case__\\\": 1, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"species\\\": \\\"homo_sapiens --ASSEMBLY GRCh37\\\"}\", \"__rerun_remap_job_id__\": null}", 
             "tool_version": "1.0.0", 
             "type": "tool", 
             "uuid": "63f25133-4b5f-45bc-8a9a-37a40b4f85a0", 
@@ -1828,8 +1764,8 @@
                 }
             ], 
             "position": {
-                "left": 2733, 
-                "top": 1384
+                "left": 2776, 
+                "top": 1200.499984741211
             }, 
             "post_job_actions": {
                 "HideDatasetActionoutput1": {
@@ -1850,12 +1786,12 @@
             }, 
             "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
             "tool_shed_repository": {
-                "changeset_revision": "786c9295d2be", 
+                "changeset_revision": "7a54ac4976d0", 
                 "name": "vep86_vcf2maf", 
                 "owner": "elixir-it", 
                 "tool_shed": "testtoolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"reference\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"buffer\\\": \\\"5000\\\", \\\"veptoolsselect\\\": \\\"vcf2maf\\\", \\\"input_vcf\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2, \\\"species\\\": \\\"homo_sapiens --ncbi-build GRCh38\\\", \\\"normal_id\\\": \\\"NORMAL\\\", \\\"tumour_id\\\": \\\"TUMOR\\\"}\", \"__rerun_remap_job_id__\": null}", 
+            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"reference\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"buffer\\\": \\\"500\\\", \\\"veptoolsselect\\\": \\\"vcf2maf\\\", \\\"input_vcf\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2, \\\"species\\\": \\\"homo_sapiens --ncbi-build GRCh37\\\", \\\"normal_id\\\": \\\"NORMAL\\\", \\\"tumour_id\\\": \\\"TUMOR\\\"}\", \"__rerun_remap_job_id__\": null}", 
             "tool_version": "1.0.0", 
             "type": "tool", 
             "uuid": "68c9c74d-4017-428d-8a6a-5f79cf8f1adf", 
@@ -1905,8 +1841,8 @@
                 }
             ], 
             "position": {
-                "left": 2496, 
-                "top": 1601
+                "left": 2539.0000610351562, 
+                "top": 1417.5
             }, 
             "post_job_actions": {
                 "HideDatasetActionoutput1": {
@@ -1927,12 +1863,12 @@
             }, 
             "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
             "tool_shed_repository": {
-                "changeset_revision": "786c9295d2be", 
+                "changeset_revision": "7a54ac4976d0", 
                 "name": "vep86_vcf2maf", 
                 "owner": "elixir-it", 
                 "tool_shed": "testtoolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"buffer\\\": \\\"5000\\\", \\\"veptoolsselect\\\": \\\"annotate\\\", \\\"everything\\\": null, \\\"__current_case__\\\": 1, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"species\\\": \\\"homo_sapiens --ASSEMBLY GRCh38\\\"}\", \"__rerun_remap_job_id__\": null}", 
+            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"buffer\\\": \\\"500\\\", \\\"veptoolsselect\\\": \\\"annotate\\\", \\\"everything\\\": null, \\\"__current_case__\\\": 1, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"species\\\": \\\"homo_sapiens --ASSEMBLY GRCh37\\\"}\", \"__rerun_remap_job_id__\": null}", 
             "tool_version": "1.0.0", 
             "type": "tool", 
             "uuid": "0cf19830-1e82-4cd0-9066-3de4e59821f3", 
@@ -1986,8 +1922,8 @@
                 }
             ], 
             "position": {
-                "left": 2717, 
-                "top": 1605
+                "left": 2760, 
+                "top": 1421.5
             }, 
             "post_job_actions": {
                 "HideDatasetActionoutput1": {
@@ -2008,12 +1944,12 @@
             }, 
             "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
             "tool_shed_repository": {
-                "changeset_revision": "786c9295d2be", 
+                "changeset_revision": "7a54ac4976d0", 
                 "name": "vep86_vcf2maf", 
                 "owner": "elixir-it", 
                 "tool_shed": "testtoolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"reference\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"buffer\\\": \\\"5000\\\", \\\"veptoolsselect\\\": \\\"vcf2maf\\\", \\\"input_vcf\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2, \\\"species\\\": \\\"homo_sapiens --ncbi-build GRCh38\\\", \\\"normal_id\\\": \\\"NORMAL\\\", \\\"tumour_id\\\": \\\"TUMOR\\\"}\", \"__rerun_remap_job_id__\": null}", 
+            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"reference\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"buffer\\\": \\\"500\\\", \\\"veptoolsselect\\\": \\\"vcf2maf\\\", \\\"input_vcf\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2, \\\"species\\\": \\\"homo_sapiens --ncbi-build GRCh37\\\", \\\"normal_id\\\": \\\"NORMAL\\\", \\\"tumour_id\\\": \\\"TUMOR\\\"}\", \"__rerun_remap_job_id__\": null}", 
             "tool_version": "1.0.0", 
             "type": "tool", 
             "uuid": "f1ab360d-ee38-4e37-a34a-70e3565de3f6", 
@@ -2031,6 +1967,10 @@
             "errors": null, 
             "id": 27, 
             "input_connections": {
+                "bam": {
+                    "id": 16, 
+                    "output_name": "ir_output_bam"
+                }, 
                 "vcf": {
                     "id": 22, 
                     "output_name": "output"
@@ -2059,8 +1999,8 @@
                 }
             ], 
             "position": {
-                "left": 2486, 
-                "top": 1848
+                "left": 2552, 
+                "top": 1654.5
             }, 
             "post_job_actions": {}, 
             "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/fpfilter/fpfilter/0.0.1", 
@@ -2070,7 +2010,7 @@
                 "owner": "elixir-it", 
                 "tool_shed": "testtoolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"min_strandness\": \"\\\"0.01\\\"\", \"max_mapqual_diff\": \"\\\"30\\\"\", \"bam\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"min_var_dist_3\": \"\\\"0.2\\\"\", \"reference\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"min_var_count\": \"\\\"4\\\"\", \"max_readlen_diff\": \"\\\"25\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"max_mm_qualsum_diff\": \"\\\"50\\\"\", \"vcf\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"sample\": \"\\\"sample2\\\"\", \"min_read_pos\": \"\\\"0.1\\\"\", \"min_var_freq\": \"\\\"0.05\\\"\", \"max_var_mm_qualsum\": \"\\\"100\\\"\"}", 
+            "tool_state": "{\"min_strandness\": \"\\\"0.01\\\"\", \"max_mapqual_diff\": \"\\\"30\\\"\", \"bam\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"min_var_dist_3\": \"\\\"0.2\\\"\", \"reference\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"min_var_count\": \"\\\"4\\\"\", \"max_readlen_diff\": \"\\\"25\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"max_mm_qualsum_diff\": \"\\\"50\\\"\", \"vcf\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"sample\": \"\\\"TUMOR\\\"\", \"min_read_pos\": \"\\\"0.1\\\"\", \"min_var_freq\": \"\\\"0.05\\\"\", \"max_var_mm_qualsum\": \"\\\"100\\\"\"}", 
             "tool_version": "0.0.1", 
             "type": "tool", 
             "uuid": "198e9d4a-8836-4bb6-9c02-fb58fdbd0fbc", 
@@ -2120,8 +2060,8 @@
                 }
             ], 
             "position": {
-                "left": 2732, 
-                "top": 1840
+                "left": 2775, 
+                "top": 1656.5
             }, 
             "post_job_actions": {
                 "HideDatasetActionoutput1": {
@@ -2142,12 +2082,12 @@
             }, 
             "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
             "tool_shed_repository": {
-                "changeset_revision": "786c9295d2be", 
+                "changeset_revision": "7a54ac4976d0", 
                 "name": "vep86_vcf2maf", 
                 "owner": "elixir-it", 
                 "tool_shed": "testtoolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"buffer\\\": \\\"5000\\\", \\\"veptoolsselect\\\": \\\"annotate\\\", \\\"everything\\\": null, \\\"__current_case__\\\": 1, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"species\\\": \\\"homo_sapiens --ASSEMBLY GRCh38\\\"}\", \"__rerun_remap_job_id__\": null}", 
+            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"buffer\\\": \\\"500\\\", \\\"veptoolsselect\\\": \\\"annotate\\\", \\\"everything\\\": null, \\\"__current_case__\\\": 1, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"species\\\": \\\"homo_sapiens --ASSEMBLY GRCh37\\\"}\", \"__rerun_remap_job_id__\": null}", 
             "tool_version": "1.0.0", 
             "type": "tool", 
             "uuid": "11cb4a40-7f62-495b-a1dc-21ab43b2f0d4", 
@@ -2201,8 +2141,8 @@
                 }
             ], 
             "position": {
-                "left": 2944, 
-                "top": 1801
+                "left": 2987, 
+                "top": 1617.5
             }, 
             "post_job_actions": {
                 "HideDatasetActionoutput1": {
@@ -2223,12 +2163,12 @@
             }, 
             "tool_id": "testtoolshed.g2.bx.psu.edu/repos/elixir-it/vep86_vcf2maf/vep-unico/1.0.0", 
             "tool_shed_repository": {
-                "changeset_revision": "786c9295d2be", 
+                "changeset_revision": "7a54ac4976d0", 
                 "name": "vep86_vcf2maf", 
                 "owner": "elixir-it", 
                 "tool_shed": "testtoolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"reference\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"buffer\\\": \\\"5000\\\", \\\"veptoolsselect\\\": \\\"vcf2maf\\\", \\\"input_vcf\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2, \\\"species\\\": \\\"homo_sapiens --ncbi-build GRCh38\\\", \\\"normal_id\\\": \\\"NORMAL\\\", \\\"tumour_id\\\": \\\"TUMOR\\\"}\", \"__rerun_remap_job_id__\": null}", 
+            "tool_state": "{\"__page__\": null, \"veptools\": \"{\\\"reference\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"buffer\\\": \\\"500\\\", \\\"veptoolsselect\\\": \\\"vcf2maf\\\", \\\"input_vcf\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 2, \\\"species\\\": \\\"homo_sapiens --ncbi-build GRCh37\\\", \\\"normal_id\\\": \\\"NORMAL\\\", \\\"tumour_id\\\": \\\"TUMOR\\\"}\", \"__rerun_remap_job_id__\": null}", 
             "tool_version": "1.0.0", 
             "type": "tool", 
             "uuid": "1789bbb8-8698-47ae-abb3-29db57443ec7", 
@@ -2241,5 +2181,5 @@
             ]
         }
     }, 
-    "uuid": "eab14fca-3bd4-4e7e-8be7-301fb02d5fca"
+    "uuid": "ad8d3683-9d28-49c8-8a65-01fad7def8f8"
 }

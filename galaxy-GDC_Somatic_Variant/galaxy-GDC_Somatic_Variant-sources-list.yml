@@ -12,6 +12,6 @@
 # ephemeris takes the worlflow path to install workflows
 - name: "Set {{galaxy_flavor}} workflows resources"
   set_fact:
-    install_workflows: false
+    install_workflows: true
     galaxy_tools_workflow_list_path:
       - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/galaxy-GDC_Somatic_Variant-workflows'

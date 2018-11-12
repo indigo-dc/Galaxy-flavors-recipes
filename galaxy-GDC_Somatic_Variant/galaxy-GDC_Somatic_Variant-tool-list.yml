@@ -23,7 +23,7 @@ tools:
   owner: devteam
   tool_panel_section_label: "pre-alignment"
   revisions:
-    - c15237684a01
+    - ff9530579d1f
   
 - name: bwa
   owner: devteam

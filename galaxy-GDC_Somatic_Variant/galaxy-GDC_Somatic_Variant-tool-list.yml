@@ -22,7 +22,9 @@ tools:
 - name: fastqc
   owner: devteam
   tool_panel_section_label: "pre-alignment"
-
+  revisions:
+    - c15237684a01
+  
 - name: bwa
   owner: devteam
   tool_panel_section_label: "DNA-alignment"

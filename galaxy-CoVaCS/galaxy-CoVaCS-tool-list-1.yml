@@ -1,0 +1,80 @@
+---
+
+
+api_key: admin
+galaxy_instance: http://localhost:8080
+install_resolver_dependencies: true
+install_tool_dependencies: false
+tools:
+
+#________________________________
+#galaxy-CoVaCS-list1 tools
+
+
+- name: bedtools
+  owner: iuc
+  tool_panel_section_label: "BED Tools"
+
+- name: trimmomatic
+  owner: pjbriggs
+  tool_panel_section_label: "pre-alignment"
+
+- name: fastqc
+  owner: devteam
+  tool_panel_section_label: "pre-alignment"
+
+- name: bwa
+  owner: devteam
+  tool_panel_section_label: "DNA-alignment"
+
+- name: bowtie2
+  owner: devteam
+  tool_panel_section_label: "DNA-alignment"
+
+- name: bowtie_wrappers
+  owner: devteam
+  tool_panel_section_label: "DNA-alignment"
+
+- name: picard
+  owner: devteam
+  tool_panel_section_label: "picard-tools"
+
+- name: vcftools_merge
+  owner: devteam
+  tool_panel_section_label: "vcf-tools"
+
+- name: covacs_freebayes
+  owner: elixir-it
+  tool_panel_section_label: "COVACS"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
+
+- name: covacs_mpileup
+  owner: elixir-it
+  tool_panel_section_label: "COVACS"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
+
+- name: covacs_varscan2
+  owner: elixir-it
+  tool_panel_section_label: "COVACS"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
+
+- name: covacs_intersect_indels
+  owner: elixir-it
+  tool_panel_section_label: "COVACS"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
+
+- name: covacs_intersect_snps
+  owner: elixir-it
+  tool_panel_section_label: "COVACS"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
+
+- name: covacs_tabix
+  owner: elixir-it
+  tool_panel_section_label: "COVACS"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
+
+- name: covacs_annovar
+  owner: elixir-it
+  tool_panel_section_label: "COVACS"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
+

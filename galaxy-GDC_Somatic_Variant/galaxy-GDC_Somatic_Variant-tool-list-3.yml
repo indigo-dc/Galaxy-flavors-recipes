@@ -1,0 +1,15 @@
+---
+
+
+api_key: admin
+galaxy_instance: http://localhost:8080
+install_resolver_dependencies: true
+install_tool_dependencies: false
+tools:
+
+#________________________________
+#galaxy-GDC_Somatic_Variant 3 tools
+
+- name: picard
+  owner: devteam
+  tool_panel_section_label: "picard-tools"

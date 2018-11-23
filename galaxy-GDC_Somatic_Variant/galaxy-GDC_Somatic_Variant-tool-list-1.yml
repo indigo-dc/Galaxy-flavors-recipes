@@ -37,14 +37,6 @@ tools:
   owner: devteam
   tool_panel_section_label: "DNA-alignment"
 
-- name: picard
-  owner: devteam
-  tool_panel_section_label: "picard-tools"
-
-- name: gatk
-  owner: avowinkel
-  tool_panel_section_label: "Co-cleaning"
-
 - name: samtools_mpileup
   owner: devteam
   tool_panel_section_label: "somatic-variant-calling"
@@ -58,11 +50,6 @@ tools:
 - name: vcftools_merge
   owner: devteam
   tool_panel_section_label: "somatic-variant-calling"
-
-- name: mutect2
-  owner: elixir-it
-  tool_panel_section_label: "somatic-variant-calling"
-  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
 
 - name: muse
   owner: elixir-it

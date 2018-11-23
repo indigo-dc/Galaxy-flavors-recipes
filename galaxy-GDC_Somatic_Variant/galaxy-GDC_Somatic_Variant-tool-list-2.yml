@@ -1,0 +1,22 @@
+---
+
+
+api_key: admin
+galaxy_instance: http://localhost:8080
+install_resolver_dependencies: true
+install_tool_dependencies: false
+tools:
+
+#________________________________
+#galaxy-GDC_Somatic_Variant 2 tools
+
+- name: mutect2
+  owner: elixir-it
+  tool_panel_section_label: "somatic-variant-calling"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
+
+- name: gatk
+  owner: avowinkel
+  tool_panel_section_label: "Co-cleaning"
+
+

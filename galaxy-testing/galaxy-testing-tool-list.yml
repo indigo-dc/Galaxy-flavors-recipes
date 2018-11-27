@@ -6,6 +6,8 @@ tools:
 - name: fastqc
   owner: devteam
   tool_panel_section_label: 'QualityCheck'
+  revisions:
+    - ff9530579d1f
 
 - name: 'bowtie_wrappers'
   owner: 'devteam'

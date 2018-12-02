@@ -1,0 +1,16 @@
+---
+api_key: <Admin user API key from galaxy_instance>
+galaxy_instance: <Galaxy instance IP>
+install_resolver_dependencies: true
+install_tool_dependencies: false
+
+tools:
+- name: fastqc
+  owner: devteam
+  tool_panel_section_label: 'QualityCheck'
+  revisions:
+    - ff9530579d1f
+
+- name: 'bowtie_wrappers'
+  owner: 'devteam'
+  tool_panel_section_label: 'Bowtie'

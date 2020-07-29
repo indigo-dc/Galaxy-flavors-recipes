@@ -11,23 +11,29 @@ tools:
 - name: vinyl
   owner: elixir-it
   tool_panel_section_label: "VINYL"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
 
 - name: vinyl_annovar
   owner: elixir-it
   tool_panel_section_label: "VINYL"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
 
 - name: vinyl_boxplot
   owner: elixir-it
   tool_panel_section_label: "VINYL"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
  
 - name: vinyl_optimizer
   owner: elixir-it
   tool_panel_section_label: "VINYL"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
 
 - name: vinyl_pca
   owner: elixir-it
   tool_panel_section_label: "VINYL"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
 
 - name: vinyl_survival
   owner: elixir-it
   tool_panel_section_label: "VINYL"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"

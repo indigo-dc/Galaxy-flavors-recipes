@@ -37,3 +37,15 @@ tools:
   owner: elixir-it
   tool_panel_section_label: "VINYL"
   tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
+
+- name: bedtools
+  owner: iuc
+  tool_panel_section_label: "VCF_utilities"
+
+- name: package_vcftools_0_1_11
+  owner: devteam
+  tool_panel_section_label: "VCF_utilities"
+
+- name: vcftools_compare
+  owner: devteam
+  tool_panel_section_label: "VCF_utilities"

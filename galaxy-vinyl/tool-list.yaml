@@ -38,6 +38,16 @@ tools:
   tool_panel_section_label: "VINYL"
   tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
 
+- name: vinyl_score_composition
+  owner: elixir-it
+  tool_panel_section_label: "VINYL"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
+
+- name: vinyl_score_heatmap
+  owner: elixir-it
+  tool_panel_section_label: "VINYL"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
+
 - name: bedtools
   owner: iuc
   tool_panel_section_label: "VCF_utilities"

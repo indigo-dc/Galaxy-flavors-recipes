@@ -6,4 +6,12 @@
 - name: "Set {{galaxy_flavor}} resources"
   set_fact:
     galaxy_tools_tool_list_files:
-      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/tool-list.yaml'
+      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/galaxy-vinyl-tool-list.yaml'
+
+# set path to workflow files
+# ephemeris takes the worlflow path to install workflows
+- name: "Set {{galaxy_flavor}} workflows resources"
+  set_fact:
+    install_workflows: true
+    galaxy_tools_workflow_list_path:
+      - '{{galaxy_tools_base_dir}}/Galaxy-flavors-recipes/{{galaxy_flavor}}/galaxy-vinyl-workflows'

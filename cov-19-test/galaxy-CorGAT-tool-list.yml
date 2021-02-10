@@ -1,0 +1,56 @@
+---
+
+
+api_key: admin
+galaxy_instance: http://localhost:8080
+install_resolver_dependencies: true
+install_tool_dependencies: false
+tools:
+
+#________________________________
+#galaxy-CorGAT-list tools
+
+
+- name: mummer_delta_filter 
+  owner: iuc 
+  tool_panel_section_label: "Genome Alignment"
+
+- name: mummer_dnadiff 
+  owner: iuc 
+  tool_panel_section_label: "Genome Alignment"
+
+- name: mummer_mummer 
+  owner: iuc 
+  tool_panel_section_label: "Genome Alignment"
+
+- name: mummer_mummerplot
+  owner: iuc 
+  tool_panel_section_label: "Genome Alignment"
+
+- name: mummer_nucmer
+  owner: iuc 
+  tool_panel_section_label: "Genome Alignment"
+
+- name: mummer_show_coords 
+  owner: iuc 
+  tool_panel_section_label: "Genome Alignment"
+
+- name: corgat_funct_annot 
+  owner: elixir-it 
+  tool_panel_section_label: "Coronavirus Annotation tools"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
+
+- name: corgat_join_nucmer
+  owner: elixir-it 
+  tool_panel_section_label: "Coronavirus Annotation tools"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
+
+- name: corgat_nucmer_snp 
+  owner: elixir-it 
+  tool_panel_section_label: "Coronavirus Annotation tools"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
+
+- name: corgat_multifc 
+  owner: elixir-it 
+  tool_panel_section_label: "Coronavirus Annotation tools"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"

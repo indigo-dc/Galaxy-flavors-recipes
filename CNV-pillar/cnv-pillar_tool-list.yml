@@ -1,0 +1,64 @@
+---
+
+api_key: admin
+galaxy_instance: http://localhost:8080
+install_repository_dependencies: true
+install_resolver_dependencies: true
+install_tool_dependencies: true
+tools:
+- name: fastqc
+  owner: devteam
+  revisions:
+  - e7b2202befea
+  tool_panel_section_label: Quality-control
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+
+- name: multiqc
+  owner: iuc
+  revisions:
+  - b2f1f75d49c4
+  tool_panel_section_label: Quality-control
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+
+- name: bwa
+  owner: devteam
+  revisions:
+  - 01ac0a5fedc3
+  tool_panel_section_label: mapping
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+
+- name: bowtie2
+  owner: devteam
+  revisions:
+  - 749c918495f7
+  tool_panel_section_label: mapping
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+
+- name: control_freec
+  owner: iuc
+  revisions:
+  - 2c6349fb175c
+  tool_panel_section_label: CNV-tools
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+
+- name: lumpy_sv
+  owner: iuc
+  revisions:
+  - 477a07f387e0 
+  tool_panel_section_label: CNV-tools
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+
+- name: exomedepth
+  owner: crs4 
+  revisions:
+  - 5d60331757d3
+  tool_panel_section_label: CNV-tools
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+  
+- name: gatk4_mutect2 
+  owner: iuc
+  revisions:
+  - 1cea23583655
+  tool_panel_section_label: CNV-tools
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+

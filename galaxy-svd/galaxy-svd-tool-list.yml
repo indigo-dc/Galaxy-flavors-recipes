@@ -1,0 +1,85 @@
+---
+
+api_key: admin
+galaxy_instance: http://localhost:8080
+install_repository_dependencies: true
+install_resolver_dependencies: true
+install_tool_dependencies: true
+tools:
+
+- name: fastqc
+  owner: devteam
+  revisions:
+  - e7b2202befea
+  tool_panel_section_label: Quality-control
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+
+- name: multiqc
+  owner: iuc
+  revisions:
+  - b2f1f75d49c4
+  tool_panel_section_label: Quality-control
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+
+- name: trimmomatic
+  owner: pjbriggs
+  revisions:
+  - d94aff5ee623
+  tool_panel_section_label: Quality-control
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+
+- name: bwa
+  owner: devteam
+  revisions:
+  - 3fe632431b68
+  tool_panel_section_label: mapping
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+
+- name: bowtie2
+  owner: devteam
+  revisions:
+  - 749c918495f7
+  tool_panel_section_label: mapping
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+
+- name: bamtools
+  owner: devteam
+  revisions:
+  - 4d343c1f606b
+  tool_panel_section_label: bamtools
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+
+- name: bamtools_filter
+  owner: devteam
+  revisions:
+  - cb20f99fd45b
+  tool_panel_section_label: bamtools
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+
+- name: samtools_rmdup
+  owner: devteam
+  revisions:
+  - 586f9e1cdb2b
+  tool_panel_section_label: samtools
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+
+- name: bamleftalign
+  owner: devteam
+  revisions:
+  - e65540a91b87
+  tool_panel_section_label: variant-detection
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+
+- name: samtools_calmd
+  owner: devteam
+  revisions:
+  - 06dc50b7b711
+  tool_panel_section_label: samtools
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+
+- name: varscan_somatic
+  owner: iuc
+  revisions:
+  - a57606054bd7
+  tool_panel_section_label: variant-detection
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/

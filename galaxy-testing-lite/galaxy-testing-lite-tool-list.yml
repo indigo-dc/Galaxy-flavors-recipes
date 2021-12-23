@@ -1,16 +1,20 @@
 ---
-api_key: <Admin user API key from galaxy_instance>
-galaxy_instance: <Galaxy instance IP>
+
+install_repository_dependencies: true
 install_resolver_dependencies: true
-install_tool_dependencies: false
+install_tool_dependencies: true
 
 tools:
 - name: fastqc
   owner: devteam
-  tool_panel_section_label: 'QualityCheck'
   revisions:
-    - ff9530579d1f
+  - e7b2202befea
+  tool_panel_section_label: Quality-control
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 
-- name: 'bowtie_wrappers'
-  owner: 'devteam'
-  tool_panel_section_label: 'Bowtie'
+- name: multiqc
+  owner: iuc
+  revisions:
+  - b2f1f75d49c4
+  tool_panel_section_label: Quality-control
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/

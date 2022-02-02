@@ -5,5 +5,16 @@
     role_debug: true
     galaxy_prefix: ":80"
     galaxy_flavors_recipes_url: 'https://github.com/pmandreoli/Galaxy-flavors-recipes.git'
+    galaxy_flavor_version: 1
   roles:
     - ../ansible-role-laniakea-galaxy-tools
+  post_tasks:
+    - name: install pigz 
+      yum: 
+        name: pigz
+
+    - name: run script for package-creation
+      script: 
+        cmd: dump.sh -f "{{ galaxy_flavour }}" -v "{{ galaxy_flavor_version }}"  
+      args:
+        executable: bash

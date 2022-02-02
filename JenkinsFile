@@ -15,13 +15,13 @@ pipeline {
 					sleep 3m
 					export VM_IP=$(openstack server list --name vm_for_packages -f json | grep -Eo \'[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\' )
 					echo $VM_IP
-					if [ -d ansible-role-laniakea-galaxy-tools ]; then rm -rf ansible-role-laniakea-galaxy-tools Galaxy-flavors-recipes; fi
+					if [ -d ansible-role-laniakea-galaxy-tools ]; then rm -rf ansible-role-laniakea-galaxy-tools && rm -rf Galaxy-flavors-recipes; fi
 					git clone https://github.com/Laniakea-elixir-it/ansible-role-laniakea-galaxy-tools.git
 					cd ansible-role-laniakea-galaxy-tools && git checkout dev && cd ..
 					git clone https://github.com/pmandreoli/Galaxy-flavors-recipes.git
 					cd Galaxy-flavors-recipes && git checkout test
 					sed -i s/VM_IP/$VM_IP/g hosts
-					ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i hosts --private-key /home/centos/.ssh/laniakea-robot.key  tools_playbook.yml'''
+					ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i hosts --private-key /home/centos/.ssh/id_rsa  tools_playbook.yml'''
 				}
 
 			}

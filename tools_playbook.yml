@@ -5,4 +5,4 @@
     role_debug: true
     galaxy_prefix: ":80"
   roles:
-    - ansible-role-laniakea-galaxy-tools
+    - ../ansible-role-laniakea-galaxy-tools

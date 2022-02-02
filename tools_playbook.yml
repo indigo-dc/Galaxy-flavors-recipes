@@ -4,5 +4,6 @@
     galaxy_flavor: galaxy-testing
     role_debug: true
     galaxy_prefix: ":80"
+    galaxy_flavors_recipes_url: 'https://github.com/pmandreoli/Galaxy-flavors-recipes.git'
   roles:
     - ../ansible-role-laniakea-galaxy-tools

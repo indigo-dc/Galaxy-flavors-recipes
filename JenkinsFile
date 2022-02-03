@@ -5,10 +5,10 @@ pipeline {
 			steps {
 				withCredentials([file(credentialsId: 'galaxy_it_credentials_mtangaro_general_user', variable: 'OPESTACK_CREDENTIALS')]) {
 					sh '''
-					#python3 -m venv openstack_cli_flavour
-					#. openstack_cli_flavour/bin/activate
-					#pip3 install --upgrade pip
-					#pip3 install python-openstackclient
+					python3 -m venv openstack_cli_flavour
+					. openstack_cli_flavour/bin/activate
+					pip3 install --upgrade pip
+					pip3 install python-openstackclient
 					set +x $OPENSTACK_CREDENTIALS
 					.  $OPESTACK_CREDENTIALS
 					#openstack server create --flavor large --image 864f87bd-0d1a-47f2-b285-e1c6bf0f80b6 --key-name laniakea-robot  --network public_net --security-group default  --security-group ssh --security-group http vm_for_packages

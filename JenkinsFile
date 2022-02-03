@@ -21,7 +21,8 @@ pipeline {
 					#git clone https://github.com/pmandreoli/Galaxy-flavors-recipes.git
 					cd Galaxy-flavors-recipes && git checkout test
 					#sed -i s/VM_IP/$VM_IP/g hosts
-					ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i hosts --private-key /home/centos/.ssh/id_rsa  tools_playbook.yml'''
+					#ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i hosts --private-key /home/centos/.ssh/id_rsa  tools_playbook.yml'''
+					ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i hosts --private-key /home/centos/.ssh/id_rsa  dump.yml'''
 				}
 
 			}

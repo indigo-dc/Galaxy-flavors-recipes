@@ -1,0 +1,16 @@
+---
+- hosts: galaxyservers
+  become: true
+  vars:
+    galaxy_flavor: galaxy-testing-lite
+    galaxy_flavor_version: 1
+  tasks:
+    - name: install pigz 
+      yum:
+        name: pigz
+
+    - name: run script for package-creation
+      script: 
+        cmd: dump.sh -f "{{ galaxy_flavour }}" -v "{{ galaxy_flavor_version }}"  
+      args:
+        executable: bash

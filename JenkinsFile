@@ -31,10 +31,9 @@ pipeline {
 		stage('upload to swift'){
 			steps {
 
-				withCredentials([file(credentialsId: 'galaxy_it_credentials_mtangaro_general_user', variable: 'OPESTACK_CREDENTIALS')]) {
+				withCredentials([file(credentialsId: 'galaxy_it_credentials_mtangaro_general_user', variable: 'OPENSTACK_CREDENTIALS')]) {
 					sh '''
 	  					cd Galaxy-flavors-recipes
-                                                cat $OPENSTACK_CREDENTIALS
                                                 cat $OPENSTACK_CREDENTIALS > rc.sh
 						ansible-playbook -i hosts --private-key /home/centos/.ssh/id_rsa  swift_upload.yml '''
 				}

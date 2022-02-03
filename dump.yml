@@ -11,6 +11,6 @@
 
     - name: run script for package-creation
       script: 
-        cmd: dump.sh -f "{{ galaxy_flavour }}" -v "{{ galaxy_flavor_version }}"  
+        cmd: dump.sh -f "{{ galaxy_flavor }}" -v "{{ galaxy_flavor_version }}"  
       args:
         executable: bash

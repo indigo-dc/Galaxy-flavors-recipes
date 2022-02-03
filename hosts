@@ -1,4 +1,4 @@
 [galaxyservers]
-VM_IP ansible_user=centos ansible_python_interpreter=/usr/bin/python3
+VM_IP ansible_user=centos ansible_python_interpreter=/usr/bin/python
 
 ## libselinux-python3 needed

@@ -8,15 +8,15 @@
     galaxy_flavor_version: 1
   roles:
     - ../ansible-role-laniakea-galaxy-tools
-  post_tasks:
-    - name: install pigz 
-      vars:
-        ansible_python_interpreter: /usr/bin/python
-      yum:
-        name: pigz
+      #  post_tasks:
+      #  - name: install pigz 
+      #    vars:
+      #      ansible_python_interpreter: /usr/bin/python
+      #    yum:
+      #      name: pigz
 
-    - name: run script for package-creation
-      script: 
-        cmd: dump.sh -f "{{ galaxy_flavour }}" -v "{{ galaxy_flavor_version }}"  
-      args:
-        executable: bash
+      #  - name: run script for package-creation
+      #    script: 
+      #      cmd: dump.sh -f "{{ galaxy_flavour }}" -v "{{ galaxy_flavor_version }}"  
+      #    args:
+      #      executable: bash

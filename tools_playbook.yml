@@ -10,10 +10,10 @@
     - ../ansible-role-laniakea-galaxy-tools
   post_tasks:
     - name: install pigz 
-      yum:
-        name: pigz
       vars:
         ansible_python_interpreter: /usr/bin/python
+      yum:
+        name: pigz
 
     - name: run script for package-creation
       script: 

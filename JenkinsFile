@@ -28,6 +28,18 @@ pipeline {
 
 			}
 		}
+		stage('upload to swift'){
+			steps {
+
+				withCredentials([file(credentialsId: 'galaxy_it_credentials_mtangaro_general_user', variable: 'OPESTACK_CREDENTIALS')]) {
+					sh '''
+                                                sh "cp \$OPENSTACK_CREDENTIALS rc.sh"
+						ansible-playbook -i hosts --private-key /home/centos/.ssh/id_rsa  swift.yml -e ansible_python_interpreter=/usr/bin/python '''
+				}
+
+
+			}
+		}
 
 	}
 }

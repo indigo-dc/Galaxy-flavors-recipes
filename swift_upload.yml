@@ -1,0 +1,31 @@
+---
+- name: upload package on swift
+  hosts: galaxyservers
+  become: true
+  tasks:
+
+    - name: upgrade pip        
+      pip:
+        name: pip
+        state: latest
+
+    - name: install swift cli        
+      pip:
+        name: [ "setuptools_rust","python-openstackclient","python-swiftclient" ]
+
+    - name: copy credentials
+      copy:
+        src: rc.sh 
+        dest: /tmp/dump/rc.sh
+
+    - name: 
+      shell: source /tmp/dump/rc.sh && /usr/local/bin/swift upload  galaxy_flavors release*
+      args:
+        chdir: /tmp/dump
+
+    
+
+
+
+          
+            

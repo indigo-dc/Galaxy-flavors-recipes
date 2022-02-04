@@ -8,3 +8,7 @@
       # galaxy_flavor_version: 1
   roles:
     - ../ansible-role-laniakea-galaxy-tools
+  pretasks:
+    - name: update conda
+      shell:
+        cmd: /export/tool_deps/_conda/bin/conda update -y conda

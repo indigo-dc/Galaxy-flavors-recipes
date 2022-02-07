@@ -41,6 +41,11 @@ pipeline {
 		}
 
 	}
+	  post {
+    success {
+	sh '''
+	  openstack server delete  --wait $INSTANCE  '''
+    }
 }
 
 

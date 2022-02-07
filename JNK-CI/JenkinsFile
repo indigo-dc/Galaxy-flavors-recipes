@@ -46,8 +46,8 @@ pipeline {
 			sh '''
 				. openstack_cli_flavour/bin/activate
 				cd Galaxy-flavors-recipes/JNK-CI
-				set +x $OPENSTACK_CREDENTIALS
-				.  $OPESTACK_CREDENTIALS
+				cat $OPENSTACK_CREDENTIALS > rc.sh
+				source rc.sh
 				openstack server delete  --wait $INSTANCE  '''
 		}
 	}

@@ -31,6 +31,7 @@ pipeline {
 
 					withCredentials([file(credentialsId: 'galaxy_it_credentials_mtangaro_general_user', variable: 'OPENSTACK_CREDENTIALS')]) {
 						sh '''
+						    set +x
 							cd Galaxy-flavors-recipes/JNK-CI
 							cat $OPENSTACK_CREDENTIALS > rc.sh
 							ansible-playbook -i hosts --private-key /home/centos/.ssh/id_rsa  swift_upload.yml '''

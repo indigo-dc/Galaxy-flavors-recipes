@@ -21,3 +21,9 @@
         - postgresql-10
         - nginx
         - galaxy
+
+    - name: remove conda.lock
+      file:
+        path: /export/tool_deps/conda.lock
+        state: absent
+

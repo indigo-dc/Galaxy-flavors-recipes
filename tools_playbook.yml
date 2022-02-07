@@ -1,14 +1,18 @@
 - hosts: galaxyservers
   become: true
   vars:
-    #    galaxy_flavor: galaxy-testing-lite
     role_debug: true
     galaxy_prefix: ":80"
     galaxy_flavors_recipes_url: 'https://github.com/pmandreoli/Galaxy-flavors-recipes.git'
-      # galaxy_flavor_version: 1
   roles:
     - ../ansible-role-laniakea-galaxy-tools
   pre_tasks:
     - name: update conda
-      shell:
-        cmd: /export/tool_deps/_conda/bin/conda update -y conda
+      systemd:
+        name: {{ item }}
+        state: started
+        enabled: True
+      with_items:
+        - postgresql-10
+        - nginx
+        - galaxy

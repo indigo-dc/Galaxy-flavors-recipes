@@ -1,51 +1,52 @@
 pipeline {
 	agent any
-	stages {
-		stage('Shell script 0') {
-			steps {
-				withCredentials([file(credentialsId: 'galaxy_it_credentials_mtangaro_general_user', variable: 'OPESTACK_CREDENTIALS')]) {
-					sh '''
-					python3 -m venv openstack_cli_flavour
-					. openstack_cli_flavour/bin/activate
-					pip3 install --upgrade pip
-					pip3 install python-openstackclient
-					set +x $OPENSTACK_CREDENTIALS
-					.  $OPESTACK_CREDENTIALS
-					openstack server create --flavor large --image $IMAGE --key-name laniakea-robot  --network public_net --security-group default  --security-group ssh --security-group http $INSTANCE --wait
-					export VM_IP=$(openstack server list --name $INSTANCE -f json | grep -Eo \'[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\' )
-					echo $VM_IP
-					if [ -d ansible-role-laniakea-galaxy-tools ]; then rm -rf ansible-role-laniakea-galaxy-tools && rm -rf Galaxy-flavors-recipes; fi
-					git clone https://github.com/Laniakea-elixir-it/ansible-role-laniakea-galaxy-tools.git
-					cd ansible-role-laniakea-galaxy-tools && git checkout dev && cd ..
-					git clone https://github.com/pmandreoli/Galaxy-flavors-recipes.git
-					cd Galaxy-flavors-recipes && git checkout test
-				    sed -i s/VM_IP/$VM_IP/g hosts
-					ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i hosts --private-key /home/centos/.ssh/id_rsa  tools_playbook.yml -e galaxy_flavor=$FLAVOR -e galaxy_flavor_version=$VERSION
-					ansible-playbook -i hosts --private-key /home/centos/.ssh/id_rsa  dump.yml -e ansible_python_interpreter=/usr/bin/python -e galaxy_flavor=$FLAVOR -e galaxy_flavor_version=$VERSION '''
+		stages {
+			stage('Shell script 0') {
+				steps {
+					withCredentials([file(credentialsId: 'galaxy_it_credentials_mtangaro_general_user', variable: 'OPESTACK_CREDENTIALS')]) {
+						sh '''
+							python3 -m venv openstack_cli_flavour
+							. openstack_cli_flavour/bin/activate
+							pip3 install --upgrade pip
+							pip3 install python-openstackclient
+							set +x $OPENSTACK_CREDENTIALS
+							.  $OPESTACK_CREDENTIALS
+							openstack server create --flavor large --image $IMAGE --key-name laniakea-robot  --network public_net --security-group default  --security-group ssh --security-group http $INSTANCE --wait
+							export VM_IP=$(openstack server list --name $INSTANCE -f json | grep -Eo \'[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\' )
+							echo $VM_IP
+							if [ -d ansible-role-laniakea-galaxy-tools ]; then rm -rf ansible-role-laniakea-galaxy-tools && rm -rf Galaxy-flavors-recipes; fi
+								git clone https://github.com/Laniakea-elixir-it/ansible-role-laniakea-galaxy-tools.git
+									cd ansible-role-laniakea-galaxy-tools && git checkout dev && cd ..
+									git clone https://github.com/pmandreoli/Galaxy-flavors-recipes.git
+									cd Galaxy-flavors-recipes && git checkout test
+									sed -i s/VM_IP/$VM_IP/g hosts
+									ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i hosts --private-key /home/centos/.ssh/id_rsa  tools_playbook.yml -e galaxy_flavor=$FLAVOR -e galaxy_flavor_version=$VERSION
+									ansible-playbook -i hosts --private-key /home/centos/.ssh/id_rsa  dump.yml -e ansible_python_interpreter=/usr/bin/python -e galaxy_flavor=$FLAVOR -e galaxy_flavor_version=$VERSION '''
+					}
+
 				}
-
 			}
-		}
-		stage('upload to swift'){
-			steps {
+			stage('upload to swift'){
+				steps {
 
-				withCredentials([file(credentialsId: 'galaxy_it_credentials_mtangaro_general_user', variable: 'OPENSTACK_CREDENTIALS')]) {
-					sh '''
-	  					cd Galaxy-flavors-recipes
-                                                cat $OPENSTACK_CREDENTIALS > rc.sh
-						ansible-playbook -i hosts --private-key /home/centos/.ssh/id_rsa  swift_upload.yml '''
+					withCredentials([file(credentialsId: 'galaxy_it_credentials_mtangaro_general_user', variable: 'OPENSTACK_CREDENTIALS')]) {
+						sh '''
+							cd Galaxy-flavors-recipes
+							cat $OPENSTACK_CREDENTIALS > rc.sh
+							ansible-playbook -i hosts --private-key /home/centos/.ssh/id_rsa  swift_upload.yml '''
+					}
+
+
 				}
-
-
 			}
-		}
 
+		}
+	post {
+		success {
+			sh '''
+				openstack server delete  --wait $INSTANCE  '''
+		}
 	}
-	  post {
-    success {
-	sh '''
-	  openstack server delete  --wait $INSTANCE  '''
-    }
 }
 
 

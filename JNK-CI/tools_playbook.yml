@@ -5,7 +5,7 @@
     galaxy_prefix: ":80"
     galaxy_flavors_recipes_url: 'https://github.com/pmandreoli/Galaxy-flavors-recipes.git'
   roles:
-    - ../ansible-role-laniakea-galaxy-tools
+    - ../../ansible-role-laniakea-galaxy-tools
   pre_tasks:
     - name: remove _conda
       file:

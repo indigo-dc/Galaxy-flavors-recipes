@@ -7,7 +7,12 @@
   roles:
     - ../ansible-role-laniakea-galaxy-tools
   pre_tasks:
-    - name: update conda
+    - name: remove _conda
+      file:
+        path: /export/tool_deps/_conda
+        state: absent
+
+    - name: start services
       systemd:
         name: "{{ item }}"
         state: started

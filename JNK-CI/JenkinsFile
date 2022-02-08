@@ -16,13 +16,13 @@ pipeline {
 						echo $VM_IP
 						cd ..
 						if [ -d ansible-role-laniakea-galaxy-tools ]; then rm -rf ansible-role-laniakea-galaxy-tools && rm -rf Galaxy-flavors-recipes; fi
-							git clone https://github.com/Laniakea-elixir-it/ansible-role-laniakea-galaxy-tools.git
-								cd ansible-role-laniakea-galaxy-tools && git checkout dev && cd ..
-								git clone https://github.com/pmandreoli/Galaxy-flavors-recipes.git
-								cd Galaxy-flavors-recipes && git checkout test && cd JNK-CI
-								sed -i s/VM_IP/$VM_IP/g hosts
-								ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i hosts --private-key /home/centos/.ssh/id_rsa  tools_playbook.yml -e galaxy_flavor=$FLAVOR -e galaxy_flavor_version=$VERSION
-								ansible-playbook -i hosts --private-key /home/centos/.ssh/id_rsa  dump.yml -e ansible_python_interpreter=/usr/bin/python -e galaxy_flavor=$FLAVOR -e galaxy_flavor_version=$VERSION '''
+						git clone https://github.com/Laniakea-elixir-it/ansible-role-laniakea-galaxy-tools.git
+						cd ansible-role-laniakea-galaxy-tools && git checkout dev && cd ..
+						git clone https://github.com/pmandreoli/Galaxy-flavors-recipes.git
+						cd Galaxy-flavors-recipes && git checkout test && cd JNK-CI
+						sed -i s/VM_IP/$VM_IP/g hosts
+						ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i hosts --private-key /home/centos/.ssh/id_rsa  tools_playbook.yml -e galaxy_flavor=$FLAVOR -e galaxy_flavor_version=$VERSION
+						ansible-playbook -i hosts --private-key /home/centos/.ssh/id_rsa  dump.yml -e ansible_python_interpreter=/usr/bin/python -e galaxy_flavor=$FLAVOR -e galaxy_flavor_version=$VERSION '''
 				}
 
 			}

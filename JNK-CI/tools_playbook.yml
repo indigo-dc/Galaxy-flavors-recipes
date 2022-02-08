@@ -11,6 +11,17 @@
       file:
         path: /export/tool_deps/_conda
         state: absent
+    
+    - name: enable test_tool_shed
+      copy:
+        src: tool_sheds_conf.xml
+        dest: /home/galaxy/galaxy/config/tool_sheds_conf.xml
+    
+    - name: change galaxy_config
+      lineinfile:
+        path: /home/galaxy/galaxy/config/galaxy.yml
+        regexp: 'tool_sheds_config_file' 
+        line: '    tool_sheds_config_file: /home/galaxy/galaxy/config/tool_sheds_conf.xml' 
 
     - name: start services
       systemd:

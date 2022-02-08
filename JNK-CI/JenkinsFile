@@ -11,7 +11,7 @@ pipeline {
 						git clone https://github.com/Laniakea-elixir-it/TerraFormExpress.git 
 						cd TerraFormExpress 
 						terraform init
-						terraform apply -auto-approve -var="$IMAGE"
+						terraform apply -auto-approve -var="image_name=$IMAGE"
 						export VM_IP=$(terraform output -raw public_ip)
 						echo $VM_IP
 						cd ..

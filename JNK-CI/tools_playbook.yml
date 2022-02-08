@@ -1,4 +1,5 @@
 - hosts: galaxyservers
+  gather_facts: no
   become: true
   vars:
     role_debug: true
@@ -7,6 +8,13 @@
   roles:
     - ../../ansible-role-laniakea-galaxy-tools
   pre_tasks:
+
+    - name: Wait for system to become reachable
+      wait_for_connection:
+
+    - name: Gather facts for first time
+      setup:
+
     - name: remove _conda
       file:
         path: /export/tool_deps/_conda

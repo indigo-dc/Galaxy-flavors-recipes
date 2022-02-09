@@ -34,14 +34,7 @@ jobs:
         run: |
           message="${{ github.event.head_commit.message }}"
           stringarray=($message)
-          first=${stringarray[0]}
-          second=${stringarray[1]}
-          third=${stringarray[2]}
-          echo "prima ${first}" 
-          echo "seconda ${second}" 
-          echo "terza ${third}" 
-
-
+          curl -X POST "https://${{ secrets.JnkUser }}:${{ secrets.JnkApiKey }}@build-usegalaxy-it.cloud.ba.infn.it/jenkins/job/flavour_packages_pipeline/buildWithParameters?token=${{ secrets.Token }}&FLAVOR=${stringarray[1]}&VERSION=${stringarray[2]}&IMAGE=galaxy-express_v3.0.2"
 
 
       # Runs a set of commands using the runners shell

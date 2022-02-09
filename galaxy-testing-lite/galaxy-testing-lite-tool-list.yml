@@ -1,5 +1,5 @@
 ---
-
+#version 1
 install_repository_dependencies: true
 install_resolver_dependencies: true
 install_tool_dependencies: true
@@ -18,3 +18,4 @@ tools:
   - b2f1f75d49c4
   tool_panel_section_label: Quality-control
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
+

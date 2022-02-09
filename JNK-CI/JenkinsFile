@@ -47,7 +47,7 @@ pipeline {
 						set +x $OPENSTACK_CREDENTIALS
 						.  $OPENSTACK_CREDENTIALS
 						cd TerraFormExpress
-						terraform apply -auto-approve -var="image_name=$IMAGE" '''
+						terraform destroy -auto-approve -var="image_name=$IMAGE" '''
 				}
 
 			}

@@ -28,7 +28,19 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         if: "startsWith(github.event.head_commit.message, 'build')"
-        run: echo BUILDING
+        env:
+          JnkUser: ${{ secrets.JnkUser }}
+          JnkApiKey: ${{ secrets.JnkApiKey }}
+        run: |
+          stringarray=${{ github.event.head_commit.message }}
+          first=${stringarray[0]}
+          second=${stringarray[1]}
+          third=${stringarray[2]}
+          echo "prima $first" 
+          echo "seconda $second" 
+          echo "terza $third" 
+
+
 
 
       # Runs a set of commands using the runners shell

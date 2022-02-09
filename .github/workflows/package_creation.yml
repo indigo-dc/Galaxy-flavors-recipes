@@ -32,7 +32,7 @@ jobs:
           JnkUser: ${{ secrets.JnkUser }}
           JnkApiKey: ${{ secrets.JnkApiKey }}
         run: |
-          message=${{ github.event.head_commit.message }}
+          message="${{ github.event.head_commit.message }}"
           stringarray=($message)
           first=${stringarray[0]}
           second=${stringarray[1]}

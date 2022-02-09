@@ -33,12 +33,12 @@ jobs:
           JnkApiKey: ${{ secrets.JnkApiKey }}
         run: |
           stringarray=${{ github.event.head_commit.message }}
-          first=${stringarray[0]}
-          second=${stringarray[1]}
-          third=${stringarray[2]}
-          echo "prima $first" 
-          echo "seconda $second" 
-          echo "terza $third" 
+          export first=${stringarray[0]}
+          export second=${stringarray[1]}
+          export third=${stringarray[2]}
+          echo "prima ${first}" 
+          echo "seconda ${second}" 
+          echo "terza ${third}" 
 
 
 

@@ -1,0 +1,61 @@
+---
+
+api_key: admin
+galaxy_instance: http://localhost:8080
+install_resolver_dependencies: true
+install_tool_dependencies: false
+
+
+tools:
+
+- name: vinyl
+  owner: elixir-it
+  tool_panel_section_label: "VINYL"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
+
+- name: vinyl_annovar
+  owner: elixir-it
+  tool_panel_section_label: "VINYL"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
+
+- name: vinyl_boxplot
+  owner: elixir-it
+  tool_panel_section_label: "VINYL"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
+ 
+- name: vinyl_optimizer
+  owner: elixir-it
+  tool_panel_section_label: "VINYL"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
+
+- name: vinyl_pca
+  owner: elixir-it
+  tool_panel_section_label: "VINYL"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
+
+- name: vinyl_survival
+  owner: elixir-it
+  tool_panel_section_label: "VINYL"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
+
+- name: vinyl_score_composition
+  owner: elixir-it
+  tool_panel_section_label: "VINYL"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
+
+- name: vinyl_score_heatmap
+  owner: elixir-it
+  tool_panel_section_label: "VINYL"
+  tool_shed_url: "https://testtoolshed.g2.bx.psu.edu"
+
+- name: bedtools
+  owner: iuc
+  tool_panel_section_label: "VCF_utilities"
+
+- name: package_vcftools_0_1_11
+  owner: devteam
+  tool_panel_section_label: "VCF_utilities"
+
+- name: vcftools_compare
+  owner: devteam
+  tool_panel_section_label: "VCF_utilities"

@@ -1,0 +1,48 @@
+- hosts: galaxyservers
+  gather_facts: no
+  become: true
+  vars:
+    role_debug: true
+    galaxy_prefix: ":80"
+    galaxy_flavors_recipes_url: 'https://github.com/pmandreoli/Galaxy-flavors-recipes.git'
+  roles:
+    - ../../ansible-role-laniakea-galaxy-tools
+  pre_tasks:
+
+    - name: Wait for system to become reachable
+      wait_for_connection:
+
+    - name: Gather facts for first time
+      setup:
+
+    - name: remove _conda
+      file:
+        path: /export/tool_deps/_conda
+        state: absent
+    
+    - name: enable test_tool_shed
+      copy:
+        src: tool_sheds_conf.xml
+        dest: /home/galaxy/galaxy/config/tool_sheds_conf.xml
+    
+    - name: change galaxy_config
+      lineinfile:
+        path: /home/galaxy/galaxy/config/galaxy.yml
+        regexp: 'tool_sheds_config_file' 
+        line: '    tool_sheds_config_file: /home/galaxy/galaxy/config/tool_sheds_conf.xml' 
+
+    - name: start services
+      systemd:
+        name: "{{ item }}"
+        state: started
+        enabled: True
+      with_items:
+        - postgresql-10
+        - nginx
+        - galaxy
+
+    - name: remove conda.lock
+      file:
+        path: /export/tool_deps/conda.lock
+        state: absent
+

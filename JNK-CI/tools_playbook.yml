@@ -15,10 +15,10 @@
     - name: Gather facts for first time
       setup:
 
-    - name: remove _conda
-      file:
-        path: /export/tool_deps/_conda
-        state: absent
+        #    - name: remove _conda
+        #      file:
+        #        path: /export/tool_deps/_conda
+        #        state: absent
     
     - name: enable test_tool_shed
       copy:

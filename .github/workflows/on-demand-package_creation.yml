@@ -7,17 +7,32 @@ on:
   workflow_dispatch:
     inputs:
       Flavor:
+        type: choice 
         description: 'galaxy flavor to build'     
         required: true
         default: 'galaxy-testing'
+        options:
+          - cov-19-test
+          - galaxy-CoVaCS
+          - galaxy-epigen
+          - galaxy-flavors
+          - galaxy-GDC_Somatic_Variant
+          - galaxy-pillar
+          - galaxy-rna-workbench
+          - galaxy-testing
+          - galaxy-testing-lite
+          - galaxy-vinyl
       Version: 
         description: 'flavor version'
         required: true
         default: '1'
       Image: 
+        type: choice
         description: 'image to use to build the package'
         required: true
         default: 'galaxy-express_v3.0.2'
+        options: 
+          - galaxy-express_v3.0.2
 
   # Allows you to run this workflow manually from the Actions tab
   #  workflow_dispatch:

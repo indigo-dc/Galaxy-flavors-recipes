@@ -19,7 +19,7 @@
         dest: /tmp/dump/rc.sh
 
     - name: 
-      shell: source /tmp/dump/rc.sh && /usr/local/bin/swift upload  galaxy_flavors release*
+      shell: source /tmp/dump/rc.sh && /usr/local/bin/swift -S 1000000000 upload  galaxy_flavors release*
       args:
         chdir: /tmp/dump
 

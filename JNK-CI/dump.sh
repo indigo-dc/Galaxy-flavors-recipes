@@ -73,8 +73,8 @@ if ( $pigz )
 then
 echo "using pigz";
 
-tar cf $DUMP_DIR/tar_shed_tools.tar.gz -I pigz $G_SHEDTOOLS_DIR/ &>>$DUMP_DIR/dump.log && echo 'Shed_tool dump_package created' &
-tar cf $DUMP_DIR/tar_conda.tar.gz -I pigz $G_CONDA_DIR &>>$DUMP_DIR/dump.log && echo 'Conda dump_package created' &
+tar cf $DUMP_DIR/tar_shed_tools.tar.gz -C shed_tools -I pigz $G_SHEDTOOLS_DIR/ &>>$DUMP_DIR/dump.log && echo 'Shed_tool dump_package created' &
+tar cf $DUMP_DIR/tar_conda.tar.gz -C tool_deps -I pigz $G_CONDA_DIR &>>$DUMP_DIR/dump.log && echo 'Conda dump_package created' &
 
 else
 

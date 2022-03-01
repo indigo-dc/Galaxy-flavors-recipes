@@ -74,11 +74,11 @@ then
 echo "using pigz";
 
 cd $G_SHEDTOOLS_DIR && tar cf $DUMP_DIR/tar_shed_tools.tar.gz -I pigz . &>>$DUMP_DIR/dump.log && echo 'Shed_tool dump_package created' &
-cd $G_CONDA_DIR && tar cf $DUMP_DIR/tar_conda.tar.gz -I pigz . &>>$DUMP_DIR/dump.log && echo 'Conda dump_package created' &
+cd $G_CONDA_DIR/.. && tar cf $DUMP_DIR/tar_conda.tar.gz -I pigz . &>>$DUMP_DIR/dump.log && echo 'Conda dump_package created' &
 
 else
 cd $G_SHEDTOOLS_DIR && tar cf $DUMP_DIR/tar_shed_tools.tar.gz . &>>$DUMP_DIR/dump.log && echo 'Shed_tool dump_package created' &
-cd $G_CONDA_DIR && tar cf $DUMP_DIR/tar_conda.tar.gz . &>>$DUMP_DIR/dump.log && echo 'Conda dump_package created' &
+cd $G_CONDA_DIR/.. && tar cf $DUMP_DIR/tar_conda.tar.gz . &>>$DUMP_DIR/dump.log && echo 'Conda dump_package created' &
 
 
 fi

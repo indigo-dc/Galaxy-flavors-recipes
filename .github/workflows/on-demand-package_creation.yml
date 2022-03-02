@@ -52,7 +52,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        if: github.event.inputs.Flavor != "all"
+        if: github.event.inputs.Flavor != all
         env:
           JnkUser: ${{ secrets.JnkUser }}
           JnkApiKey: ${{ secrets.JnkApiKey }}
@@ -60,7 +60,7 @@ jobs:
           curl -X POST "https://${{ secrets.JnkUser }}:${{ secrets.JnkApiKey }}@build-usegalaxy-it.cloud.ba.infn.it/jenkins/job/flavour_packages_pipeline/buildWithParameters?token=${{ secrets.Token }}&FLAVOR=${{ github.event.inputs.Flavor }}&VERSION=${{ github.event.inputs.Version }}&IMAGE=${{ github.event.inputs.Image }}"
       
       - name: when flavor is all  
-        if: github.event.inputs.Flavor
+        if: github.event.inputs.Flavor == all
         env:
           JnkUser: ${{ secrets.JnkUser }}
           JnkApiKey: ${{ secrets.JnkApiKey }}

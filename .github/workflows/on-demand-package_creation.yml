@@ -64,6 +64,7 @@ jobs:
         env:
           JnkUser: ${{ secrets.JnkUser }}
           JnkApiKey: ${{ secrets.JnkApiKey }}
+          GITHUB_CONTEXT: ${{ toJson(github) }}
         run: |
           echo "$GITHUB_CONTEXT" 
 

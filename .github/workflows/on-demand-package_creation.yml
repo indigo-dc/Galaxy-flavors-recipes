@@ -66,5 +66,5 @@ jobs:
           JnkApiKey: ${{ secrets.JnkApiKey }}
           GITHUB_CONTEXT: ${{ toJson(github) }}
         run: |
-          echo "$GITHUB_CONTEXT" 
+          echo "${{ github.inputs.Flavor }}" 
 

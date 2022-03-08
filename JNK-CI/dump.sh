@@ -84,5 +84,12 @@ cd $G_CONDA_DIR/.. && tar cf $DUMP_DIR/tar_conda.tar.gz . &>>$DUMP_DIR/dump.log 
 fi
 
 wait
+
+if [ -d /data/${f_name}/workflows ]
+
+then
+	cp -r /data/${f_name}/workflows $DUMP_DIR
+fi
+
 echo "packages created"
 

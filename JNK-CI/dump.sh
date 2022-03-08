@@ -85,10 +85,12 @@ fi
 
 wait
 
-if [ -d /data/${f_name}/workflows ]
+WORKFLOW_DIR="/data/${f_name}/workflows"
+
+if [ -d "$WORKFLOW_DIR" ];
 
 then
-	cp -r /data/${f_name}/workflows $DUMP_DIR
+	cp -R $WORKFLOW_DIR $DUMP_DIR
 fi
 
 echo "packages created"

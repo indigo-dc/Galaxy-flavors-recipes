@@ -85,7 +85,7 @@ fi
 
 wait
 
-WORKFLOW_DIR="/data/${f_name}/workflows"
+WORKFLOW_DIR="/data/Galaxy-flavors-recipes/${f_name}/workflows"
 
 if [ -d "$WORKFLOW_DIR" ];
 

@@ -2,7 +2,7 @@ pipeline {
     agent any
        environment {
         API_TOKEN = credentials('telegram_bot_API_token')
-		ANSIBLE_HOST_KEY_CHECKING=False
+		ANSIBLE_HOST_KEY_CHECKING = "False"
     }
     stages {
         stage('upload_to_cvmfs') {

@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('upload_to_cvmfs') {
             steps {
-			 sh'ansible-playbook -i hosts cvmfs_upload.yml'
+			 sh'cd JNK-CI && ansible-playbook -i hosts cvmfs_upload.yml'
                  }
                  }
         }

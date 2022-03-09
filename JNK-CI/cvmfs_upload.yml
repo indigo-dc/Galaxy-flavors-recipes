@@ -13,15 +13,11 @@
       pip:
         name: [ "setuptools_rust","python-openstackclient","python-swiftclient" ]
 
-    - name: source openstack credentials
-      shell: source /buffer/usegalaxy-it-openrc.sh
+    - name: source openstack credentials and download container
+      shell: source /buffer/usegalaxy-it-openrc.sh && swift download galaxy_flavors
       args:
         executable: /bin/bash
 
-    - name: 
-      shell: swift download galaxy_flavors
-      args:
-        chdir: /buffer
 
     
 

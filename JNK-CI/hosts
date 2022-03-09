@@ -2,4 +2,4 @@
 VM_IP ansible_user=centos ansible_python_interpreter=/usr/bin/python3
 
 [cvmfs]
-90.147.102.226 ansible_user=ubuntu ansible_ssh_private_key_file=/home/centos/.ssh/id_rsa 
+90.147.102.226 ansible_user=ubuntu ansible_ssh_private_key_file=/home/centos/.ssh/laniakea-robot.key

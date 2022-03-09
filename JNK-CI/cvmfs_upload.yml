@@ -12,16 +12,43 @@
     - name: install swift cli        
       pip:
         name: [ "setuptools_rust","python-openstackclient","python-swiftclient" ]
+    
 
     - name: source openstack credentials and download container
       shell: source /buffer/usegalaxy-it-openrc.sh && swift download galaxy_flavors
       args:
         executable: /bin/bash
+        chdir: /buffer
+
+    - name: save downloaded package in a variable to clean after
+      shell: echo release*
+      args:
+        executable: /bin/bash
+        chdir: /buffer
+      register: package 
+    
+    - name: open cvmfs transaction
+      shell: cvmfs_server transaction tools.elixir-italy-cvmfs
+      args:
+        executable: /bin/bash
+        chdir: /buffer
 
 
+    - name: mv package to cvmfs
+      shell: mv "{{ package.stdout }}" /cvmfs/tools.elixir-italy-cvmfs/dump/
+      args:
+        executable: /bin/bash
+        chdir: /buffer
     
 
-
-
-          
-            
+    - name: CVMFS publish
+      shell: cvmfs_server publish tools.elixir-italy-cvmfs
+      args:
+        executable: /bin/bash
+        chdir: /buffer
+    
+    - name: clean container 
+      shell: source /buffer/usegalaxy-it-openrc.sh && swift delete galaxy_flavors -p "{{ package.stdout }}"
+      args:
+        executable: /bin/bash
+        chdir: /buffer

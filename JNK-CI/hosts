@@ -1,6 +1,5 @@
 [galaxyservers]
 VM_IP ansible_user=centos ansible_python_interpreter=/usr/bin/python3
 
-## libselinux-python3 needed
-#test1
-#test2
+[cmvfs]
+90.147.102.226 ansible_user=ubuntu 

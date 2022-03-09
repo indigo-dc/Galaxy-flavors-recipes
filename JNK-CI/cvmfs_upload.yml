@@ -1,0 +1,29 @@
+---
+- name: upload package on cvmfs
+  hosts: cvmfs
+  become: true
+  tasks:
+
+    - name: upgrade pip        
+      pip:
+        name: pip
+        state: latest
+
+    - name: install swift cli        
+      pip:
+        name: [ "setuptools_rust","python-openstackclient","python-swiftclient" ]
+
+    - name: source openstack credentials
+      shell: source /buffer/usegalaxy-it-openrc.sh
+
+    - name: 
+      shell: swift download galaxy_flavors
+      args:
+        chdir: /buffer
+
+    
+
+
+
+          
+            

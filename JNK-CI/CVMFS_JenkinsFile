@@ -1,0 +1,33 @@
+pipeline {
+    agent any
+       environment {
+        API_TOKEN = credentials('telegram_bot_API_token')
+    }
+    stages {
+        stage('upload_to_cvmfs') {
+            steps {
+			ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i hosts --private-key /home/centos/.ssh/id_rsa  cvmfs_upload.yml
+                 }
+                 }
+        }
+    post {
+        always {
+            echo 'This will always run'
+        }
+        success {
+        
+        sh 'curl -s -X POST https://api.telegram.org/bot$API_TOKEN/sendMessage -d chat_id=-667232678 -d text="SSH test on CVMFS: SUCCESS"'
+        }
+        failure {
+            sh 'curl -s -X POST https://api.telegram.org/bot$API_TOKEN/sendMessage -d chat_id=-667232678 -d text="SSH test on CVMFS: FAILED"'
+    
+        }
+        unstable {
+            echo 'This will run only if the run was marked as unstable'
+        }
+        changed {
+            echo 'This will run only if the state of the Pipeline has changed'
+            echo 'For example, if the Pipeline was previously failing but is now successful'
+        }
+    }
+}
